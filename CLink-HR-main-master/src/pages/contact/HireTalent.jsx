@@ -1,145 +1,171 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Send, Search, Users, Briefcase, ChevronRight } from 'lucide-react';
+import { Users, Clock, CheckSquare, DollarSign, Headphones, Layers, Zap, Briefcase, Globe, Send, UserCheck } from 'lucide-react';
 
 const HireTalent = () => {
+    const [formData, setFormData] = useState({
+        companyName: '',
+        contactPerson: '',
+        email: '',
+        phone: '',
+        hiringNeeds: ''
+    });
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        console.log("Hiring Request:", formData);
+        alert("Thank you! Our recruitment team will assist you shortly.");
+    };
+
     return (
         <div className="min-h-screen bg-slate-50">
             {/* Hero Section */}
-            <section className="bg-brand-950 py-32 relative overflow-hidden">
-                <div className="absolute inset-0">
-                    <img
-                        src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80"
-                        alt="Hire Talent"
-                        className="w-full h-full object-cover"
-                    />
-                    <div className="absolute inset-0 bg-brand-950/70"></div>
-                </div>
+            <section className="bg-brand-950 py-40 relative overflow-hidden text-center text-white">
+                <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2684&q=80')] bg-cover bg-center opacity-10"></div>
+                <div className="absolute inset-0 bg-gradient-to-b from-brand-950/70 via-brand-950/90 to-brand-950"></div>
 
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+                <div className="max-w-4xl mx-auto px-4 relative z-10">
                     <motion.div
-                        initial={{ opacity: 0, y: 30 }}
+                        initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8 }}
+                        transition={{ duration: 0.6 }}
                     >
-                        <span className="inline-block py-1 px-3 rounded-full bg-brand-800/50 border border-brand-700 text-brand-200 text-xs font-bold tracking-widest uppercase mb-6 backdrop-blur-md">
-                            Requirement Intake
+                        <span className="inline-block py-1 px-3 rounded-full bg-accent-500/10 border border-accent-500/20 text-accent-400 text-xs font-bold tracking-widest uppercase mb-6 backdrop-blur-md">
+                            Recruitment Solutions
                         </span>
-                        <h1 className="text-4xl md:text-8xl font-extrabold text-white mb-8 tracking-tight leading-[1.1]">
-                            Scale Your <br />
-                            <span className="text-accent-500">Workforce.</span>
+                        <h1 className="text-4xl md:text-6xl font-extrabold mb-6 tracking-tight">
+                            Find the Right <span className="text-accent-500">Talent, Faster</span>
                         </h1>
-                        <p className="text-xl md:text-2xl text-slate-200 max-w-2xl mx-auto font-light leading-relaxed">
-                            Share your hiring needs and let our <span className="text-white font-medium">specialized recruitment desks</span> find the builders for your business.
+                        <p className="text-xl md:text-2xl text-slate-300 leading-relaxed mb-8">
+                            At CLink HR, we help businesses hire the best talent quickly and efficiently. Leveraging our network of Independent Prime Partners (IPP) and the Zryoss platform, we deliver scalable, quality, and fast recruitment solutions across industries.
+                        </p>
+                        <p className="text-base text-slate-400 font-medium font-outfit">
+                            Whether you are a startup, SME, or enterprise, our model ensures speed, accuracy, and cost-efficiency.
                         </p>
                     </motion.div>
                 </div>
             </section>
 
-            {/* Form Section */}
-            <section className="py-24 relative -mt-16 z-20">
-                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="bg-white p-10 md:p-16 rounded-[3rem] shadow-2xl border border-slate-100">
-                        <div className="mb-12">
-                            <h2 className="text-3xl font-bold text-slate-900 mb-4 tracking-tight">Hiring Request</h2>
-                            <p className="text-slate-500 font-light">Please provide the core details of the role. Our account manager will contact you within 24 hours.</p>
+            {/* Main Content Area */}
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 relative z-20 pb-24">
+                <div className="grid lg:grid-cols-3 gap-8">
+
+                    {/* Left Column: Why Hire & Solutions */}
+                    <div className="lg:col-span-2 space-y-8">
+
+                        {/* Why Hire */}
+                        <div className="bg-white rounded-3xl p-8 shadow-md border border-slate-100">
+                            <h2 className="text-2xl font-bold text-slate-900 mb-8">Why Hire Through CLink HR?</h2>
+                            <div className="grid sm:grid-cols-2 gap-6">
+                                {[
+                                    { title: "Access a Large Talent Pool", desc: "Specialized candidates across IT, Retail, Healthcare & more via IPP network.", icon: Users },
+                                    { title: "Faster Hiring", desc: "Distributed execution ensures parallel sourcing and reduced time-to-hire.", icon: Clock },
+                                    { title: "Structured Process", desc: "Centralized validation, clear SLAs, and continuous monitoring.", icon: CheckSquare },
+                                    { title: "Cost-Optimized", desc: "Flexible hiring options without overheads of large internal HR teams.", icon: DollarSign },
+                                    { title: "End-to-End Support", desc: "Sourcing, screening, interview coordination, and onboarding.", icon: Headphones }
+                                ].map((item, i) => (
+                                    <div key={i} className={`flex gap-4 ${i === 4 ? 'sm:col-span-2' : ''}`}>
+                                        <div className="w-10 h-10 rounded-xl bg-brand-50 flex items-center justify-center text-brand-600 shrink-0 mt-1">
+                                            <item.icon className="w-5 h-5" />
+                                        </div>
+                                        <div>
+                                            <h3 className="font-bold text-slate-900 text-base mb-1">{item.title}</h3>
+                                            <p className="text-slate-600 text-sm leading-relaxed">{item.desc}</p>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
                         </div>
 
-                        <form className="space-y-8">
-                            <div className="grid md:grid-cols-2 gap-8">
-                                <div className="space-y-3">
-                                    <label className="text-sm font-bold text-slate-700 ml-1">Company Name</label>
-                                    <input
-                                        type="text"
-                                        className="w-full px-6 py-4 rounded-2xl bg-slate-50 border-none focus:ring-4 focus:ring-brand-500/20 text-slate-900 transition-all font-light"
-                                        placeholder="Enter company name"
-                                    />
+                        {/* Solutions & Process */}
+                        <div className="bg-white rounded-3xl p-8 shadow-md border border-slate-100">
+                            <div className="mb-10">
+                                <h2 className="text-2xl font-bold text-brand-900 mb-6 flex items-center gap-2">
+                                    <Layers className="w-6 h-6 text-brand-600" /> Our Hiring Solutions
+                                </h2>
+                                <div className="flex flex-wrap gap-3">
+                                    {[
+                                        "IT Hiring Solutions",
+                                        "Startup & Fast Closure Hiring",
+                                        "Multi-location Workforce Solutions",
+                                        "Contract Workforce Management",
+                                        "Industry-Specific Hiring Solutions"
+                                    ].map((tag, i) => (
+                                        <span key={i} className="bg-slate-50 px-4 py-2 rounded-lg text-base font-medium text-slate-700 border border-slate-100">
+                                            {tag}
+                                        </span>
+                                    ))}
                                 </div>
-                                <div className="space-y-3">
-                                    <label className="text-sm font-bold text-slate-700 ml-1">Industry</label>
-                                    <select className="w-full px-6 py-4 rounded-2xl bg-slate-50 border-none focus:ring-4 focus:ring-brand-500/20 text-slate-900 transition-all font-light appearance-none">
-                                        <option>Select Industry</option>
-                                        <option>IT & Software</option>
-                                        <option>Manufacturing</option>
-                                        <option>Healthcare</option>
-                                        <option>Retail & E-commerce</option>
-                                        <option>Logistics</option>
-                                        <option>BFSI</option>
-                                        <option>Education</option>
-                                        <option>Other</option>
-                                    </select>
-                                </div>
+                                <p className="mt-4 text-base text-slate-500 italic">Tailored to meet your business requirements and hiring goals.</p>
                             </div>
 
-                            <div className="space-y-3">
-                                <label className="text-sm font-bold text-slate-700 ml-1">Title of the Position</label>
-                                <input
-                                    type="text"
-                                    className="w-full px-6 py-4 rounded-2xl bg-slate-50 border-none focus:ring-4 focus:ring-brand-500/20 text-slate-900 transition-all font-light"
-                                    placeholder="e.g. Senior Product Manager"
-                                />
-                            </div>
-
-                            <div className="grid md:grid-cols-2 gap-8">
-                                <div className="space-y-3">
-                                    <label className="text-sm font-bold text-slate-700 ml-1">Number of Openings</label>
-                                    <input
-                                        type="number"
-                                        className="w-full px-6 py-4 rounded-2xl bg-slate-50 border-none focus:ring-4 focus:ring-brand-500/20 text-slate-900 transition-all font-light"
-                                        placeholder="1"
-                                    />
-                                </div>
-                                <div className="space-y-3">
-                                    <label className="text-sm font-bold text-slate-700 ml-1">Experience Bracket</label>
-                                    <input
-                                        type="text"
-                                        className="w-full px-6 py-4 rounded-2xl bg-slate-50 border-none focus:ring-4 focus:ring-brand-500/20 text-slate-900 transition-all font-light"
-                                        placeholder="e.g. 5-8 Years"
-                                    />
+                            <div className="pt-8 border-t border-slate-100">
+                                <h2 className="text-2xl font-bold text-brand-900 mb-6 flex items-center gap-2">
+                                    <Zap className="w-6 h-6 text-brand-600" /> How It Works
+                                </h2>
+                                <div className="space-y-4">
+                                    {[
+                                        "Submit Your Requirement: Share JDs and expectations.",
+                                        "Requirement Structuring: Validated and structured by CLink.",
+                                        "Execution via IPPs: Parallel sourcing by experts.",
+                                        "Central Validation: Quality checks before submission.",
+                                        "Closure & Onboarding: Hiring and onboarding facilitated."
+                                    ].map((step, i) => (
+                                        <div key={i} className="flex items-center gap-3">
+                                            <div className="w-6 h-6 rounded-full bg-brand-100 text-brand-700 text-xs font-bold flex items-center justify-center shrink-0">
+                                                {i + 1}
+                                            </div>
+                                            <p className="text-slate-700 text-base">{step}</p>
+                                        </div>
+                                    ))}
                                 </div>
                             </div>
+                        </div>
 
-                            <div className="space-y-3">
-                                <label className="text-sm font-bold text-slate-700 ml-1">Primary Skills / Key Focus</label>
-                                <textarea
-                                    rows={4}
-                                    className="w-full px-6 py-4 rounded-2xl bg-slate-50 border-none focus:ring-4 focus:ring-brand-500/20 text-slate-900 transition-all font-light"
-                                    placeholder="Highlight the most critical skills needed..."
-                                ></textarea>
-                            </div>
+                    </div>
 
-                            <div className="pt-6">
-                                <button className="w-full bg-brand-600 text-white px-12 py-5 rounded-full font-bold hover:bg-brand-700 transition-all shadow-xl flex items-center justify-center gap-3 group">
-                                    Request Talent Search <Send className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+                    {/* Right Column: CTA Form */}
+                    <div className="lg:col-span-1">
+                        <div className="bg-white p-6 rounded-3xl shadow-xl border border-slate-100 sticky top-24">
+                            <h3 className="text-xl font-bold text-slate-900 mb-2">Get Started Today</h3>
+                            <p className="text-slate-500 text-base mb-6">Start hiring the right talent.</p>
+
+                            <form onSubmit={handleSubmit} className="space-y-4">
+                                <div>
+                                    <label className="block text-xs font-bold text-slate-700 mb-1">Company Name</label>
+                                    <input type="text" className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-brand-500 focus:bg-white focus:outline-none text-sm transition-all" placeholder="Your Company" required />
+                                </div>
+                                <div>
+                                    <label className="block text-xs font-bold text-slate-700 mb-1">Contact Person</label>
+                                    <input type="text" className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-brand-500 focus:bg-white focus:outline-none text-sm transition-all" placeholder="Full Name" required />
+                                </div>
+                                <div>
+                                    <label className="block text-xs font-bold text-slate-700 mb-1">Work Email</label>
+                                    <input type="email" className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-brand-500 focus:bg-white focus:outline-none text-sm transition-all" placeholder="email@company.com" required />
+                                </div>
+                                <div>
+                                    <label className="block text-xs font-bold text-slate-700 mb-1">Hiring Needs</label>
+                                    <textarea rows="3" className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-brand-500 focus:bg-white focus:outline-none text-sm transition-all" placeholder="Briefly describe roles..."></textarea>
+                                </div>
+                                <button type="submit" className="w-full bg-brand-600 text-white font-bold py-3.5 rounded-xl hover:bg-brand-700 transition-all shadow-lg flex items-center justify-center gap-2">
+                                    Start Hiring <Send className="w-4 h-4" />
                                 </button>
-                                <p className="text-center text-slate-400 text-sm mt-6 font-light">
-                                    By submitting, you agree to our terms of service and privacy policy.
-                                </p>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </section>
-
-            {/* Why Hire Thru Us */}
-            <section className="py-24 bg-white text-center">
-                <div className="max-w-4xl mx-auto px-4">
-                    <h2 className="text-3xl font-bold text-slate-900 mb-12 tracking-tight">The CLink Advantage</h2>
-                    <div className="grid md:grid-cols-3 gap-12">
-                        {[
-                            { title: "Deep Sourcing", desc: "Access to passive talent pools and niche communities.", icon: Search },
-                            { title: "SLA Driven", desc: "Defined timelines for shortlisting and replacements.", icon: Briefcase },
-                            { title: "Multi-Hub", desc: "Scale across 25+ cities with the same quality.", icon: Users },
-                        ].map((item, i) => (
-                            <div key={i} className="space-y-4">
-                                <div className="w-16 h-16 bg-slate-50 rounded-2xl flex items-center justify-center text-accent-500 mx-auto shadow-sm">
-                                    <item.icon className="w-8 h-8" />
+                                <div className="text-center mt-3">
+                                    <p className="text-xs text-slate-400">or email <a href="mailto:hire@clinkhr.com" className="text-brand-600 font-bold hover:underline">hire@clinkhr.com</a></p>
                                 </div>
-                                <h4 className="font-bold text-slate-900 text-lg">{item.title}</h4>
-                                <p className="text-slate-600 font-light text-sm">{item.desc}</p>
-                            </div>
-                        ))}
+                            </form>
+                        </div>
                     </div>
+
+                </div>
+            </div>
+
+            {/* Key Statement */}
+            <section className="py-16 bg-brand-50 text-center border-t border-brand-100">
+                <div className="max-w-4xl mx-auto px-4">
+                    <h2 className="text-2xl md:text-3xl font-bold text-brand-900 italic tracking-tight">
+                        "Hire smarter, faster, and with confidence — <br className="hidden md:block" /> powered by CLink HR and our IPP network."
+                    </h2>
                 </div>
             </section>
         </div>

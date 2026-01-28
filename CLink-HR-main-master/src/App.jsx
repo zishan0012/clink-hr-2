@@ -62,7 +62,20 @@ import Startups from './pages/industries/Startups';
 
 import HowItWorks from './pages/HowItWorks';
 import OurDeliveryModel from './pages/how-it-works/OurDeliveryModel';
+import IPPPartnerNetwork from './pages/how-it-works/IPPPartnerNetwork';
+import QualitySLAFramework from './pages/how-it-works/QualitySLAFramework';
+import TechnologyPlatform from './pages/how-it-works/TechnologyPlatform';
+import RequirementDistribution from './pages/how-it-works/RequirementDistribution';
 import Partners from './pages/Partners';
+
+// Partner Subpages
+import IPPPartnerProgram from './pages/partner/IPPPartnerProgram';
+import WhoCanBecomeIPP from './pages/partner/WhoCanBecomeIPP';
+import WhyJoinIPP from './pages/partner/WhyJoinIPP';
+import HowIPPModelWorks from './pages/partner/HowIPPModelWorks';
+import IPPOnboardingProcess from './pages/partner/IPPOnboardingProcess';
+import IPPEarningsPayout from './pages/partner/IPPEarningsPayout';
+import BecomeIPPPartner from './pages/partner/BecomeIPPPartner';
 
 import ContactUs from './pages/contact/ContactUs';
 import HireTalent from './pages/contact/HireTalent';
@@ -85,10 +98,10 @@ const App = () => {
           <Route path="/company/our-approach" element={<OurApproach />} />
           <Route path="/company/pan-india" element={<PanIndiaPresence />} />
           <Route path="/company/careers" element={<Careers />} />
-          <Route path="/resources/blog" element={<Blog />} />
-          <Route path="/resources/faqs-clients" element={<FAQsClients />} />
-          <Route path="/resources/faqs-partners" element={<FAQsPartners />} />
-          <Route path="/resources/case-studies" element={<CaseStudies />} />
+          <Route path="/company/blog" element={<Blog />} />
+          <Route path="/company/faqs-clients" element={<FAQsClients />} />
+          <Route path="/company/faqs-partners" element={<FAQsPartners />} />
+          <Route path="/company/case-studies" element={<CaseStudies />} />
 
           <Route path="/services" element={<Services />} />
           <Route path="/services/recruitment" element={<RecruitmentServices />} />
@@ -136,8 +149,26 @@ const App = () => {
           <Route path="/industries/startups" element={<Startups />} />
 
           <Route path="/how-it-works" element={<HowItWorks />} />
+          <Route path="/pages/howitworks/ourdeliverymodel" element={<OurDeliveryModel />} />
+          <Route path="/pages/howitworks/ipppartnernetwork" element={<IPPPartnerNetwork />} />
+          <Route path="/pages/howitworks/quality&slaframework/" element={<QualitySLAFramework />} />
+          <Route path="/pages/howitworks/technologyplatform(zryoss)/" element={<TechnologyPlatform />} />
+          <Route path="/pages/howitworks/requirementdistributionsystem/" element={<RequirementDistribution />} />
           <Route path="/how-it-works/delivery-model" element={<OurDeliveryModel />} />
+          <Route path="/how-it-works/ipp-partner-network" element={<IPPPartnerNetwork />} />
+          <Route path="/how-it-works/quality-sla-framework" element={<QualitySLAFramework />} />
+          <Route path="/how-it-works/technology-platform" element={<TechnologyPlatform />} />
+          <Route path="/how-it-works/requirement-distribution" element={<RequirementDistribution />} />
           <Route path="/partners" element={<Partners />} />
+
+          {/* Partner Subpages */}
+          <Route path="/partners/ipp-partner-program" element={<IPPPartnerProgram />} />
+          <Route path="/partners/who-can-become-ipp" element={<WhoCanBecomeIPP />} />
+          <Route path="/partners/why-join-as-ipp" element={<WhyJoinIPP />} />
+          <Route path="/partners/how-ipp-model-works" element={<HowIPPModelWorks />} />
+          <Route path="/partners/ipp-onboarding-process" element={<IPPOnboardingProcess />} />
+          <Route path="/partners/ipp-earnings-payout" element={<IPPEarningsPayout />} />
+          <Route path="/partners/become-ipp-partner" element={<BecomeIPPPartner />} />
 
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/contact/hire-talent" element={<HireTalent />} />
