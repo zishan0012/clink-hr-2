@@ -61,6 +61,7 @@ import Education from './pages/industries/Education';
 import Startups from './pages/industries/Startups';
 
 import HowItWorks from './pages/HowItWorks';
+import OurDeliveryModel from './pages/how-it-works/OurDeliveryModel';
 import Partners from './pages/Partners';
 
 import ContactUs from './pages/contact/ContactUs';
@@ -135,6 +136,7 @@ const App = () => {
           <Route path="/industries/startups" element={<Startups />} />
 
           <Route path="/how-it-works" element={<HowItWorks />} />
+          <Route path="/how-it-works/delivery-model" element={<OurDeliveryModel />} />
           <Route path="/partners" element={<Partners />} />
 
           <Route path="/contact" element={<ContactUs />} />
