@@ -102,7 +102,7 @@ export const NAVIGATION = [
     label: 'How It Works',
     path: '/how-it-works',
     children: [
-      { label: 'Our Delivery Model', path: '/how-it-works#delivery' },
+      { label: 'Our Delivery Model', path: '/how-it-works/delivery-model' },
       { label: 'IPP Partner Network', path: '/how-it-works#ipp' },
       { label: 'Quality & SLA Framework', path: '/how-it-works#quality' },
       { label: 'Technology Platform (Zryoss)', path: '/how-it-works#tech' },
