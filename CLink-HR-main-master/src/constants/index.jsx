@@ -3,14 +3,16 @@ export const NAVIGATION = [
     label: 'Company',
     path: '/company/about',
     children: [
-      { label: 'About Us', path: '/company/about' },
+      { label: 'About CLink HR', path: '/company/about' },
       { label: 'Vision & Mission', path: '/company/vision-mission' },
       { label: 'Founder’s Message', path: '/company/founder-message' },
       { label: 'Our Approach', path: '/company/our-approach' },
       { label: 'Pan-India Presence', path: '/company/pan-india' },
       { label: 'Careers at CLink HR', path: '/company/careers' },
-      { label: 'FAQs – Clients', path: '/resources/faqs-clients' },
-      { label: 'FAQs – Partners', path: '/resources/faqs-partners' }
+      { label: 'Blog / Insights', path: '/company/blog' },
+      { label: 'FAQs – Clients', path: '/company/faqs-clients' },
+      { label: 'FAQs – Partners', path: '/company/faqs-partners' },
+      { label: 'Case Studies', path: '/company/case-studies' }
     ]
   },
   {
@@ -102,24 +104,24 @@ export const NAVIGATION = [
     label: 'How It Works',
     path: '/how-it-works',
     children: [
-      { label: 'Our Delivery Model', path: '/how-it-works/delivery-model' },
-      { label: 'IPP Partner Network', path: '/how-it-works#ipp' },
-      { label: 'Quality & SLA Framework', path: '/how-it-works#quality' },
-      { label: 'Technology Platform (Zryoss)', path: '/how-it-works#tech' },
-      { label: 'Requirement Distribution System', path: '/how-it-works#distribution' }
+      { label: 'Our Delivery Model', path: '/pages/howitworks/ourdeliverymodel' },
+      { label: 'IPP Partner Network', path: '/pages/howitworks/ipppartnernetwork' },
+      { label: 'Quality & SLA Framework', path: '/pages/howitworks/quality&slaframework/' },
+      { label: 'Technology Platform (Zryoss)', path: '/pages/howitworks/technologyplatform(zryoss)/' },
+      { label: 'Requirement Distribution System', path: '/pages/howitworks/requirementdistributionsystem/' }
     ]
   },
   {
     label: 'Partners',
     path: '/partners',
     children: [
-      { label: 'IPP Partner Program', path: '/partners#program' },
-      { label: 'Who Can Become an IPP', path: '/partners#who' },
-      { label: 'Why Join as an IPP', path: '/partners#why' },
-      { label: 'How IPP Model Works', path: '/partners#how' },
-      { label: 'IPP Onboarding Process', path: '/partners#onboarding' },
-      { label: 'IPP Earnings & Payout Model', path: '/partners#earnings' },
-      { label: 'Become an IPP Partner', path: '/partners#join' }
+      { label: 'IPP Partner Program', path: '/partners/ipp-partner-program' },
+      { label: 'Who Can Become an IPP', path: '/partners/who-can-become-ipp' },
+      { label: 'Why Join as an IPP', path: '/partners/why-join-as-ipp' },
+      { label: 'How IPP Model Works', path: '/partners/how-ipp-model-works' },
+      { label: 'IPP Onboarding Process', path: '/partners/ipp-onboarding-process' },
+      { label: 'IPP Earnings & Payout Model', path: '/partners/ipp-earnings-payout' },
+      { label: 'Become an IPP Partner', path: '/partners/become-ipp-partner' }
     ]
   },
   {
@@ -155,9 +157,10 @@ export const FOOTER_LINKS = {
     { label: 'Partner Onboarding', path: '/partners#onboarding' }
   ],
   resources: [
-    { label: 'Blog', path: '/resources/blog' },
-    { label: 'FAQs – Clients', path: '/resources/faqs-clients' },
-    { label: 'FAQs – Partners', path: '/resources/faqs-partners' }
+    { label: 'Blog / Insights', path: '/company/blog' },
+    { label: 'FAQs – Clients', path: '/company/faqs-clients' },
+    { label: 'FAQs – Partners', path: '/company/faqs-partners' },
+    { label: 'Case Studies', path: '/company/case-studies' }
   ],
   legal: [
     { label: 'Privacy Policy', path: '/legal/privacy' },

@@ -1,19 +1,20 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin, Send, MessageSquare, Clock } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, MessageSquare, Clock, Globe, Facebook, Twitter, Instagram, Linkedin, Briefcase } from 'lucide-react';
 
 const ContactUs = () => {
     return (
         <div className="min-h-screen bg-slate-50">
+            {/* Hero Section */}
             {/* Hero Section */}
             <section className="bg-brand-950 py-32 relative overflow-hidden">
                 <div className="absolute inset-0">
                     <img
                         src="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80"
                         alt="Contact Us"
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-cover opacity-50"
                     />
-                    <div className="absolute inset-0 bg-brand-950/70"></div>
+                    <div className="absolute inset-0 bg-gradient-to-b from-brand-950/80 to-brand-950"></div>
                 </div>
 
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
@@ -23,123 +24,152 @@ const ContactUs = () => {
                         transition={{ duration: 0.8 }}
                     >
                         <span className="inline-block py-1 px-3 rounded-full bg-brand-800/50 border border-brand-700 text-brand-200 text-xs font-bold tracking-widest uppercase mb-6 backdrop-blur-md">
-                            Connect With Us
+                            Get in Touch
                         </span>
-                        <h1 className="text-4xl md:text-8xl font-extrabold text-white mb-8 tracking-tight leading-[1.1]">
-                            Let's Talk <br />
-                            <span className="text-accent-500">Business.</span>
+                        <h1 className="text-4xl md:text-7xl font-extrabold text-white mb-6">
+                            We’re Here to <span className="text-accent-500">Help You Grow</span>
                         </h1>
-                        <p className="text-xl md:text-2xl text-slate-200 max-w-2xl mx-auto font-light leading-relaxed">
-                            Have a requirement or a question? Reach out to our <span className="text-white font-medium">strategic HR specialists</span> today.
+                        <p className="text-xl md:text-2xl text-slate-300 max-w-2xl mx-auto leading-relaxed">
+                            Have questions about CLink HR services, IPP Partner Program, or recruitment solutions? Our team is ready to assist you.
                         </p>
                     </motion.div>
                 </div>
             </section>
 
-            {/* Main Contact Area */}
-            <section className="py-24 relative -mt-16 z-20">
+            {/* Main Contact Content */}
+            <section className="py-32 bg-slate-50 relative z-20">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid lg:grid-cols-12 gap-8">
-                        {/* Info Column */}
+
+                        {/* Left Info Column */}
                         <div className="lg:col-span-5 space-y-8">
-                            <div className="bg-white p-10 rounded-[2.5rem] shadow-sm border border-slate-100 h-full">
-                                <h2 className="text-3xl font-bold text-slate-900 mb-10 tracking-tight">Our Offices</h2>
-                                <div className="space-y-10">
-                                    <div className="flex gap-6">
-                                        <div className="w-12 h-12 bg-slate-50 rounded-2xl flex items-center justify-center text-brand-600 shrink-0 border border-slate-100 shadow-sm">
-                                            <MapPin className="w-6 h-6" />
-                                        </div>
-                                        <div>
-                                            <h4 className="font-bold text-slate-900 text-lg mb-2">Corporate Head Office</h4>
-                                            <p className="text-slate-600 font-light text-sm leading-relaxed">
-                                                Plot No 14, Sector 44, <br />
-                                                Gurgaon, Haryana 122003, India
-                                            </p>
-                                        </div>
+                            {/* Office Info Card */}
+                            <div className="bg-white p-8 rounded-3xl shadow-lg border border-slate-100 hover:shadow-xl transition-shadow">
+                                <h2 className="text-2xl font-bold text-slate-900 mb-8 flex items-center gap-2">
+                                    <MapPin className="text-brand-600" /> Corporate Office
+                                </h2>
+                                <div className="space-y-6">
+                                    <div className="pl-4 border-l-2 border-brand-100">
+                                        <h4 className="font-bold text-brand-900">CLink HR Pvt. Ltd.</h4>
+                                        <p className="text-slate-600 text-base mt-1">
+                                            [Address Line 1] <br />
+                                            [City, State, ZIP Code]
+                                        </p>
                                     </div>
-
-                                    <div className="flex gap-6">
-                                        <div className="w-12 h-12 bg-slate-50 rounded-2xl flex items-center justify-center text-brand-600 shrink-0 border border-slate-100 shadow-sm">
-                                            <Mail className="w-6 h-6" />
+                                    <div className="pl-4 border-l-2 border-brand-100">
+                                        <div className="flex items-center gap-2 text-slate-700 mb-1">
+                                            <Phone className="w-4 h-4 text-brand-500" /> <span className="font-bold">+91-XXXXXXXXXX</span>
                                         </div>
-                                        <div>
-                                            <h4 className="font-bold text-slate-900 text-lg mb-2">Email Inquiry</h4>
-                                            <p className="text-slate-600 font-light text-sm">hello@clinkhr.com</p>
-                                            <p className="text-slate-600 font-light text-sm">sales@clinkhr.com</p>
-                                        </div>
-                                    </div>
-
-                                    <div className="flex gap-6">
-                                        <div className="w-12 h-12 bg-slate-50 rounded-2xl flex items-center justify-center text-brand-600 shrink-0 border border-slate-100 shadow-sm">
-                                            <Phone className="w-6 h-6" />
-                                        </div>
-                                        <div>
-                                            <h4 className="font-bold text-slate-900 text-lg mb-2">Call Us</h4>
-                                            <p className="text-slate-600 font-light text-sm">+91 0124 400 1234</p>
-                                            <p className="text-slate-600 font-light text-sm">+91 91122 33445</p>
-                                        </div>
-                                    </div>
-
-                                    <div className="flex gap-6">
-                                        <div className="w-12 h-12 bg-slate-50 rounded-2xl flex items-center justify-center text-brand-600 shrink-0 border border-slate-100 shadow-sm">
-                                            <Clock className="w-6 h-6" />
-                                        </div>
-                                        <div>
-                                            <h4 className="font-bold text-slate-900 text-lg mb-2">Working Hours</h4>
-                                            <p className="text-slate-600 font-light text-sm">Mon - Fri: 09:30 AM - 06:30 PM</p>
+                                        <div className="flex items-center gap-2 text-slate-700">
+                                            <Mail className="w-4 h-4 text-brand-500" /> <span className="font-bold">contact@clinkhr.com</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+
+                            {/* Enquiries Grid */}
+                            <div className="grid sm:grid-cols-2 lg:grid-cols-1 gap-6">
+                                {/* Business Enquiries */}
+                                <div className="bg-brand-50 p-6 rounded-3xl border border-brand-100 hover:shadow-md transition-shadow">
+                                    <h3 className="font-bold text-brand-900 mb-2 flex items-center gap-2">
+                                        <Briefcase className="w-5 h-5 text-brand-600" /> Business Enquiries
+                                    </h3>
+                                    <p className="text-sm text-slate-600 mb-3">
+                                        For recruitment, payroll services, or collaborations:
+                                    </p>
+                                    <div className="space-y-1 text-base font-medium text-brand-800">
+                                        <p>business@clinkhr.com</p>
+                                        <p>+91-XXXXXXXXXX</p>
+                                    </div>
+                                </div>
+
+                                {/* IPP Enquiries */}
+                                <div className="bg-accent-50 p-6 rounded-3xl border border-accent-100 hover:shadow-md transition-shadow">
+                                    <h3 className="font-bold text-slate-900 mb-2 flex items-center gap-2">
+                                        <MessageSquare className="w-5 h-5 text-accent-600" /> IPP Partner Enquiries
+                                    </h3>
+                                    <p className="text-sm text-slate-600 mb-3">
+                                        Interested in becoming an Independent Prime Partner?
+                                    </p>
+                                    <div className="space-y-1 text-base font-medium text-slate-800">
+                                        <p>ipp@clinkhr.com</p>
+                                        <p>+91-XXXXXXXXXX</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* Social Media */}
+                            <div className="bg-slate-900 text-white p-8 rounded-3xl shadow-lg hover:shadow-xl transition-shadow">
+                                <h3 className="font-bold text-lg mb-6">Connect with Us</h3>
+                                <div className="flex gap-4 mb-6">
+                                    <a href="#" className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-brand-500 transition-colors"><Linkedin className="w-5 h-5" /></a>
+                                    <a href="#" className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-brand-500 transition-colors"><Facebook className="w-5 h-5" /></a>
+                                    <a href="#" className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-brand-500 transition-colors"><Twitter className="w-5 h-5" /></a>
+                                    <a href="#" className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-brand-500 transition-colors"><Instagram className="w-5 h-5" /></a>
+                                </div>
+                                <p className="text-slate-400 text-sm italic">
+                                    Stay updated on industry insights, hiring trends, and IPP partner opportunities.
+                                </p>
+                            </div>
                         </div>
 
-                        {/* Form Column */}
+                        {/* Right Form Column */}
                         <div className="lg:col-span-7">
-                            <div className="bg-white p-10 md:p-14 rounded-[2.5rem] shadow-sm border border-slate-100">
-                                <h2 className="text-3xl font-bold text-slate-900 mb-8 tracking-tight">Drop us a Message</h2>
+                            <div className="bg-white p-10 md:p-12 rounded-3xl shadow-xl border border-slate-100 h-full">
+                                <h2 className="text-3xl font-bold text-slate-900 mb-2">Quick Contact Form</h2>
+                                <p className="text-slate-500 mb-8">Our team will respond within 24–48 hours.</p>
+
                                 <form className="space-y-6">
                                     <div className="grid sm:grid-cols-2 gap-6">
                                         <div className="space-y-2">
-                                            <label className="text-sm font-bold text-slate-700 ml-1">Full Name</label>
+                                            <label className="text-sm font-bold text-slate-700 ml-1">Name</label>
                                             <input
                                                 type="text"
-                                                className="w-full px-6 py-4 rounded-2xl bg-slate-50 border-none focus:ring-4 focus:ring-brand-500/20 text-slate-900 placeholder-slate-400 transition-all font-light"
-                                                placeholder="John Doe"
+                                                className="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-slate-200 focus:ring-2 focus:ring-brand-500 focus:bg-white text-slate-900 placeholder-slate-400 transition-all"
+                                                placeholder="Your Name"
                                             />
                                         </div>
                                         <div className="space-y-2">
-                                            <label className="text-sm font-bold text-slate-700 ml-1">Work Email</label>
+                                            <label className="text-sm font-bold text-slate-700 ml-1">Phone</label>
                                             <input
-                                                type="email"
-                                                className="w-full px-6 py-4 rounded-2xl bg-slate-50 border-none focus:ring-4 focus:ring-brand-500/20 text-slate-900 placeholder-slate-400 transition-all font-light"
-                                                placeholder="john@company.com"
+                                                type="tel"
+                                                className="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-slate-200 focus:ring-2 focus:ring-brand-500 focus:bg-white text-slate-900 placeholder-slate-400 transition-all"
+                                                placeholder="+91..."
                                             />
                                         </div>
                                     </div>
                                     <div className="space-y-2">
-                                        <label className="text-sm font-bold text-slate-700 ml-1">Subject</label>
-                                        <select className="w-full px-6 py-4 rounded-2xl bg-slate-50 border-none focus:ring-4 focus:ring-brand-500/20 text-slate-900 transition-all font-light appearance-none">
-                                            <option>General Inquiry</option>
-                                            <option>Hiring Talent</option>
-                                            <option>Payroll Outsourcing</option>
-                                            <option>Strategic Advisory</option>
-                                        </select>
+                                        <label className="text-sm font-bold text-slate-700 ml-1">Email</label>
+                                        <input
+                                            type="email"
+                                            className="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-slate-200 focus:ring-2 focus:ring-brand-500 focus:bg-white text-slate-900 placeholder-slate-400 transition-all"
+                                            placeholder="you@email.com"
+                                        />
                                     </div>
                                     <div className="space-y-2">
                                         <label className="text-sm font-bold text-slate-700 ml-1">Message</label>
                                         <textarea
                                             rows={5}
-                                            className="w-full px-6 py-4 rounded-2xl bg-slate-50 border-none focus:ring-4 focus:ring-brand-500/20 text-slate-900 placeholder-slate-400 transition-all font-light"
-                                            placeholder="Tell us about your requirement..."
+                                            className="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-slate-200 focus:ring-2 focus:ring-brand-500 focus:bg-white text-slate-900 placeholder-slate-400 transition-all"
+                                            placeholder="How can we help you?"
                                         ></textarea>
                                     </div>
-                                    <button className="w-full sm:w-auto bg-brand-600 text-white px-10 py-5 rounded-full font-bold hover:bg-brand-700 transition-all shadow-xl flex items-center justify-center gap-3 group">
-                                        Send Message <Send className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+                                    <button className="w-full bg-brand-600 text-white px-10 py-5 rounded-xl font-bold hover:bg-brand-700 transition-all shadow-xl hover:shadow-brand-500/25 flex items-center justify-center gap-3">
+                                        Submit <Send className="w-5 h-5" />
                                     </button>
                                 </form>
                             </div>
                         </div>
                     </div>
+                </div>
+            </section>
+
+            {/* Footer CTA Statement */}
+            <section className="py-20 bg-white text-center border-t border-slate-100">
+                <div className="max-w-4xl mx-auto px-4">
+                    <h2 className="text-3xl md:text-5xl font-bold text-slate-900 italic tracking-tight leading-tight">
+                        "Your hiring solutions and partnership journey start here. <span className="text-accent-600">Reach out today.</span>"
+                    </h2>
                 </div>
             </section>
         </div>
