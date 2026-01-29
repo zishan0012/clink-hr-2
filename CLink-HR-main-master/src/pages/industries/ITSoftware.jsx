@@ -122,7 +122,7 @@ const ITSoftware = () => {
                         </h2>
                     </div>
 
-                    <div className="grid md:grid-cols-2 gap-8">
+                    <div className="flex flex-wrap justify-center gap-8">
                         {[
                             {
                                 title: "Technology Hiring Solutions",
@@ -173,7 +173,7 @@ const ITSoftware = () => {
                             <motion.div
                                 key={i}
                                 whileHover={{ scale: 1.01 }}
-                                className="bg-slate-50 p-10 rounded-3xl border border-slate-100 hover:border-brand-200 transition-all hover:shadow-lg"
+                                className="w-full md:w-[calc(50%-1rem)] bg-slate-50 p-10 rounded-3xl border border-slate-100 hover:border-brand-200 transition-all hover:shadow-lg"
                             >
                                 <div className="flex items-center gap-6 mb-8">
                                     <div className="w-14 h-14 rounded-2xl bg-white text-brand-600 flex items-center justify-center shadow-sm">

@@ -83,7 +83,7 @@ const Startups = () => {
                         </p>
                     </div>
 
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div className="flex flex-wrap justify-center gap-8">
                         {[
                             { title: "Rapid Hiring at Scale", desc: "Coordinating multi-role recruitment across technical and product functions simultaneously.", icon: Rocket },
                             { title: "Limited HR Resources", desc: "Managing high-velocity teams without the overhead of a full in-house HR department.", icon: Users },
@@ -94,7 +94,7 @@ const Startups = () => {
                             <motion.div
                                 key={i}
                                 whileHover={{ y: -6, boxShadow: "0 20px 25px -5px rgb(0 0 0 / 0.1)" }}
-                                className="bg-slate-50 p-8 rounded-2xl border border-slate-100 shadow-sm group transition-all"
+                                className="w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.33%-1.4rem)] bg-slate-50 p-8 rounded-2xl border border-slate-100 shadow-sm group transition-all"
                             >
                                 <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center text-brand-600 mb-6 group-hover:bg-brand-600 group-hover:text-white transition-colors shadow-sm">
                                     <item.icon className="w-6 h-6" />

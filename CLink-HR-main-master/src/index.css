@@ -15,14 +15,27 @@ body {
   min-width: 320px;
   min-height: 100vh;
   font-family: 'Outfit', sans-serif !important;
-  background-color: #f8fafc; /* Slate 50 */
-  color: #0f172a; /* Slate 900 */
+  background-color: #f8fafc;
+  /* Slate 50 */
+  color: #0f172a;
+  /* Slate 900 */
 }
 
 /* Ensure all interactive and typography elements use the theme font */
-h1, h2, h3, h4, h5, h6, 
-button, input, select, textarea,
-span, p, a, div {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+input,
+select,
+textarea,
+span,
+p,
+a,
+div {
   font-family: 'Outfit', sans-serif;
 }
 
@@ -48,6 +61,24 @@ span, p, a, div {
 
 .perspective-1000 {
   perspective: 1000px;
+}
+
+/* Standardized Paragraph/Description Text for Consistency */
+/* Use these classes across all pages for uniform paragraph sizes */
+
+/* Section description - main descriptive text below section headings */
+.section-text {
+  @apply text-xl text-slate-600 font-light leading-relaxed;
+}
+
+/* Card/Item description - text within cards or list items */
+.card-text {
+  @apply text-sm text-slate-600 leading-relaxed;
+}
+
+/* Body text - general paragraph text */
+.body-text {
+  @apply text-base text-slate-600 leading-relaxed;
 }
 
 /* Custom Scrollbar */

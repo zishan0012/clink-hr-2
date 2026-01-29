@@ -60,7 +60,7 @@ const IPPOnboardingProcess = () => {
                         <p className="text-xl text-slate-300 max-w-3xl mx-auto mb-6">
                             Start Your Journey as an Independent Prime Partner
                         </p>
-                        <p className="text-slate-400 max-w-2xl mx-auto text-sm leading-relaxed mb-8">
+                        <p className="text-slate-400 max-w-2xl mx-auto text-xl leading-relaxed mb-8">
                             Becoming an Independent Prime Partner (IPP) with CLink HR is simple, structured, and designed for independent recruiters. The onboarding process ensures you are fully enabled to deliver quality recruitment services, while CLink HR and the Zryoss ecosystem handle clients, coordination, and backend operations.
                         </p>
                     </motion.div>

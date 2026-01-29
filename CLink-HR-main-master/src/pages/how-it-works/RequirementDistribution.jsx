@@ -33,8 +33,13 @@ const RequirementDistribution = () => {
 
             {/* HERO */}
             <section className="relative bg-brand-950 py-32 overflow-hidden">
-                <div className="absolute inset-0 opacity-20">
-                    <div className="absolute top-0 right-0 w-full h-full bg-[radial-gradient(circle_at_70%_30%,#3b82f6_0%,transparent_50%)]" />
+                <div className="absolute inset-0">
+                    <img
+                        src="/src/assets/how-it-works-img/requirement-distribution-hero.jpg"
+                        alt="Requirement Distribution"
+                        className="w-full h-full object-cover"
+                    />
+                    <div className="absolute inset-0 bg-brand-950/50"></div>
                 </div>
 
                 <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

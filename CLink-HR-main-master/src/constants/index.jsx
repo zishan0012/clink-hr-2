@@ -53,7 +53,7 @@ export const NAVIGATION = [
   },
   {
     label: 'Solutions',
-    path: '/solutions/hiring',
+    path: '/solutions',
     children: [
       {
         label: 'Hiring Solutions',
