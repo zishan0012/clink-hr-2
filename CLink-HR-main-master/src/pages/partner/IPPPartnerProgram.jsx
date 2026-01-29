@@ -43,7 +43,7 @@ const IPPPartnerProgram = () => {
                     <div className="text-center max-w-3xl mx-auto mb-20">
                         <span className="text-brand-600 font-bold uppercase tracking-widest text-sm mb-4 block">Program Overview</span>
                         <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">A High-Performance Ecosystem</h2>
-                        <p className="text-lg text-slate-600 leading-relaxed">
+                        <p className="text-xl text-slate-600 leading-relaxed">
                             The IPP Partner Program connects client demand managed by CLink HR with Independent Prime Partners (IPP) executing deliveries, all supported by the Zryoss platform ensuring structure, transparency, and scale.
                         </p>
                     </div>

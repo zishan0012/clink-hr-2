@@ -27,8 +27,13 @@ const TechnologyPlatform = () => {
 
             {/* HERO */}
             <section className="relative bg-brand-950 py-32 overflow-hidden">
-                <div className="absolute inset-0 opacity-20">
-                    <div className="absolute top-0 right-0 w-full h-full bg-[radial-gradient(circle_at_70%_30%,#3b82f6_0%,transparent_50%)]" />
+                <div className="absolute inset-0">
+                    <img
+                        src="/src/assets/how-it-works-img/technology-platform-hero.jpg"
+                        alt="Technology Platform Zryoss"
+                        className="w-full h-full object-cover"
+                    />
+                    <div className="absolute inset-0 bg-brand-950/50"></div>
                 </div>
 
                 <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -110,7 +115,7 @@ const TechnologyPlatform = () => {
                         <p className="text-xl text-slate-600">Powering every touchpoint in the delivery lifecycle.</p>
                     </div>
 
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div className="flex flex-wrap justify-center gap-8">
                         {[
                             {
                                 title: "Centralized Requirement Management",
@@ -158,7 +163,7 @@ const TechnologyPlatform = () => {
                                 icon: BarChart3
                             }
                         ].map((box, i) => (
-                            <div key={i} className="bg-white p-10 rounded-[3rem] border border-slate-100 flex flex-col items-start hover:shadow-lg transition-shadow">
+                            <div key={i} className="w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.33%-1.4rem)] bg-white p-10 rounded-[3rem] border border-slate-100 flex flex-col items-start hover:shadow-lg transition-shadow">
                                 <div className="w-14 h-14 bg-brand-50 rounded-2xl flex items-center justify-center text-brand-600 mb-8">
                                     <box.icon className="w-7 h-7" />
                                 </div>

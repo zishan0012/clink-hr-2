@@ -27,8 +27,13 @@ const OurDeliveryModel = () => {
 
             {/* HERO */}
             <section className="relative bg-brand-950 py-32 overflow-hidden">
-                <div className="absolute inset-0 opacity-20">
-                    <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_50%_50%,#3b82f6_0%,transparent_50%)]" />
+                <div className="absolute inset-0">
+                    <img
+                        src="/src/assets/how-it-works-img/delivery-model-hero.jpg"
+                        alt="Our Delivery Model"
+                        className="w-full h-full object-cover"
+                    />
+                    <div className="absolute inset-0 bg-brand-950/50"></div>
                 </div>
 
                 <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -75,7 +80,7 @@ const OurDeliveryModel = () => {
                         </h2>
                     </div>
 
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div className="flex flex-wrap justify-center gap-6">
                         {[
                             { title: "Centralized Coordination", desc: "CLink HR focuses on client onboarding, governance, and seamless payouts.", icon: Target },
                             { title: "Distributed Execution", desc: "Execution is carried out by authorized IPP partners at the ground level.", icon: Network },
@@ -86,7 +91,7 @@ const OurDeliveryModel = () => {
                             <motion.div
                                 key={i}
                                 whileHover={{ y: -5 }}
-                                className="bg-slate-50 p-8 rounded-2xl border border-slate-100 shadow-sm transition-all text-center lg:text-left h-full"
+                                className="w-full md:w-[calc(50%-0.75rem)] lg:w-[calc(33.33%-1rem)] bg-slate-50 p-8 rounded-2xl border border-slate-100 shadow-sm transition-all text-center lg:text-left h-full min-h-[18rem]"
                             >
                                 <div className="w-14 h-14 bg-brand-600 text-white rounded-2xl flex items-center justify-center mb-6 mx-auto lg:mx-0 shadow-lg">
                                     <item.icon className="w-7 h-7" />

@@ -1,33 +1,31 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import {
-    Users,
-    TrendingUp,
-    Award,
-    Briefcase,
-    CheckCircle,
-    ArrowRight,
-    Target,
-    DollarSign,
-    UserPlus,
+    Network,
+    ShieldCheck,
     Zap,
-    Shield,
-    Network
+    Users,
+    BarChart3,
+    ArrowRight,
+    CheckCircle,
+    Target,
+    Cpu,
+    TrendingUp
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
-const Partners = () => {
+const HowItWorks = () => {
     return (
         <div className="min-h-screen bg-slate-50">
             {/* Hero Section */}
             <section className="bg-brand-950 py-32 relative overflow-hidden">
                 <div className="absolute inset-0">
                     <img
-                        src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?ixlib=rb-4.0.3&auto=format&fit=crop&w=1587&q=80"
-                        alt="Partner with CLink HR"
+                        src="/src/assets/how-it-works-img/how-it-works-main.jpg"
+                        alt="How It Works"
                         className="w-full h-full object-cover"
                     />
-                    <div className="absolute inset-0 bg-brand-950/85"></div>
+                    <div className="absolute inset-0 bg-brand-950/50"></div>
                 </div>
 
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -38,45 +36,42 @@ const Partners = () => {
                         className="max-w-3xl"
                     >
                         <span className="inline-block py-1 px-3 rounded-full bg-brand-800/50 border border-brand-700 text-brand-200 text-xs font-bold tracking-widest uppercase mb-6 backdrop-blur-md">
-                            Partnership Program
+                            Our Process
                         </span>
                         <h1 className="text-4xl md:text-8xl font-extrabold text-white mb-8 tracking-tight leading-[1.1]">
-                            Become an <br />
-                            <span className="text-accent-500">IPP Partner.</span>
+                            How CLink HR <br />
+                            <span className="text-accent-500">Works.</span>
                         </h1>
                         <p className="text-xl md:text-2xl text-slate-200 leading-relaxed font-light mb-10 max-w-2xl">
-                            Join India's fastest-growing <span className="text-white font-medium">Independent Prime Partner (IPP) network</span> and build a scalable recruitment business with CLink HR.
+                            A <span className="text-white font-medium">proven framework</span> combining technology, talent networks, and quality assurance to deliver exceptional HR and recruitment outcomes.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4">
-                            <Link to="/partners/become-ipp-partner" className="bg-brand-600 text-white px-8 py-4 rounded-full font-bold hover:bg-brand-500 transition-all shadow-lg flex items-center justify-center gap-2">
-                                Become an IPP Partner <ArrowRight className="w-5 h-5" />
-                            </Link>
-                            <Link to="/contact/partner-inquiry" className="bg-white/10 backdrop-blur-md text-white border border-white/20 px-8 py-4 rounded-full font-bold hover:bg-white/20 transition-all flex items-center justify-center gap-2">
-                                Partner Inquiry
+                            <Link to="/contact" className="bg-brand-600 text-white px-8 py-4 rounded-full font-bold hover:bg-brand-500 transition-all shadow-lg flex items-center justify-center gap-2">
+                                Get Started <ArrowRight className="w-5 h-5" />
                             </Link>
                         </div>
                     </motion.div>
                 </div>
             </section>
 
-            {/* Value Proposition */}
+            {/* Overview Section */}
             <section className="py-24 bg-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
-                        <span className="text-accent-600 font-bold uppercase tracking-widest text-sm mb-4 block">Why Partner with CLink HR</span>
+                        <span className="text-accent-600 font-bold uppercase tracking-widest text-sm mb-4 block">The CLink HR Framework</span>
                         <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-6 leading-tight">
-                            Build Your <span className="text-brand-600">Recruitment Business</span>
+                            Built for <span className="text-brand-600">Speed, Scale & Quality</span>
                         </h2>
                         <p className="text-xl text-slate-600 max-w-3xl mx-auto font-light">
-                            The IPP model empowers recruiters, consultants, and HR professionals to scale their business with zero infrastructure investment.
+                            Our approach combines strategic planning, technology enablement, and a distributed partner network to deliver recruitment and HR solutions that work.
                         </p>
                     </div>
 
                     <div className="grid md:grid-cols-3 gap-8">
                         {[
-                            { icon: TrendingUp, label: "Scalable Income", desc: "Unlimited earning potential with performance-based payouts" },
-                            { icon: Shield, label: "Zero Investment", desc: "No setup costs, no technology fees, no hidden charges" },
-                            { icon: Network, label: "Pan-India Access", desc: "Work on requirements across industries and locations" }
+                            { icon: Zap, label: "Fast Execution", desc: "Rapid turnaround on hiring and HR processes" },
+                            { icon: Network, label: "Wide Reach", desc: "Pan-India coverage through IPP network" },
+                            { icon: ShieldCheck, label: "Quality Assured", desc: "Structured SLA and compliance frameworks" }
                         ].map((item, i) => (
                             <div key={i} className="text-center p-8 bg-slate-50 rounded-2xl border border-slate-100 hover:shadow-lg transition-all">
                                 <div className="w-16 h-16 bg-brand-50 rounded-2xl flex items-center justify-center text-brand-600 mx-auto mb-6">
@@ -90,59 +85,57 @@ const Partners = () => {
                 </div>
             </section>
 
-            {/* IPP Program Components */}
+            {/* Core Components */}
             <section className="py-24 bg-slate-50">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
-                        <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-6">Everything You Need to Know</h2>
+                        <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-6">How We Deliver Excellence</h2>
                         <p className="text-xl text-slate-600 max-w-2xl mx-auto font-light">
-                            Comprehensive information about the IPP Partner Program.
+                            Five interconnected pillars that power our recruitment and HR operations.
                         </p>
                     </div>
 
                     <div className="space-y-8">
                         {[
                             {
-                                title: "IPP Partner Program",
-                                desc: "A structured partnership model enabling independent recruiters and consultants to access CLink HR's client base, technology platform, and operational support.",
-                                icon: Award,
-                                link: "/partners/ipp-partner-program",
-                                features: ["Access to verified client requirements", "Technology platform access", "Brand association with CLink HR", "Operational & compliance support"]
-                            },
-                            {
-                                title: "Who Can Become an IPP",
-                                desc: "The IPP model is designed for recruitment professionals, HR consultants, freelance recruiters, and agencies looking to scale without infrastructure investment.",
-                                icon: Users,
-                                link: "/partners/who-can-become-ipp",
-                                features: ["Independent recruiters", "HR consultants & advisors", "Recruitment agencies", "Experienced talent acquisition professionals"]
-                            },
-                            {
-                                title: "Why Join as an IPP",
-                                desc: "Unlock growth opportunities with zero investment, flexible work models, performance-based earnings, and comprehensive business support.",
+                                id: "delivery-model",
+                                title: "Our Delivery Model",
+                                desc: "A structured, end-to-end approach to recruitment and HR service delivery designed for consistency and scalability.",
                                 icon: Target,
-                                link: "/partners/why-join-as-ipp",
-                                features: ["Zero setup investment", "Flexible working model", "Unlimited earning potential", "Technology & brand support"]
+                                link: "/pages/howitworks/ourdeliverymodel",
+                                features: ["Client requirement analysis", "Talent sourcing strategy", "Candidate screening & evaluation", "Onboarding & post-placement support"]
                             },
                             {
-                                title: "How IPP Model Works",
-                                desc: "A transparent, technology-enabled process from requirement distribution to candidate placement and payout processing.",
-                                icon: Zap,
-                                link: "/partners/how-ipp-model-works",
-                                features: ["Requirement allocation via platform", "Candidate sourcing & submission", "Client interview coordination", "Closure & payout processing"]
+                                id: "ipp-network",
+                                title: "IPP Partner Network",
+                                desc: "A distributed network of Independent Prime Partners (IPP) enabling pan-India reach and specialized talent access.",
+                                icon: Users,
+                                link: "/pages/howitworks/ipppartnernetwork",
+                                features: ["Verified partner ecosystem", "Industry-specific expertise", "Local market intelligence", "Scalable hiring capacity"]
                             },
                             {
-                                title: "IPP Onboarding Process",
-                                desc: "A simple, structured onboarding journey designed to get you started quickly with full training and support.",
-                                icon: UserPlus,
-                                link: "/partners/ipp-onboarding-process",
-                                features: ["Application & verification", "Agreement signing", "Platform training", "First requirement allocation"]
+                                id: "quality-sla",
+                                title: "Quality & SLA Framework",
+                                desc: "Defined service standards, performance metrics, and accountability structures ensuring predictable outcomes.",
+                                icon: ShieldCheck,
+                                link: "/pages/howitworks/quality&slaframework/",
+                                features: ["Time-to-hire commitments", "Quality benchmarks", "Replacement guarantees", "Regular performance reviews"]
                             },
                             {
-                                title: "IPP Earnings & Payout Model",
-                                desc: "Transparent, performance-based earnings with timely payouts and clear payout structures across different hiring models.",
-                                icon: DollarSign,
-                                link: "/partners/ipp-earnings-payout",
-                                features: ["Performance-based earnings", "Transparent payout structure", "Timely payment processing", "Bonus & incentive programs"]
+                                id: "technology",
+                                title: "Technology Platform (Zryoss)",
+                                desc: "Our proprietary HRMS and recruitment platform streamlining workflows, data management, and partner collaboration.",
+                                icon: Cpu,
+                                link: "/pages/howitworks/technologyplatform(zryoss)/",
+                                features: ["Centralized candidate database", "Real-time tracking & reporting", "Automated compliance checks", "Partner portal access"]
+                            },
+                            {
+                                id: "distribution",
+                                title: "Requirement Distribution System",
+                                desc: "Intelligent requirement routing to the right partners based on expertise, location, and performance history.",
+                                icon: TrendingUp,
+                                link: "/pages/howitworks/requirementdistributionsystem/",
+                                features: ["Smart requirement matching", "Multi-partner collaboration", "Performance-based allocation", "Real-time status updates"]
                             }
                         ].map((item, i) => (
                             <motion.div
@@ -186,22 +179,22 @@ const Partners = () => {
                 </div>
             </section>
 
-            {/* Partner Journey */}
+            {/* Process Flow */}
             <section className="py-24 bg-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
-                        <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-6">Your IPP Journey</h2>
+                        <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-6">The CLink HR Process</h2>
                         <p className="text-xl text-slate-600 max-w-2xl mx-auto font-light">
-                            From application to your first successful placement.
+                            From requirement to delivery, here's how we work with you.
                         </p>
                     </div>
 
                     <div className="grid md:grid-cols-4 gap-6">
                         {[
-                            { step: "01", title: "Apply Online", desc: "Submit your IPP partner application with basic details" },
-                            { step: "02", title: "Verification & Onboarding", desc: "Complete verification and sign partnership agreement" },
-                            { step: "03", title: "Platform Training", desc: "Get trained on our technology platform and processes" },
-                            { step: "04", title: "Start Earning", desc: "Receive requirements and start closing positions" }
+                            { step: "01", title: "Requirement Analysis", desc: "Understanding your hiring or HR needs in detail" },
+                            { step: "02", title: "Partner Activation", desc: "Routing to the right IPP partners via our system" },
+                            { step: "03", title: "Execution & Tracking", desc: "Candidate sourcing, screening, and real-time updates" },
+                            { step: "04", title: "Quality Assurance", desc: "SLA monitoring, feedback loops, and continuous improvement" }
                         ].map((item, i) => (
                             <div key={i} className="relative">
                                 <div className="text-center">
@@ -222,47 +215,21 @@ const Partners = () => {
                 </div>
             </section>
 
-            {/* Success Stories */}
-            <section className="py-24 bg-slate-50">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-16">
-                        <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-6">IPP Partner Success</h2>
-                        <p className="text-xl text-slate-600 max-w-2xl mx-auto font-light">
-                            Real results from our partner network.
-                        </p>
-                    </div>
-
-                    <div className="grid md:grid-cols-3 gap-8">
-                        {[
-                            { number: "500+", label: "Active IPP Partners", desc: "Across India" },
-                            { number: "10,000+", label: "Placements", desc: "Closed by IPP network" },
-                            { number: "₹50L+", label: "Avg. Annual Earnings", desc: "For top performers" }
-                        ].map((stat, i) => (
-                            <div key={i} className="bg-white p-8 rounded-2xl border border-slate-100 text-center">
-                                <div className="text-4xl md:text-5xl font-extrabold text-brand-600 mb-2">{stat.number}</div>
-                                <div className="text-lg font-bold text-slate-900 mb-1">{stat.label}</div>
-                                <div className="text-sm text-slate-500">{stat.desc}</div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
             {/* CTA Section */}
             <section className="py-24 bg-slate-900 text-center">
                 <div className="max-w-4xl mx-auto px-4">
                     <h2 className="text-4xl md:text-5xl font-bold text-white mb-8 tracking-tight">
-                        Ready to Build Your <span className="text-accent-500">Recruitment Business?</span>
+                        Ready to Experience <span className="text-accent-500">The CLink HR Difference?</span>
                     </h2>
                     <p className="text-xl text-slate-300 mb-12 leading-relaxed font-light">
-                        Join hundreds of successful IPP partners who are scaling their recruitment business with CLink HR.
+                        Let us show you how our proven framework can transform your recruitment and HR operations.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-6 justify-center">
-                        <Link to="/partners/become-ipp-partner" className="bg-brand-600 text-white px-10 py-4 rounded-full font-bold hover:bg-brand-700 transition-all shadow-xl">
-                            Apply as IPP Partner
+                        <Link to="/contact" className="bg-brand-600 text-white px-10 py-4 rounded-full font-bold hover:bg-brand-700 transition-all shadow-xl">
+                            Schedule a Consultation
                         </Link>
-                        <Link to="/contact/partner-inquiry" className="bg-white text-brand-900 px-10 py-4 rounded-full font-bold hover:bg-slate-100 transition-all shadow-xl">
-                            Schedule a Call
+                        <Link to="/partners/ipp-partner-program" className="bg-white text-brand-900 px-10 py-4 rounded-full font-bold hover:bg-slate-100 transition-all shadow-xl">
+                            Become an IPP Partner
                         </Link>
                     </div>
                 </div>
@@ -271,4 +238,4 @@ const Partners = () => {
     );
 };
 
-export default Partners;
+export default HowItWorks;

@@ -14,7 +14,15 @@ import Careers from './pages/company/Careers';
 import Blog from './pages/resources/Blog';
 import FAQsClients from './pages/resources/FAQsClients';
 import FAQsPartners from './pages/resources/FAQsPartners';
-import CaseStudies from './pages/resources/CaseStudies';
+import CaseStudies from './pages/resources/casestudies/CaseStudies';
+import FutureOfHROutsourcing from './pages/resources/blogs/FutureOfHROutsourcing';
+import PermanentVsTemporaryStaffing from './pages/resources/blogs/PermanentVsTemporaryStaffing';
+import PayrollAndComplianceBenefits from './pages/resources/blogs/PayrollAndComplianceBenefits';
+import IndependentPrimePartners from './pages/resources/blogs/IndependentPrimePartners';
+import BusinessPrimePartners from './pages/resources/blogs/BusinessPrimePartners';
+import ExecutiveSearchLeadershipHiring from './pages/resources/blogs/ExecutiveSearchLeadershipHiring';
+import WorkforceTransformationIndia from './pages/resources/blogs/WorkforceTransformationIndia';
+import ITServicesScaling from './pages/resources/casestudies/ITServicesScaling';
 
 import Services from './pages/services/Services';
 import RecruitmentServices from './pages/services/recruitment/RecruitmentServices';
@@ -35,6 +43,8 @@ import HRPolicySetup from './pages/services/other/HRPolicySetup';
 import BackgroundVerification from './pages/services/other/BackgroundVerification';
 import HRAdvisory from './pages/services/other/HRAdvisory';
 
+
+import Solutions from './pages/solutions/Solutions';
 import HiringSolutions from './pages/solutions/HiringSolutions';
 import ITHiringSolutions from './pages/solutions/hiringsolution/ITHiringSolutions';
 import NonITHiringSolutions from './pages/solutions/hiringsolution/NonITHiringSolutions';
@@ -50,7 +60,7 @@ import CostOptimizedHRSolutions from './pages/solutions/businesshrsolutions/Cost
 import WorkforceSolutions from './pages/solutions/WorkforceSolutions';
 import BusinessHRSolutions from './pages/solutions/BusinessHRSolutions';
 
-import Industries from './pages/industries/Index';
+import Industries from './pages/industries/Industries';
 import ITSoftware from './pages/industries/ITSoftware';
 import Manufacturing from './pages/industries/Manufacturing';
 import Healthcare from './pages/industries/Healthcare';
@@ -60,15 +70,14 @@ import BFSI from './pages/industries/BFSI';
 import Education from './pages/industries/Education';
 import Startups from './pages/industries/Startups';
 
-import HowItWorks from './pages/HowItWorks';
+import HowItWorks from './pages/how-it-works/HowItWorks';
 import OurDeliveryModel from './pages/how-it-works/OurDeliveryModel';
 import IPPPartnerNetwork from './pages/how-it-works/IPPPartnerNetwork';
 import QualitySLAFramework from './pages/how-it-works/QualitySLAFramework';
 import TechnologyPlatform from './pages/how-it-works/TechnologyPlatform';
 import RequirementDistribution from './pages/how-it-works/RequirementDistribution';
-import Partners from './pages/Partners';
-
 // Partner Subpages
+import Partners from './pages/partner/Partners';
 import IPPPartnerProgram from './pages/partner/IPPPartnerProgram';
 import WhoCanBecomeIPP from './pages/partner/WhoCanBecomeIPP';
 import WhyJoinIPP from './pages/partner/WhyJoinIPP';
@@ -99,9 +108,17 @@ const App = () => {
           <Route path="/company/pan-india" element={<PanIndiaPresence />} />
           <Route path="/company/careers" element={<Careers />} />
           <Route path="/company/blog" element={<Blog />} />
+          <Route path="/resources/blog/future-of-hr-outsourcing-2026" element={<FutureOfHROutsourcing />} />
+          <Route path="/resources/blog/permanent-vs-temporary-staffing" element={<PermanentVsTemporaryStaffing />} />
+          <Route path="/resources/blog/payroll-compliance-benefits" element={<PayrollAndComplianceBenefits />} />
+          <Route path="/resources/blog/independent-prime-partners-ipp" element={<IndependentPrimePartners />} />
+          <Route path="/resources/blog/business-prime-partners-bpp" element={<BusinessPrimePartners />} />
+          <Route path="/resources/blog/executive-search-leadership-hiring" element={<ExecutiveSearchLeadershipHiring />} />
+          <Route path="/resources/blog/workforce-transformation-india-2026" element={<WorkforceTransformationIndia />} />
           <Route path="/company/faqs-clients" element={<FAQsClients />} />
           <Route path="/company/faqs-partners" element={<FAQsPartners />} />
           <Route path="/company/case-studies" element={<CaseStudies />} />
+          <Route path="/resources/case-studies/it-services-scaling" element={<ITServicesScaling />} />
 
           <Route path="/services" element={<Services />} />
           <Route path="/services/recruitment" element={<RecruitmentServices />} />
@@ -123,6 +140,8 @@ const App = () => {
           <Route path="/services/other/hr-advisory" element={<HRAdvisory />} />
 
 
+          {/* Solutions */}
+          <Route path="/solutions" element={<Solutions />} />
           <Route path="/solutions/hiring" element={<HiringSolutions />} />
           <Route path="/solutions/hiring/it-hiring" element={<ITHiringSolutions />} />
           <Route path="/solutions/hiring/non-it-hiring" element={<NonITHiringSolutions />} />
@@ -159,9 +178,10 @@ const App = () => {
           <Route path="/how-it-works/quality-sla-framework" element={<QualitySLAFramework />} />
           <Route path="/how-it-works/technology-platform" element={<TechnologyPlatform />} />
           <Route path="/how-it-works/requirement-distribution" element={<RequirementDistribution />} />
-          <Route path="/partners" element={<Partners />} />
+
 
           {/* Partner Subpages */}
+          <Route path="/partners" element={<Partners />} />
           <Route path="/partners/ipp-partner-program" element={<IPPPartnerProgram />} />
           <Route path="/partners/who-can-become-ipp" element={<WhoCanBecomeIPP />} />
           <Route path="/partners/why-join-as-ipp" element={<WhyJoinIPP />} />

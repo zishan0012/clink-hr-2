@@ -83,7 +83,7 @@ const StatutoryCompliance = () => {
             {/* Intro Section */}
             <section className="py-24 bg-white">
                 <div className="max-w-4xl mx-auto px-4 text-center">
-                    <p className="text-lg text-slate-600 leading-relaxed font-light">
+                    <p className="text-xl text-slate-600 leading-relaxed font-light">
                         Compliance is not just a legal requirement—it’s a critical part of business continuity, employee trust, and risk management. We provide structured coordination, documentation readiness, and ongoing compliance support under a single accountable framework.
                     </p>
                 </div>

@@ -82,7 +82,7 @@ const Manufacturing = () => {
                         </p>
                     </div>
 
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div className="flex flex-wrap justify-center gap-8">
                         {[
                             { title: "Large-Scale Management", desc: "Multi-shift and high-volume workforce coordination.", icon: Users },
                             { title: "Manpower Hiring", desc: "Sourcing skilled and semi-skilled manpower consistently.", icon: HardHat },
@@ -93,7 +93,7 @@ const Manufacturing = () => {
                             <motion.div
                                 key={i}
                                 whileHover={{ y: -6, boxShadow: "0 20px 25px -5px rgb(0 0 0 / 0.1)" }}
-                                className="bg-slate-50 p-8 rounded-2xl border border-slate-100 shadow-sm group transition-all"
+                                className="w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.33%-1.4rem)] bg-slate-50 p-8 rounded-2xl border border-slate-100 shadow-sm group transition-all"
                             >
                                 <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center text-brand-600 mb-6 group-hover:bg-brand-600 group-hover:text-white transition-colors shadow-sm">
                                     <item.icon className="w-6 h-6" />
@@ -121,7 +121,7 @@ const Manufacturing = () => {
                         </h2>
                     </div>
 
-                    <div className="grid md:grid-cols-2 gap-8">
+                    <div className="flex flex-wrap justify-center gap-8">
                         {[
                             {
                                 title: "Volume & Skilled Hiring",
@@ -172,7 +172,7 @@ const Manufacturing = () => {
                             <motion.div
                                 key={i}
                                 whileHover={{ scale: 1.01 }}
-                                className="bg-white p-10 rounded-3xl border border-slate-100 hover:border-brand-200 transition-all hover:shadow-lg"
+                                className="w-full md:w-[calc(50%-1rem)] bg-white p-10 rounded-3xl border border-slate-100 hover:border-brand-200 transition-all hover:shadow-lg"
                             >
                                 <div className="flex items-center gap-6 mb-8">
                                     <div className="w-14 h-14 rounded-2xl bg-brand-50 text-brand-600 flex items-center justify-center shadow-sm">

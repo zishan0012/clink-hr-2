@@ -214,7 +214,7 @@ const Home = () => {
 
             {/* SECTION 2: WHAT WE DO (Quick Overview) */}
             <section id="what-we-do" className="py-24 bg-white relative">
-                <div className="absolute top-0 right-0 w-1/2 h-full bg-slate-50 rounded-tl-[100px] -z-0"></div>
+                <div className="absolute top-0 right-0 w-1 h-full bg-slate-50 rounded-tl-[100px] -z-0"></div>
                 <div className="max-w-7xl mx-auto px-4 relative z-10">
                     {/* Heading */}
                     <div className="text-center max-w-3xl mx-auto mb-16">
@@ -850,7 +850,7 @@ const Home = () => {
                         <div>
                             <span className="bg-brand-100 text-brand-700 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-6 inline-block">Technology</span>
                             <h3 className="text-3xl md:text-5xl font-extrabold text-slate-900 mb-6 leading-tight">Zryoss HRMS <br /> <span className="text-brand-600">Unified & Powerful.</span></h3>
-                            <p className="text-lg text-slate-600 mb-8 leading-relaxed">
+                            <p className="text-xl text-slate-600 mb-8 leading-relaxed">
                                 An end-to-end enterprise HRMS web-based SaaS application which effectively manages the entire gamut of HR functions. Experience automation like never before.
                             </p>
 
@@ -906,7 +906,7 @@ const Home = () => {
                                 Who We Are
                             </h2>
 
-                            <div className="space-y-6 text-lg text-slate-600 leading-relaxed">
+                            <div className="space-y-6 text-xl text-slate-600 leading-relaxed">
                                 <p>
                                     At <span className="font-bold text-slate-900">CLink HR</span>, we align the diversified and intricate HR needs of our clients by providing reliable and strategic staffing solutions.
                                 </p>
