@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import requirementDistributionHero from '../../assets/how-it-works-img/requirement-distribution-hero.jpg';
 import {
     Share2,
     ShieldCheck,
@@ -35,7 +36,7 @@ const RequirementDistribution = () => {
             <section className="relative bg-brand-950 py-32 overflow-hidden">
                 <div className="absolute inset-0">
                     <img
-                        src="/src/assets/how-it-works-img/requirement-distribution-hero.jpg"
+                        src={requirementDistributionHero}
                         alt="Requirement Distribution"
                         className="w-full h-full object-cover"
                     />

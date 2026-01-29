@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import howItWorksHero from '../../assets/how-it-works-img/how-it-works-main.jpg';
 import {
     Network,
     ShieldCheck,
@@ -21,7 +22,7 @@ const HowItWorks = () => {
             <section className="bg-brand-950 py-32 relative overflow-hidden">
                 <div className="absolute inset-0">
                     <img
-                        src="/src/assets/how-it-works-img/how-it-works-main.jpg"
+                        src={howItWorksHero}
                         alt="How It Works"
                         className="w-full h-full object-cover"
                     />
