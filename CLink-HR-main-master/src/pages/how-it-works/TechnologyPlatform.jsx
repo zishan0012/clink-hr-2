@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import technologyPlatformHero from '../../assets/how-it-works-img/technology-platform-hero.jpg';
 import {
     Layout,
     ShieldCheck,
@@ -29,7 +30,7 @@ const TechnologyPlatform = () => {
             <section className="relative bg-brand-950 py-32 overflow-hidden">
                 <div className="absolute inset-0">
                     <img
-                        src="/src/assets/how-it-works-img/technology-platform-hero.jpg"
+                        src={technologyPlatformHero}
                         alt="Technology Platform Zryoss"
                         className="w-full h-full object-cover"
                     />

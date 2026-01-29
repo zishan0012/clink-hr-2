@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import deliveryModelHero from '../../assets/how-it-works-img/delivery-model-hero.jpg';
 import {
     ShieldCheck,
     Zap,
@@ -29,7 +30,7 @@ const OurDeliveryModel = () => {
             <section className="relative bg-brand-950 py-32 overflow-hidden">
                 <div className="absolute inset-0">
                     <img
-                        src="/src/assets/how-it-works-img/delivery-model-hero.jpg"
+                        src={deliveryModelHero}
                         alt="Our Delivery Model"
                         className="w-full h-full object-cover"
                     />

@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import qualitySLAHero from '../../assets/how-it-works-img/quality-sla-hero.jpg';
 import {
     ShieldCheck,
     CheckCircle,
@@ -28,7 +29,7 @@ const QualitySLAFramework = () => {
             <section className="relative bg-brand-950 py-32 overflow-hidden">
                 <div className="absolute inset-0">
                     <img
-                        src="/src/assets/how-it-works-img/quality-sla-hero.jpg"
+                        src={qualitySLAHero}
                         alt="Quality & SLA Framework"
                         className="w-full h-full object-cover"
                     />
