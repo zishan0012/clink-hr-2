@@ -45,11 +45,17 @@ const WhyJoinIPP = () => {
     return (
         <div className="min-h-screen bg-slate-50">
             {/* Hero Section */}
-            <section className="bg-brand-950 py-40 relative overflow-hidden text-center text-white">
-                <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-5"></div>
-                <div className="absolute inset-0 bg-gradient-to-b from-brand-950/70 via-brand-950/90 to-brand-950"></div>
+            <section className="bg-brand-950 py-40 relative overflow-hidden text-white">
+                <div className="absolute inset-0">
+                    <img
+                        src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2071&q=80"
+                        alt="Why Join IPP"
+                        className="w-full h-full object-cover"
+                    />
+                    <div className="absolute inset-0 bg-brand-950/50"></div>
+                </div>
 
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -61,7 +67,7 @@ const WhyJoinIPP = () => {
                         <div className="inline-block bg-white/10 backdrop-blur-md border border-white/10 px-6 py-2 rounded-full text-sm font-bold text-accent-400 mb-6 uppercase tracking-widest">
                             Build Your Own Recruitment Brand with Support
                         </div>
-                        <p className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
+                        <p className="text-xl md:text-2xl text-slate-200 mb-8 font-light max-w-4xl leading-relaxed">
                             Joining CLink HR as an Independent Prime Partner (IPP) allows you to focus on delivering quality hires, while we manage clients, coordination, and backend operations. The program is designed for recruiters and firms who want independence, growth, and scalability without operational hassles.
                         </p>
                     </motion.div>

@@ -21,7 +21,7 @@ const EndToEndPayroll = () => {
                         alt="End-to-End Payroll Management"
                         className="w-full h-full object-cover"
                     />
-                    <div className="absolute inset-0 bg-brand-950/70"></div>
+                    <div className="absolute inset-0 bg-brand-950/50"></div>
                 </div>
 
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -104,7 +104,7 @@ const EndToEndPayroll = () => {
                         <div className="relative">
                             <div className="absolute inset-0 bg-brand-200 rounded-[2rem] -rotate-3 opacity-30"></div>
                             <img
-                                src="https://images.unsplash.com/photo-1554224154-260312cb7a25?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80"
+                                src="https://i.pinimg.com/1200x/57/a2/93/57a293dae3254368e2986e3fada70d38.jpg"
                                 alt="Payroll Analytics"
                                 className="relative rounded-[2rem] shadow-2xl"
                             />

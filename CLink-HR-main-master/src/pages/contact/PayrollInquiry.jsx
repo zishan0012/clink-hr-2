@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import payrollInquiryHero from '../../assets/contact-img/payroll-inquiry-hero.jpg';
 import { Calculator, FileSpreadsheet, ShieldCheck, Globe, Headphones, CheckCircle, Send, Briefcase } from 'lucide-react';
 
 const PayrollInquiry = () => {
@@ -21,11 +22,17 @@ const PayrollInquiry = () => {
     return (
         <div className="min-h-screen bg-slate-50">
             {/* Hero Section */}
-            <section className="bg-brand-950 py-40 relative overflow-hidden text-center text-white">
-                <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2932&q=80')] bg-cover bg-center opacity-10"></div>
-                <div className="absolute inset-0 bg-gradient-to-b from-brand-950 via-brand-950/90 to-brand-950"></div>
+            <section className="relative bg-brand-950 py-32 overflow-hidden">
+                <div className="absolute inset-0">
+                    <img
+                        src={payrollInquiryHero}
+                        alt="Payroll Inquiry"
+                        className="w-full h-full object-cover"
+                    />
+                    <div className="absolute inset-0 bg-brand-950/60"></div>
+                </div>
 
-                <div className="max-w-4xl mx-auto px-4 relative z-10">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -34,10 +41,10 @@ const PayrollInquiry = () => {
                         <span className="inline-block py-1 px-3 rounded-full bg-accent-500/10 border border-accent-500/20 text-accent-400 text-xs font-bold tracking-widest uppercase mb-6 backdrop-blur-md">
                             Payroll Solutions
                         </span>
-                        <h1 className="text-4xl md:text-6xl font-extrabold mb-6 tracking-tight">
+                        <h1 className="text-4xl md:text-6xl text-white font-extrabold mb-6 tracking-tight">
                             Simplify Payroll with <span className="text-accent-500">CLink HR</span>
                         </h1>
-                        <p className="text-xl md:text-2xl text-slate-300 leading-relaxed mb-8">
+                        <p className="text-xl md:text-2xl text-slate-300 max-w-4xl leading-relaxed mb-8">
                             Managing payroll can be complex, but CLink HR makes it simple, accurate, and compliant. Through our centralized payroll management, backed by the Zryoss platform and expert IPP network, we handle everything from salary processing to statutory compliance.
                         </p>
                     </motion.div>

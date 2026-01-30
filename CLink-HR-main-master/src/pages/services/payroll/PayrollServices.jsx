@@ -61,7 +61,7 @@ const PayrollServices = () => {
                         alt="Financial Planning"
                         className="w-full h-full object-cover"
                     />
-                    <div className="absolute inset-0 bg-brand-950/70"></div>
+                    <div className="absolute inset-0 bg-brand-950/50"></div>
                 </div>
 
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -119,7 +119,7 @@ const PayrollServices = () => {
                         <div className="relative">
                             <div className="absolute inset-0 bg-brand-200 rounded-[2rem] rotate-6 opacity-30"></div>
                             <img
-                                src="https://images.unsplash.com/photo-1556742049-0cfed4f7a07d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80"
+                                src="https://i.pinimg.com/1200x/70/08/c4/7008c46c3d62fc9151f81e6894b07fd1.jpg"
                                 alt="Payroll Accounting"
                                 className="relative rounded-[2rem] shadow-2xl"
                             />

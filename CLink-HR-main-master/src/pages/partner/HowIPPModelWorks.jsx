@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import howIPPModelWorksHero from '../../assets/partners-img/how-ipp-model-works-hero.jpg';
 import { UserPlus, Search, FileCheck, ShieldCheck, CheckCircle, TrendingUp, Handshake } from 'lucide-react';
 
 const HowIPPModelWorks = () => {
@@ -39,10 +40,16 @@ const HowIPPModelWorks = () => {
     return (
         <div className="min-h-screen bg-slate-50">
             {/* Hero Section */}
-            <section className="bg-brand-950 py-40 text-center text-white relative overflow-hidden">
-                <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-5"></div>
-                <div className="absolute inset-0 bg-gradient-to-b from-brand-950/70 via-brand-950/90 to-brand-950"></div>
-                <div className="relative z-10 max-w-4xl mx-auto px-4">
+            <section className="bg-brand-950 py-40 text-white relative overflow-hidden">
+                <div className="absolute inset-0">
+                    <img
+                        src={howIPPModelWorksHero}
+                        alt="How IPP Model Works"
+                        className="w-full h-full object-cover"
+                    />
+                    <div className="absolute inset-0 bg-brand-950/50"></div>
+                </div>
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <motion.h1
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -50,7 +57,7 @@ const HowIPPModelWorks = () => {
                     >
                         Independent Delivery with <br /><span className="text-accent-500">Centralized Support</span>
                     </motion.h1>
-                    <p className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed mb-8">
+                    <p className="text-xl md:text-2xl text-slate-200 mb-8 font-light max-w-4xl leading-relaxed">
                         The IPP (Independent Prime Partner) Model allows recruitment professionals to operate under your own brand, while leveraging the CLink HR + Zryoss ecosystem for clients, coordination, and backend support.
                     </p>
                     <div className="inline-block bg-white/10 backdrop-blur-md border border-white/10 px-6 py-3 rounded-full text-base font-medium text-accent-400">

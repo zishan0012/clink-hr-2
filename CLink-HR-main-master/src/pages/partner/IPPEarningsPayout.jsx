@@ -6,10 +6,16 @@ const IPPEarningsPayout = () => {
     return (
         <div className="min-h-screen bg-slate-50">
             {/* Hero Section */}
-            <section className="bg-brand-950 py-40 text-center text-white relative overflow-hidden">
-                <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-5"></div>
-                <div className="absolute inset-0 bg-gradient-to-b from-brand-950/70 via-brand-950/90 to-brand-950"></div>
-                <div className="relative z-10 max-w-5xl mx-auto px-4">
+            <section className="bg-brand-950 py-40 text-white relative overflow-hidden">
+                <div className="absolute inset-0">
+                    <img
+                        src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2011&q=80"
+                        alt="IPP Earnings"
+                        className="w-full h-full object-cover"
+                    />
+                    <div className="absolute inset-0 bg-brand-950/50"></div>
+                </div>
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <motion.h1
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -20,7 +26,7 @@ const IPPEarningsPayout = () => {
                     <div className="inline-block bg-white/10 backdrop-blur-md border border-white/10 px-6 py-2 rounded-full text-sm font-bold text-accent-400 mb-6 uppercase tracking-widest">
                         Transparent, Performance-Driven, and Scalable
                     </div>
-                    <p className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
+                    <p className="text-xl md:text-2xl text-slate-200 mb-8 font-light max-w-4xl leading-relaxed">
                         CLink HR’s IPP Earnings & Payout Model is designed to reward performance, ensure transparency, and provide predictable income for Independent Prime Partners (IPP). All payouts are processed centrally through the Zryoss platform, giving IPPs visibility and control over their earnings.
                     </p>
                 </div>

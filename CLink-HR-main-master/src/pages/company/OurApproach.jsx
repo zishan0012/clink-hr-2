@@ -103,10 +103,10 @@ const OurApproach = () => {
                         alt="Methodology"
                         className="w-full h-full object-cover"
                     />
-                    <div className="absolute inset-0 bg-brand-950/70"></div>
+                    <div className="absolute inset-0 bg-brand-950/50"></div>
                 </div>
 
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -118,7 +118,7 @@ const OurApproach = () => {
                         <h1 className="text-4xl md:text-8xl font-extrabold text-white mb-8 tracking-tight leading-[1.1]">
                             The <span className="text-accent-500">Method</span> Behind <br /> Our Execution.
                         </h1>
-                        <p className="text-xl md:text-2xl text-slate-200 max-w-3xl mx-auto font-light leading-relaxed">
+                        <p className="text-xl md:text-2xl text-slate-200 max-w-3xl font-light leading-relaxed">
                             A structured, <span className="text-white font-medium">5-step approach</span> built to deliver speed, control, and consistent quality.
                         </p>
                     </motion.div>

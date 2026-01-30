@@ -39,7 +39,7 @@ const Industries = () => {
                     <div className="absolute inset-0 bg-brand-950/70"></div>
                 </div>
 
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -52,7 +52,7 @@ const Industries = () => {
                             Expertise Across <br />
                             <span className="text-accent-500">Every Sector.</span>
                         </h1>
-                        <p className="text-xl md:text-2xl text-slate-200 leading-relaxed font-light mb-10 max-w-3xl mx-auto">
+                        <p className="text-xl md:text-2xl text-slate-200 leading-relaxed font-light mb-10 max-w-3xl">
                             We don't just recruit; we understand the <span className="text-white font-medium">nuances of each domain</span> to find the perfect cultural and technical fit.
                         </p>
                     </motion.div>

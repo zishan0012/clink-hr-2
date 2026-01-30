@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import partnerInquiryHero from '../../assets/contact-img/partner-inquiry-hero.jpg';
 import { Handshake, CheckCircle, TrendingUp, ShieldCheck, Globe, Send, UserCheck, Briefcase } from 'lucide-react';
 
 const PartnerInquiry = () => {
@@ -22,11 +23,17 @@ const PartnerInquiry = () => {
     return (
         <div className="min-h-screen bg-slate-50">
             {/* Hero Section */}
-            <section className="bg-brand-950 py-40 relative overflow-hidden text-center text-white">
-                <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=2940&q=80')] bg-cover bg-center opacity-10"></div>
-                <div className="absolute inset-0 bg-gradient-to-b from-brand-950 via-brand-950/90 to-brand-950"></div>
+            <section className="relative bg-brand-950 py-32 overflow-hidden">
+                <div className="absolute inset-0">
+                    <img
+                        src={partnerInquiryHero}
+                        alt="Partner Inquiry"
+                        className="w-full h-full object-cover"
+                    />
+                    <div className="absolute inset-0 bg-brand-950/50"></div>
+                </div>
 
-                <div className="max-w-4xl mx-auto px-4 relative z-10">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <motion.div
                         initial={{ opacity: 0, scale: 0.95 }}
                         animate={{ opacity: 1, scale: 1 }}
@@ -35,10 +42,10 @@ const PartnerInquiry = () => {
                         <span className="inline-block py-1 px-3 rounded-full bg-accent-500/10 border border-accent-500/20 text-accent-400 text-xs font-bold tracking-widest uppercase mb-6 backdrop-blur-md">
                             IPP Partner Program
                         </span>
-                        <h1 className="text-3xl md:text-5xl font-extrabold mb-6 tracking-tight">
+                        <h1 className="text-3xl md:text-5xl text-white font-extrabold mb-6 tracking-tight">
                             Join CLink HR as an <br /><span className="text-accent-500">Independent Prime Partner (IPP)</span>
                         </h1>
-                        <p className="text-xl md:text-2xl text-slate-300 leading-relaxed mb-8">
+                        <p className="text-xl md:text-2xl text-slate-300 max-w-4xl leading-relaxed mb-8">
                             Looking to build your own recruitment brand while leveraging a structured ecosystem? CLink HR’s IPP Partner Program allows recruiters and recruitment firms to focus on delivery and closures, while we manage clients, coordination, and backend support through the Zryoss platform.
                         </p>
                     </motion.div>

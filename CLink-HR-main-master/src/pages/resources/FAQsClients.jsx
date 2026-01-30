@@ -119,13 +119,12 @@ const FAQsClients = () => {
                     <img
                         src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1974&q=80"
                         alt="Client Meeting"
-                        className="w-full h-full object-cover opacity-80"
+                        className="w-full h-full object-cover"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-br from-brand-950 via-brand-900/90 to-brand-950/80 mix-blend-multiply"></div>
-                    <div className="absolute inset-0 bg-black/40"></div>
+                    <div className="absolute inset-0 bg-brand-950/50"></div>
                 </div>
 
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -137,7 +136,7 @@ const FAQsClients = () => {
                         <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-6">
                             FAQs – Clients
                         </h1>
-                        <p className="text-xl text-slate-300 max-w-2xl mx-auto font-light leading-relaxed">
+                        <p className="text-xl md:text-2xl text-slate-200 mb-8 font-light max-w-4xl leading-relaxed">
                             Everything you need to know about partnering with CLink HR for your recruitment and workforce needs.
                         </p>
                     </motion.div>

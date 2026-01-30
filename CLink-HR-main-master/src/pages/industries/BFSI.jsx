@@ -28,10 +28,10 @@ const BFSI = () => {
                 <div className="absolute inset-0">
                     <img
                         src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80"
-                        className="w-full h-full object-cover opacity-60"
+                        className="w-full h-full object-cover"
                         alt="BFSI & Fintech Operations"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-r from-brand-950 via-brand-950/90 to-transparent" />
+                    <div className="absolute inset-0 bg-brand-950/50"></div>
                 </div>
 
                 <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

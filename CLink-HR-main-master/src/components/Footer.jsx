@@ -18,7 +18,7 @@ const Footer = () => {
               <img
                 src="/clink-logo.png"
                 alt="CLink HR Logo"
-                className="h-14 w-auto brightness-0 invert" // Inverting color for dark footer if logo is dark
+                className="h-14 w-auto"
               />
             </Link>
             <p className="text-slate-400 text-sm leading-relaxed">
@@ -44,6 +44,7 @@ const Footer = () => {
                     <li key={link.label}>
                       <Link
                         to={link.path}
+                        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                         className="text-slate-400 hover:text-brand-400 transition-colors text-sm hover:translate-x-1 duration-300 inline-block"
                       >
                         {link.label}

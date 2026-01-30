@@ -30,10 +30,16 @@ const BecomeIPPPartner = () => {
         <div className="min-h-screen bg-slate-50">
             {/* Hero Section */}
             <section className="bg-brand-950 py-40 relative overflow-hidden">
-                <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2850&q=80')] bg-cover bg-center opacity-10"></div>
-                <div className="absolute inset-0 bg-gradient-to-b from-brand-950/70 via-brand-950/90 to-brand-950"></div>
+                <div className="absolute inset-0">
+                    <img
+                        src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2850&q=80"
+                        alt="Join the Ecosystem"
+                        className="w-full h-full object-cover"
+                    />
+                    <div className="absolute inset-0 bg-brand-950/50"></div>
+                </div>
 
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -45,10 +51,10 @@ const BecomeIPPPartner = () => {
                         <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-6 tracking-tight">
                             Start Your Journey as an <br /><span className="text-accent-500">Independent Prime Partner</span>
                         </h1>
-                        <p className="text-lg md:text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed mb-8">
+                        <p className="text-xl md:text-2xl text-slate-200 mb-8 font-light max-w-4xl leading-relaxed">
                             CLink HR’s IPP Partner Program enables recruitment professionals and firms to build and grow their own recruitment brand while leveraging our structured ecosystem and technology platform (Zryoss).
                         </p>
-                        <p className="text-slate-400 max-w-2xl mx-auto text-sm italic">
+                        <p className="text-xl md:text-2xl text-slate-200 mb-8 font-light max-w-4xl leading-relaxed">
                             Become an IPP to focus on delivery, maximize earnings, and scale your recruitment business—without the hassle of client acquisition or backend operations.
                         </p>
                     </motion.div>

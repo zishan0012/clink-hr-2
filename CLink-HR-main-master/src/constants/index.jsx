@@ -149,12 +149,12 @@ export const FOOTER_LINKS = {
     { label: 'Recruitment Services', path: '/services/recruitment' },
     { label: 'Payroll Services', path: '/services/payroll' },
     { label: 'Compliance Support', path: '/services/payroll/statutory-compliance' },
-    { label: 'HR Advisory', path: '/services/other' }
+    { label: 'HR Advisory', path: '/services/other/hr-advisory' }
   ],
   partners: [
-    { label: 'Partner Program', path: '/partners' },
-    { label: 'IPP Model', path: '/partners#ipp' },
-    { label: 'Partner Onboarding', path: '/partners#onboarding' }
+    { label: 'Partner Program', path: '/partners/ipp-partner-program' },
+    { label: 'IPP Model', path: '/partners/how-ipp-model-works' },
+    { label: 'Partner Onboarding', path: '/partners/ipp-onboarding-process' }
   ],
   resources: [
     { label: 'Blog / Insights', path: '/company/blog' },

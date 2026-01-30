@@ -56,7 +56,7 @@ div {
 }
 
 .animate-scroll {
-  animation: scroll 40s linear infinite;
+  animation: scroll 80s linear infinite;
 }
 
 .perspective-1000 {
@@ -98,4 +98,18 @@ div {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #f97316;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.mask-image-linear-gradient {
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
 }

@@ -26,8 +26,7 @@ const StatutoryCompliance = () => {
                         alt="Compliance and Regulation"
                         className="w-full h-full object-cover"
                     />
-                    <div className="absolute inset-0 bg-brand-950/80 mix-blend-multiply"></div>
-                    <div className="absolute inset-0 bg-gradient-to-tr from-brand-950 via-brand-950/40 to-transparent"></div>
+                    <div className="absolute inset-0 bg-brand-950/50"></div>
                 </div>
 
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">

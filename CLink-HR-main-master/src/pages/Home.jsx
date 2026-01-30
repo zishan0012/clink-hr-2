@@ -47,7 +47,6 @@ const Home = () => {
         phone: "",
         message: "",
     });
-
     const handleChange = (e) => {
         const { name, value } = e.target;
         setFormData((prev) => ({
@@ -171,13 +170,16 @@ const Home = () => {
                         transition={{ duration: 0.8 }}
                         className="max-w-5xl"
                     >
-                        <span className="inline-block py-2 px-4 rounded-full bg-accent-500/20 border border-accent-500/30 text-accent-400 text-xs font-bold tracking-widest uppercase mb-8 backdrop-blur-md shadow-lg">
+                        <span className="inline-block py-2 px-4 rounded-full bg-brand-800/20 border border-brand-700 text-brand-400 text-xs font-bold tracking-widest uppercase mb-8 backdrop-blur-md shadow-lg">
                             Premier Workforce Solutions
                         </span>
-                        <h1 className="text-5xl md:text-7xl lg:text-9xl font-extrabold leading-[1] text-white mb-8 tracking-tighter drop-shadow-2xl">
+                        <h1 className="text-4xl md:text-6xl lg:text-8xl font-bold leading-tight text-white mb-8 tracking-tight drop-shadow-xl">
+
+
+
                             The Engine of <br />
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent-400 to-accent-600">
-                                Global Growth.
+                                Global Growth
                             </span>
                         </h1>
                     </motion.div>
@@ -655,7 +657,7 @@ const Home = () => {
             </section>
 
             {/* SECTION 9: Our Happy Clients */}
-            <section id="clients" className="py-24 bg-white overflow-hidden border-t border-slate-100" >
+            <section id="clients" className="py-24 bg-white overflow-hidden border-t border-slate-100">
                 <div className="max-w-7xl mx-auto px-4">
                     <div className="text-center mb-16">
                         <span className="bg-slate-100 text-slate-600 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider">Trusted Support</span>
@@ -665,11 +667,11 @@ const Home = () => {
                     </div>
 
                     <div className="relative w-full overflow-hidden mask-image-linear-gradient">
-                        <div className="flex w-max animate-scroll gap-16 group hover:[animation-play-state:paused]">
+                        <div className="flex w-max animate-scroll gap-16 py-12 group hover:[animation-play-state:paused]">
                             {/* Original Set */}
                             {[...clients, ...clients].map((item, idx) => (
                                 <div key={idx} className="relative group/item flex flex-col items-center justify-center gap-4 min-w-[120px] opacity-60 hover:opacity-100 transition-opacity grayscale hover:grayscale-0">
-                                    <div className="w-24 h-24 rounded-full border border-slate-200 bg-white shadow-sm flex items-center justify-center overflow-hidden transition-all group-hover/item:shadow-xl group-hover/item:scale-110">
+                                    <div className="w-24 h-24 rounded-full border border-slate-200 bg-white shadow-sm flex items-center justify-center transition-all group-hover/item:shadow-xl group-hover/item:scale-110">
                                         <img
                                             src={item.logo}
                                             alt={item.name}
@@ -681,10 +683,10 @@ const Home = () => {
                                     </div>
                                 </div>
                             ))}
-                            {/* Duplicate Set */}
+                            {/* Duplicate Set Set */}
                             {[...clients, ...clients].map((item, idx) => (
                                 <div key={idx} className="relative group/item flex flex-col items-center justify-center gap-4 min-w-[120px] opacity-60 hover:opacity-100 transition-opacity grayscale hover:grayscale-0">
-                                    <div className="w-24 h-24 rounded-full border border-slate-200 bg-white shadow-sm flex items-center justify-center overflow-hidden transition-all group-hover/item:shadow-xl group-hover/item:scale-110">
+                                    <div className="w-24 h-24 rounded-full border border-slate-200 bg-white shadow-sm flex items-center justify-center transition-all group-hover/item:shadow-xl group-hover/item:scale-110">
                                         <img
                                             src={item.logo}
                                             alt={item.name}
@@ -699,10 +701,10 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-            </section >
+            </section>
 
             {/* SECTION 10: Testimonials */}
-            <section className="py-28 bg-brand-50 relative" >
+            <section className="py-28 bg-brand-50 relative">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
                         <span className="bg-white text-brand-600 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider shadow-sm">Testimonials</span>
@@ -747,7 +749,7 @@ const Home = () => {
 
 
             {/* ===== Partner Ecosystem Highlight Section ===== */}
-            <section className="py-24 bg-white relative overflow-hidden" >
+            < section className="py-24 bg-white relative overflow-hidden" >
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="relative rounded-[2.5rem] bg-slate-900 overflow-hidden shadow-2xl">
                         {/* Decorative Background Elements */}
@@ -808,7 +810,7 @@ const Home = () => {
             </section >
 
             {/* ===== IPP SECTION ===== */}
-            <section className="py-24 bg-slate-900 text-white relative overflow-hidden text-center">
+            < section className="py-24 bg-slate-900 text-white relative overflow-hidden text-center" >
                 <div className="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-5"></div>
                 <div className="max-w-5xl mx-auto px-4 relative z-10">
                     <span className="inline-block py-1 px-3 rounded-full bg-brand-500/20 text-brand-300 text-xs font-bold uppercase tracking-wider mb-6 border border-brand-500/30">
@@ -840,10 +842,10 @@ const Home = () => {
                         Become an IPP Partner
                     </button>
                 </div>
-            </section>
+            </section >
 
             {/* HRMS Software Section */}
-            <section className="py-24 bg-slate-50 overflow-hidden relative" >
+            < section className="py-24 bg-slate-50 overflow-hidden relative" >
                 <div className="absolute top-0 left-0 w-full h-1/2 bg-white skew-y-3 origin-left -z-0"></div>
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <div className="lg:grid lg:grid-cols-2 gap-20 items-center">
@@ -885,7 +887,7 @@ const Home = () => {
             </section >
 
             {/* About Us Section */}
-            <section id="about" className="py-24 bg-white" >
+            < section id="about" className="py-24 bg-white" >
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
@@ -937,7 +939,7 @@ const Home = () => {
 
                     </div>
                 </div>
-            </section>
+            </section >
             {/* Contact CTA */}
             {/* <section id="contact" className="py-24 bg-brand-600">
                 <div className="max-w-4xl mx-auto px-4 text-center text-white">

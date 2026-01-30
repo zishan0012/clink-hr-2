@@ -12,12 +12,12 @@ const ContactUs = () => {
                     <img
                         src="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80"
                         alt="Contact Us"
-                        className="w-full h-full object-cover opacity-50"
+                        className="w-full h-full object-cover"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-b from-brand-950/80 to-brand-950"></div>
+                    <div className="absolute inset-0 bg-brand-950/50"></div>
                 </div>
 
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -29,7 +29,7 @@ const ContactUs = () => {
                         <h1 className="text-4xl md:text-7xl font-extrabold text-white mb-6">
                             We’re Here to <span className="text-accent-500">Help You Grow</span>
                         </h1>
-                        <p className="text-xl md:text-2xl text-slate-300 max-w-2xl mx-auto leading-relaxed">
+                        <p className="text-xl md:text-2xl text-slate-300 max-w-2xl leading-relaxed">
                             Have questions about CLink HR services, IPP Partner Program, or recruitment solutions? Our team is ready to assist you.
                         </p>
                     </motion.div>

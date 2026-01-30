@@ -25,9 +25,9 @@ const NonITHiringSolutions = () => {
                     <img
                         src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1632&q=80"
                         alt="Non-IT Hiring Team"
-                        className="w-full h-full object-cover opacity-80"
+                        className="w-full h-full object-cover"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-r from-brand-950 via-brand-950/90 to-brand-950/70"></div>
+                    <div className="absolute inset-0 bg-brand-950/50"></div>
                 </div>
 
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -44,7 +44,7 @@ const NonITHiringSolutions = () => {
                             Reliable Non-IT Hiring for <br />
                             <span className="text-accent-500">Business-Critical</span> Roles
                         </h1>
-                        <p className="text-xl text-slate-300 leading-relaxed font-light mb-10 max-w-2xl">
+                        <p className="text-xl md:text-2xl text-slate-200 mb-8 font-light max-w-4xl leading-relaxed">
                             CLink HR’s Non-IT Hiring Solutions help organizations build strong operational, sales, and support teams across functions and locations. We support businesses with structured, scalable hiring solutions that ensure continuity, speed, and consistency—without increasing internal recruitment workload.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4">
