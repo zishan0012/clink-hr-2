@@ -29,9 +29,9 @@ const ThirdPartyPayrollSolutions = () => {
                     <img
                         src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1471&q=80"
                         alt="Payroll Solutions"
-                        className="w-full h-full object-cover opacity-80"
+                        className="w-full h-full object-cover"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-r from-brand-950 via-brand-950/90 to-brand-950/70"></div>
+                    <div className="absolute inset-0 bg-brand-950/50"></div>
                 </div>
 
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -48,7 +48,7 @@ const ThirdPartyPayrollSolutions = () => {
                             Flexible Payroll Solutions for <br />
                             <span className="text-accent-500">Distributed & Contract</span> Workforce
                         </h1>
-                        <p className="text-xl text-slate-300 leading-relaxed font-light mb-10 max-w-2xl">
+                        <p className="text-xl md:text-2xl text-slate-200 mb-8 font-light max-w-4xl leading-relaxed">
                             CLink HR’s Third-Party Payroll Solutions help organizations manage workforce payroll through a structured, centrally coordinated payroll framework—without adding internal payroll complexity.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4">

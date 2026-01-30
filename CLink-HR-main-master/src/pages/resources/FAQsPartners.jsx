@@ -85,13 +85,12 @@ const FAQsPartners = () => {
                     <img
                         src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=2064&q=80"
                         alt="Partnership Handshake"
-                        className="w-full h-full object-cover opacity-80"
+                        className="w-full h-full object-cover"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-br from-brand-950 via-brand-900/90 to-brand-950/80 mix-blend-multiply"></div>
-                    <div className="absolute inset-0 bg-black/40"></div>
+                    <div className="absolute inset-0 bg-brand-950/50"></div>
                 </div>
 
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -103,10 +102,10 @@ const FAQsPartners = () => {
                         <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-6">
                             FAQs – Partners (IPP)
                         </h1>
-                        <p className="text-xl text-brand-200 max-w-2xl mx-auto font-medium mb-4">
+                        <p className="text-xl text-brand-200 max-w-2xl  font-medium mb-4">
                             (Enabled & Managed by the Zryoss Ecosystem)
-                        </p>
-                        <p className="text-lg text-slate-400 max-w-3xl mx-auto leading-relaxed font-light">
+                        </p>t
+                        <p className="text-xl md:text-2xl text-slate-200 mb-8 font-light max-w-4xl leading-relaxed">
                             Everything you need to know about joining India's fastest-growing recruitment partner network.
                         </p>
                     </motion.div>

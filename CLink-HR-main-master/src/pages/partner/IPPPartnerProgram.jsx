@@ -9,11 +9,15 @@ const IPPPartnerProgram = () => {
             {/* Hero Section */}
             <section className="relative bg-brand-950 py-40 overflow-hidden">
                 <div className="absolute inset-0 z-0">
-                    <div className="absolute inset-0 bg-gradient-to-b from-brand-950/70 via-brand-950/90 to-brand-950"></div>
-                    <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1556761175-4b46a572b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=1974&q=80')] bg-cover bg-center mix-blend-overlay opacity-20"></div>
+                    <img
+                        src="https://images.unsplash.com/photo-1556761175-4b46a572b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=1974&q=80"
+                        alt="Partner Program"
+                        className="w-full h-full object-cover"
+                    />
+                    <div className="absolute inset-0 bg-brand-950/50"></div>
                 </div>
 
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -25,10 +29,10 @@ const IPPPartnerProgram = () => {
                         <h1 className="text-4xl md:text-7xl font-extrabold text-white mb-6 tracking-tight leading-tight">
                             IPP Partner <span className="text-accent-500">Program</span>
                         </h1>
-                        <p className="text-xl md:text-2xl text-slate-300 max-w-4xl mx-auto leading-relaxed mb-10">
+                        <p className="text-xl md:text-2xl text-slate-300 max-w-4xl leading-relaxed mb-10">
                             Build Your Recruitment Business with Confidence. The IPP Partner Program by CLink HR is designed for professionals who want to scale their own recruitment brand without the burden of backend operations.
                         </p>
-                        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                        <div className="flex flex-col sm:flex-row gap-4">
                             <Link to="/partners/become-partner" className="bg-accent-600 text-white px-8 py-4 rounded-full font-bold hover:bg-accent-700 transition-all shadow-lg hover:shadow-accent-500/25 flex items-center justify-center gap-2">
                                 Join Program <ArrowRight className="w-5 h-5" />
                             </Link>

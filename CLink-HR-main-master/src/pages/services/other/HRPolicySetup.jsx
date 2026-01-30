@@ -27,10 +27,10 @@ const HRPolicySetup = () => {
                         alt="HR Policy Setup"
                         className="w-full h-full object-cover"
                     />
-                    <div className="absolute inset-0 bg-brand-950/70"></div>
+                    <div className="absolute inset-0 bg-brand-950/50"></div>
                 </div>
 
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -43,7 +43,7 @@ const HRPolicySetup = () => {
                             HR Policy <br />
                             <span className="text-accent-500">Design & Setup.</span>
                         </h1>
-                        <p className="text-xl md:text-2xl text-slate-200 max-w-3xl mx-auto font-light leading-relaxed">
+                        <p className="text-xl md:text-2xl text-slate-200 max-w-3xl font-light leading-relaxed">
                             CLink HR helps organizations build <span className="text-white font-medium">clear, compliant, and practical</span> HR policies that support smooth workforce management and reduce people-related risks.
                         </p>
                     </motion.div>

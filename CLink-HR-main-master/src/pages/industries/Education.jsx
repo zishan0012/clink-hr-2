@@ -28,11 +28,11 @@ const Education = () => {
             <section className="relative bg-brand-950 py-32 overflow-hidden">
                 <div className="absolute inset-0">
                     <img
-                        src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80"
-                        className="w-full h-full object-cover opacity-60"
+                        src="https://i.pinimg.com/1200x/71/ee/65/71ee6561621ab5a15c8d467f35ec2d84.jpg"
+                        className="w-full h-full object-cover"
                         alt="Education & Training Excellence"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-r from-brand-950 via-brand-950/90 to-transparent" />
+                    <div className="absolute inset-0 bg-brand-950/50"></div>
                 </div>
 
                 <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

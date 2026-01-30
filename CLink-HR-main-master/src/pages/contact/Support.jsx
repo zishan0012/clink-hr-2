@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import supportHero from '../../assets/contact-img/support-hero.jpg';
 import { LifeBuoy, Users, Briefcase, Monitor, Clock, Send, MessageSquare } from 'lucide-react';
 
 const Support = () => {
@@ -19,11 +20,17 @@ const Support = () => {
     return (
         <div className="min-h-screen bg-slate-50">
             {/* Hero Section */}
-            <section className="bg-brand-950 py-40 relative overflow-hidden text-center text-white">
-                <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&auto=format&fit=crop&w=1469&q=80')] bg-cover bg-center opacity-10"></div>
-                <div className="absolute inset-0 bg-gradient-to-b from-brand-950 via-brand-950/90 to-brand-950"></div>
+            <section className="relative bg-brand-950 py-32 overflow-hidden">
+                <div className="absolute inset-0">
+                    <img
+                        src={supportHero}
+                        alt="Support"
+                        className="w-full h-full object-cover"
+                    />
+                    <div className="absolute inset-0 bg-brand-950/60"></div>
+                </div>
 
-                <div className="max-w-4xl mx-auto px-4 relative z-10">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -32,10 +39,10 @@ const Support = () => {
                         <span className="inline-block py-1 px-3 rounded-full bg-accent-500/10 border border-accent-500/20 text-accent-400 text-xs font-bold tracking-widest uppercase mb-6 backdrop-blur-md">
                             Help Center
                         </span>
-                        <h1 className="text-4xl md:text-6xl font-extrabold mb-6 tracking-tight">
+                        <h1 className="text-4xl md:text-6xl text-white font-extrabold mb-6 max-w-2xl tracking-tight">
                             Reliable Support for <span className="text-accent-500">Clients & IPP Partners</span>
                         </h1>
-                        <p className="text-xl md:text-2xl text-slate-300 leading-relaxed max-w-3xl mx-auto">
+                        <p className="text-xl md:text-2xl text-slate-300 leading-relaxed max-w-3xl">
                             At CLink HR, support is not an afterthought—it’s a core part of our delivery model. Through a centralized support framework powered by the Zryoss platform, we ensure timely assistance, clarity, and resolution.
                         </p>
                     </motion.div>

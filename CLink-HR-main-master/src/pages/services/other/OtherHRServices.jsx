@@ -50,12 +50,12 @@ const OtherHRServices = () => {
                     <img
                         src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
                         alt="Other HR Services"
-                        className="w-full h-full object-cover opacity-40"
+                        className="w-full h-full object-cover"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-brand-950 via-brand-950/20 to-transparent"></div>
+                    <div className="absolute inset-0 bg-brand-950/50"></div>
                 </div>
 
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -68,7 +68,7 @@ const OtherHRServices = () => {
                             Other HR <br />
                             <span className="text-accent-500">Services.</span>
                         </h1>
-                        <p className="text-xl md:text-2xl text-slate-200 max-w-3xl mx-auto font-light leading-relaxed">
+                        <p className="text-xl md:text-2xl text-slate-200 max-w-3xl font-light leading-relaxed">
                             Specialized HR Services to <span className="text-white font-medium">Strengthen Your Workforce Foundation</span> and support compliant, well-governed operations.
                         </p>
                     </motion.div>

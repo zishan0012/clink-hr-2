@@ -8,8 +8,15 @@ const WhoCanBecomeIPP = () => {
         <div className="min-h-screen bg-slate-50">
             {/* Hero Section */}
             <section className="relative bg-brand-950 py-40 overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-b from-brand-950/70 via-brand-950/90 to-brand-950"></div>
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+                <div className="absolute inset-0">
+                    <img
+                        src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+                        alt="Who Can Become IPP"
+                        className="w-full h-full object-cover"
+                    />
+                    <div className="absolute inset-0 bg-brand-950/50"></div>
+                </div>
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <motion.div
                         initial={{ opacity: 0, scale: 0.95 }}
                         animate={{ opacity: 1, scale: 1 }}
@@ -21,7 +28,7 @@ const WhoCanBecomeIPP = () => {
                         <div className="inline-block bg-white/10 backdrop-blur-md border border-white/10 px-6 py-2 rounded-full text-sm font-bold text-accent-400 mb-6 uppercase tracking-widest">
                             For Recruiters Ready to Build Their Own Brand
                         </div>
-                        <p className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
+                        <p className="text-xl md:text-2xl text-slate-200 mb-8 font-light max-w-4xl leading-relaxed">
                             The Independent Prime Partner (IPP) model is designed for professionals and firms who want to operate as independent recruitment businesses, while being supported by a structured delivery ecosystem. If you can deliver quality hiring outcomes, you can become an IPP.
                         </p>
                     </motion.div>

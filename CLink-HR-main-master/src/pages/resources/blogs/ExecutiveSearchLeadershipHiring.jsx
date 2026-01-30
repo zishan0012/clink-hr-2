@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
+import leadershipStrategyHero from '../../../assets/blog-img/Leadership Strategy.jpg';
 import { Calendar, Clock, User, ArrowLeft, Search, Briefcase, TrendingUp, ShieldCheck, Target, Globe, BarChart3, Users, XCircle, CheckCircle, Zap, Award } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -12,10 +13,15 @@ const ExecutiveSearchLeadershipHiring = () => {
         <div className="min-h-screen bg-white pt-20">
             {/* HERO SECTION */}
             <section className="relative bg-brand-950 py-20 pb-32 overflow-hidden">
-                <div className="absolute inset-0 opacity-20">
-                    <div className="absolute top-0 right-0 w-full h-full bg-[radial-gradient(circle_at_70%_30%,#ef4444_0%,transparent_60%)]" />
+                <div className="absolute inset-0">
+                    <img
+                        src={leadershipStrategyHero}
+                        alt="Leadership Strategy"
+                        className="w-full h-full object-cover"
+                    />
+                    <div className="absolute inset-0 bg-brand-950/60"></div>
                 </div>
-                <div className="max-w-4xl mx-auto px-4 sm:px-6 relative z-10 text-center">
+                <div className="max-w-4xl mx-auto px-4 sm:px-6 relative z-10">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -39,7 +45,7 @@ const ExecutiveSearchLeadershipHiring = () => {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ delay: 0.2 }}
-                        className="flex flex-wrap justify-center items-center gap-6 text-slate-300 text-sm md:text-base"
+                        className="flex flex-wrap items-center gap-6 text-slate-300 text-sm md:text-base"
                     >
                         <div className="flex items-center gap-2">
                             <User className="w-4 h-4 text-red-400" />

@@ -44,11 +44,17 @@ const IPPOnboardingProcess = () => {
     return (
         <div className="min-h-screen bg-slate-50">
             {/* Hero Section */}
-            <section className="bg-brand-950 py-40 text-center text-white relative overflow-hidden">
-                <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-5"></div>
-                <div className="absolute inset-0 bg-gradient-to-b from-brand-950/70 via-brand-950/90 to-brand-950"></div>
+            <section className="bg-brand-950 py-40 text-white relative overflow-hidden">
+                <div className="absolute inset-0">
+                    <img
+                        src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+                        alt="IPP Onboarding"
+                        className="w-full h-full object-cover"
+                    />
+                    <div className="absolute inset-0 bg-brand-950/50"></div>
+                </div>
 
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -57,10 +63,10 @@ const IPPOnboardingProcess = () => {
                         <h1 className="text-4xl md:text-6xl font-extrabold mb-6">
                             IPP <span className="text-accent-500">Onboarding</span> Process
                         </h1>
-                        <p className="text-xl text-slate-300 max-w-3xl mx-auto mb-6">
+                        <p className="text-xl text-slate-300 max-w-3xl mb-6">
                             Start Your Journey as an Independent Prime Partner
                         </p>
-                        <p className="text-slate-400 max-w-2xl mx-auto text-xl leading-relaxed mb-8">
+                        <p className="text-xl md:text-2xl text-slate-200 mb-8 font-light max-w-4xl leading-relaxed">
                             Becoming an Independent Prime Partner (IPP) with CLink HR is simple, structured, and designed for independent recruiters. The onboarding process ensures you are fully enabled to deliver quality recruitment services, while CLink HR and the Zryoss ecosystem handle clients, coordination, and backend operations.
                         </p>
                     </motion.div>

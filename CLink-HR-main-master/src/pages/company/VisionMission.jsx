@@ -23,10 +23,10 @@ const VisionMission = () => {
                         alt="Skyscrapers"
                         className="w-full h-full object-cover"
                     />
-                    <div className="absolute inset-0 bg-brand-950/70"></div>
+                    <div className="absolute inset-0 bg-brand-950/50"></div>
                 </div>
 
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -39,7 +39,7 @@ const VisionMission = () => {
                             Vision <br />
                             <span className="text-accent-500">& Mission</span>
                         </h1>
-                        <p className="text-xl md:text-2xl text-slate-200 max-w-3xl mx-auto font-light leading-relaxed">
+                        <p className="text-xl md:text-2xl text-slate-200 max-w-3xl font-light leading-relaxed">
                             Redefining how organizations experience <span className="text-white font-medium">talent acquisition and workforce management</span> across India.
                         </p>
                     </motion.div>

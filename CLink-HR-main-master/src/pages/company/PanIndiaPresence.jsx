@@ -45,10 +45,10 @@ const PanIndiaPresence = () => {
                         alt="India Gate - Pan India"
                         className="w-full h-full object-cover"
                     />
-                    <div className="absolute inset-0 bg-brand-950/70"></div>
+                    <div className="absolute inset-0 bg-brand-950/50"></div>
                 </div>
 
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -61,7 +61,7 @@ const PanIndiaPresence = () => {
                             Pan-India <br />
                             <span className="text-accent-500">Service Network</span>
                         </h1>
-                        <p className="text-xl md:text-2xl text-slate-200 max-w-4xl mx-auto leading-relaxed font-light">
+                        <p className="text-xl md:text-2xl text-slate-200 max-w-4xl  leading-relaxed font-light">
                             One partner. Every hub. Consistent <span className="text-white font-medium">workforce solutions</span> across India's most critical business clusters.
                         </p>
                     </motion.div>

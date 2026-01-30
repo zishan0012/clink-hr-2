@@ -10,9 +10,14 @@ const Blog = () => {
 
     return (
         <div className="pt-20 min-h-screen bg-slate-50">
-            <div className="bg-brand-900 py-24 relative overflow-hidden">
-                <div className="absolute inset-0 opacity-20">
-                    <div className="absolute top-0 right-0 w-full h-full bg-[radial-gradient(circle_at_70%_30%,#3b82f6_0%,transparent_60%)]" />
+            <div className="bg-brand-950 py-32 relative overflow-hidden">
+                <div className="absolute inset-0">
+                    <img
+                        src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+                        alt="Insights & Blog"
+                        className="w-full h-full object-cover"
+                    />
+                    <div className="absolute inset-0 bg-brand-950/50"></div>
                 </div>
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <motion.h1

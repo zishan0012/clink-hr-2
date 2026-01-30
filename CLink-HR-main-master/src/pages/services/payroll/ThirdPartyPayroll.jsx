@@ -20,10 +20,9 @@ const ThirdPartyPayroll = () => {
                     <img
                         src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
                         alt="Payroll Management"
-                        className="w-full h-full object-cover opacity-80"
+                        className="w-full h-full object-cover"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-r from-brand-950 via-brand-950/90 to-black/60 mix-blend-multiply"></div>
-                    <div className="absolute inset-0 bg-black/40"></div>
+                    <div className="absolute inset-0 bg-brand-950/50"></div>
                 </div>
 
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import hireTalentHero from '../../assets/contact-img/hire-talent-hero.jpg';
 import { Users, Clock, CheckSquare, DollarSign, Headphones, Layers, Zap, Briefcase, Globe, Send, UserCheck } from 'lucide-react';
 
 const HireTalent = () => {
@@ -20,11 +21,17 @@ const HireTalent = () => {
     return (
         <div className="min-h-screen bg-slate-50">
             {/* Hero Section */}
-            <section className="bg-brand-950 py-40 relative overflow-hidden text-center text-white">
-                <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2684&q=80')] bg-cover bg-center opacity-10"></div>
-                <div className="absolute inset-0 bg-gradient-to-b from-brand-950/70 via-brand-950/90 to-brand-950"></div>
+            <section className="relative bg-brand-950 py-32 overflow-hidden">
+                <div className="absolute inset-0">
+                    <img
+                        src={hireTalentHero}
+                        alt="Hire Talent"
+                        className="w-full h-full object-cover"
+                    />
+                    <div className="absolute inset-0 bg-brand-950/60"></div>
+                </div>
 
-                <div className="max-w-4xl mx-auto px-4 relative z-10">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -33,13 +40,13 @@ const HireTalent = () => {
                         <span className="inline-block py-1 px-3 rounded-full bg-accent-500/10 border border-accent-500/20 text-accent-400 text-xs font-bold tracking-widest uppercase mb-6 backdrop-blur-md">
                             Recruitment Solutions
                         </span>
-                        <h1 className="text-4xl md:text-6xl font-extrabold mb-6 tracking-tight">
+                        <h1 className="text-4xl md:text-6xl text-white font-extrabold mb-6 tracking-tight">
                             Find the Right <span className="text-accent-500">Talent, Faster</span>
                         </h1>
-                        <p className="text-xl md:text-2xl text-slate-300 leading-relaxed mb-8">
+                        <p className="text-xl md:text-2xl text-slate-300 max-w-4xl leading-relaxed mb-8">
                             At CLink HR, we help businesses hire the best talent quickly and efficiently. Leveraging our network of Independent Prime Partners (IPP) and the Zryoss platform, we deliver scalable, quality, and fast recruitment solutions across industries.
                         </p>
-                        <p className="text-base text-slate-400 font-medium font-outfit">
+                        <p className="text-xl md:text-2xl text-slate-200 mb-8 font-light max-w-4xl leading-relaxed">
                             Whether you are a startup, SME, or enterprise, our model ensures speed, accuracy, and cost-efficiency.
                         </p>
                     </motion.div>

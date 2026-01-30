@@ -30,9 +30,9 @@ const ScalableHRModel = () => {
                     <img
                         src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80"
                         alt="Scalable HR Model"
-                        className="w-full h-full object-cover opacity-80"
+                        className="w-full h-full object-cover"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-r from-brand-950 via-brand-950/90 to-brand-950/70"></div>
+                    <div className="absolute inset-0 bg-brand-950/50"></div>
                 </div>
 
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -49,7 +49,7 @@ const ScalableHRModel = () => {
                             HR That Grows With <br />
                             <span className="text-accent-500">Your Business</span>
                         </h1>
-                        <p className="text-xl text-slate-300 leading-relaxed font-light mb-10 max-w-2xl">
+                        <p className="text-xl md:text-2xl text-slate-200 mb-8 font-light max-w-4xl leading-relaxed">
                             CLink HR’s Scalable HR Model is a flexible, modular framework designed for organizations that are growing, evolving, or restructuring. We adapt as your workforce needs expand.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4">
@@ -137,7 +137,7 @@ const ScalableHRModel = () => {
                         <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-6">Key Components of the <span className="text-brand-600">Scalable HR Model</span></h2>
                     </div>
 
-                    <div className="grid md:grid-cols-2 gap-8">
+                    <div className="flex flex-wrap justify-center gap-8">
                         {[
                             {
                                 title: "Modular HR Services",
@@ -168,7 +168,7 @@ const ScalableHRModel = () => {
                             <motion.div
                                 key={i}
                                 whileHover={{ scale: 1.02 }}
-                                className="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:border-brand-200 transition-all hover:shadow-lg"
+                                className="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:border-brand-200 transition-all hover:shadow-lg w-full md:w-[calc(50%-1rem)]"
                             >
                                 <div className="flex items-start gap-6">
                                     <div className="w-14 h-14 bg-white rounded-xl flex items-center justify-center text-brand-600 shadow-sm shrink-0">

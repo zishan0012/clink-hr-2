@@ -67,10 +67,10 @@ const Careers = () => {
                         alt="Indian Office Culture"
                         className="w-full h-full object-cover"
                     />
-                    <div className="absolute inset-0 bg-brand-950/70"></div>
+                    <div className="absolute inset-0 bg-brand-950/50"></div>
                 </div>
 
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -83,11 +83,11 @@ const Careers = () => {
                             Build the <br />
                             <span className="text-accent-500">Future of Work.</span>
                         </h1>
-                        <p className="text-xl md:text-2xl text-slate-200 max-w-3xl mx-auto font-light leading-relaxed mb-10">
+                        <p className="text-xl md:text-2xl text-slate-200 max-w-3xl font-light leading-relaxed mb-10">
                             At CLink HR, we don't just hire people; we empower them to shape the <span className="text-white font-medium">careers of thousands</span>.
                         </p>
 
-                        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                        <div className="flex flex-col sm:flex-row gap-4">
                             <button onClick={() => document.getElementById('openings').scrollIntoView({ behavior: 'smooth' })} className="bg-brand-600 text-white px-10 py-4 rounded-full font-bold hover:bg-brand-500 transition-all shadow-xl flex items-center justify-center gap-2">
                                 View Openings <Briefcase className="w-5 h-5" />
                             </button>

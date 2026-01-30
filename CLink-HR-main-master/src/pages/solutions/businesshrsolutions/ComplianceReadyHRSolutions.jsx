@@ -29,9 +29,9 @@ const ComplianceReadyHRSolutions = () => {
                     <img
                         src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?ixlib=rb-4.0.3&auto=format&fit=crop&w=1471&q=80"
                         alt="Compliance Ready HR"
-                        className="w-full h-full object-cover opacity-80"
+                        className="w-full h-full object-cover"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-r from-brand-950 via-brand-950/90 to-brand-950/70"></div>
+                    <div className="absolute inset-0 bg-brand-950/50"></div>
                 </div>
 
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -49,7 +49,7 @@ const ComplianceReadyHRSolutions = () => {
                             Stay Confident. <br />
                             <span className="text-accent-500">Stay Scalable.</span>
                         </h1>
-                        <p className="text-xl text-slate-300 leading-relaxed font-light mb-10 max-w-2xl">
+                        <p className="text-xl md:text-2xl text-slate-200 mb-8 font-light max-w-4xl leading-relaxed">
                             CLink HR’s Compliance-Ready HR Solutions help businesses operate with full regulatory confidence—ensuring workforce operations remain audit-ready, regulation-aligned, and risk-controlled.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4">
@@ -142,7 +142,7 @@ const ComplianceReadyHRSolutions = () => {
                         <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-6">Key Compliance Areas We Support</h2>
                     </div>
 
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div className="flex flex-wrap justify-center gap-8">
                         {[
                             {
                                 title: "Statutory Compliance",
@@ -173,7 +173,7 @@ const ComplianceReadyHRSolutions = () => {
                             <motion.div
                                 key={i}
                                 whileHover={{ scale: 1.02 }}
-                                className="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:border-brand-200 transition-all hover:shadow-lg"
+                                className="w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-2rem)] bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:border-brand-200 transition-all hover:shadow-lg"
                             >
                                 <div className="w-14 h-14 bg-white rounded-xl flex items-center justify-center text-brand-600 shadow-sm mb-6">
                                     <service.icon className="w-7 h-7" />
