@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import Testimonials from '../../components/Testimonials';
 import { PieChart, TrendingUp, CreditCard, DollarSign, BarChart3, ShieldCheck, CheckCircle } from 'lucide-react';
 
 const IPPEarningsPayout = () => {
@@ -171,6 +172,8 @@ const IPPEarningsPayout = () => {
                     </h2>
                 </div>
             </section>
+
+            <Testimonials />
         </div>
     );
 };

@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Testimonials from "../../components/Testimonials";
 import {
     GraduationCap,
     BookOpen,
@@ -27,19 +28,24 @@ const Education = () => {
             {/* HERO */}
             <section className="relative bg-brand-950 py-32 overflow-hidden">
                 <div className="absolute inset-0">
-                    <img
+                    <motion.img
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ duration: 0.6 }}
                         src="https://i.pinimg.com/1200x/71/ee/65/71ee6561621ab5a15c8d467f35ec2d84.jpg"
                         className="w-full h-full object-cover"
                         alt="Education & Training Excellence"
+                        loading="eager"
+                        fetchPriority="high"
                     />
                     <div className="absolute inset-0 bg-brand-950/50"></div>
                 </div>
 
                 <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <motion.div
-                        initial={{ opacity: 0, y: 40 }}
+                        initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8 }}
+                        transition={{ duration: 0.5 }}
                         className="max-w-4xl"
                     >
                         <span className="inline-block mb-6 px-4 py-1 rounded-full bg-brand-800/50 border border-brand-700 text-brand-200 text-xs font-bold tracking-widest uppercase backdrop-blur-md">
@@ -295,6 +301,8 @@ const Education = () => {
                     </div>
                 </div>
             </section>
+
+            <Testimonials />
         </div>
     );
 };

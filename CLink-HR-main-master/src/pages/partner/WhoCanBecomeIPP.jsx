@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import Testimonials from '../../components/Testimonials';
 import { Briefcase, UserCheck, GraduationCap, Building, Link, CheckCircle, XCircle, Search, Rocket } from 'lucide-react';
 import { Link as RouterLink } from 'react-router-dom';
 
@@ -20,7 +21,7 @@ const WhoCanBecomeIPP = () => {
                     <motion.div
                         initial={{ opacity: 0, scale: 0.95 }}
                         animate={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: 0.8 }}
+                        transition={{ duration: 0.4 }}
                     >
                         <h1 className="text-4xl md:text-7xl font-extrabold text-white mb-6">
                             Who Can Become an <span className="text-accent-500">IPP?</span>
@@ -155,6 +156,8 @@ const WhoCanBecomeIPP = () => {
                     </RouterLink>
                 </div>
             </section>
+
+            <Testimonials />
         </div>
     );
 };

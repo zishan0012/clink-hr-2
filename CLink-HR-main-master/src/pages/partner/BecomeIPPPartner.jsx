@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import Testimonials from '../../components/Testimonials';
 import { Send, User, Mail, Phone, MapPin, Linkedin, Briefcase, Award, CheckCircle } from 'lucide-react';
 
 const BecomeIPPPartner = () => {
@@ -269,6 +270,7 @@ const BecomeIPPPartner = () => {
                     </div>
                 </div>
             </div>
+            <Testimonials />
         </div>
     );
 };

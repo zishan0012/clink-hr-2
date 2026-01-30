@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import Testimonials from '../../components/Testimonials';
 import howIPPModelWorksHero from '../../assets/partners-img/how-ipp-model-works-hero.jpg';
 import { UserPlus, Search, FileCheck, ShieldCheck, CheckCircle, TrendingUp, Handshake } from 'lucide-react';
 
@@ -182,6 +183,8 @@ const HowIPPModelWorks = () => {
                     </p>
                 </div>
             </section>
+
+            <Testimonials />
         </div>
     );
 };

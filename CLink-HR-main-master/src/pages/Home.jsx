@@ -2,6 +2,7 @@
 import { useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Rocket, Building2, Globe, Coins, Users, FileText, CheckCircle, BarChart, Server, Briefcase, Shirt, GraduationCap, Truck, Video, ShoppingBag, Quote, Activity } from 'lucide-react';
+import Testimonials from '../components/Testimonials';
 import bd from "../assets/clients/bd.png";
 import quest from "../assets/clients/quest.png";
 import micromax from "../assets/clients/micromax.png";
@@ -150,7 +151,10 @@ const Home = () => {
                 className="relative flex items-center overflow-hidden bg-slate-900 min-h-[90vh] pt-20"
             >
                 {/* Background Image with Parallax-like effect */}
-                <div
+                <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 0.6 }}
                     className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat transform scale-105"
                     style={{
                         backgroundImage: "url('/hero.jpg')",
@@ -165,9 +169,9 @@ const Home = () => {
                 <div className="relative z-20 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center py-20 pb-24">
 
                     <motion.div
-                        initial={{ opacity: 0, x: -30 }}
+                        initial={{ opacity: 0, x: -20 }}
                         animate={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 0.8 }}
+                        transition={{ duration: 0.5 }}
                         className="max-w-5xl"
                     >
                         <span className="inline-block py-2 px-4 rounded-full bg-brand-800/20 border border-brand-700 text-brand-400 text-xs font-bold tracking-widest uppercase mb-8 backdrop-blur-md shadow-lg">
@@ -185,9 +189,9 @@ const Home = () => {
                     </motion.div>
 
                     <motion.p
-                        initial={{ opacity: 0, y: 30 }}
+                        initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8, delay: 0.2 }}
+                        transition={{ duration: 0.5, delay: 0.1 }}
                         className="text-lg md:text-xl text-slate-200 mb-10 leading-relaxed max-w-2xl font-light drop-shadow-md"
                     >
                         CLink HR helps organizations hire faster, manage workforce operations efficiently, and scale with confidence through a structured, technology-enabled delivery ecosystem.
@@ -195,9 +199,9 @@ const Home = () => {
 
                     {/* Primary CTAs */}
                     <motion.div
-                        initial={{ opacity: 0, y: 20 }}
+                        initial={{ opacity: 0, y: 15 }}
                         animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8, delay: 0.4 }}
+                        transition={{ duration: 0.5, delay: 0.2 }}
                         className="flex flex-col sm:flex-row gap-6"
                     >
                         <button className="group relative bg-brand-600 text-white px-10 py-5 rounded-full font-bold overflow-hidden transition-all hover:scale-105 shadow-2xl hover:shadow-brand-500/40">
@@ -670,7 +674,7 @@ const Home = () => {
                         <div className="flex w-max animate-scroll gap-16 py-12 group hover:[animation-play-state:paused]">
                             {/* Original Set */}
                             {[...clients, ...clients].map((item, idx) => (
-                                <div key={idx} className="relative group/item flex flex-col items-center justify-center gap-4 min-w-[120px] opacity-60 hover:opacity-100 transition-opacity grayscale hover:grayscale-0">
+                                <div key={idx} className="relative group/item flex flex-col items-center justify-center gap-4 min-w-[120px] transition-opacity">
                                     <div className="w-24 h-24 rounded-full border border-slate-200 bg-white shadow-sm flex items-center justify-center transition-all group-hover/item:shadow-xl group-hover/item:scale-110">
                                         <img
                                             src={item.logo}
@@ -685,7 +689,7 @@ const Home = () => {
                             ))}
                             {/* Duplicate Set Set */}
                             {[...clients, ...clients].map((item, idx) => (
-                                <div key={idx} className="relative group/item flex flex-col items-center justify-center gap-4 min-w-[120px] opacity-60 hover:opacity-100 transition-opacity grayscale hover:grayscale-0">
+                                <div key={idx} className="relative group/item flex flex-col items-center justify-center gap-4 min-w-[120px] transition-opacity">
                                     <div className="w-24 h-24 rounded-full border border-slate-200 bg-white shadow-sm flex items-center justify-center transition-all group-hover/item:shadow-xl group-hover/item:scale-110">
                                         <img
                                             src={item.logo}
@@ -704,49 +708,7 @@ const Home = () => {
             </section>
 
             {/* SECTION 10: Testimonials */}
-            <section className="py-28 bg-brand-50 relative">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-16">
-                        <span className="bg-white text-brand-600 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider shadow-sm">Testimonials</span>
-                        <h3 className="text-3xl md:text-5xl font-extrabold text-slate-900 mt-4">What Our Clients Say</h3>
-                    </div>
-
-                    <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
-                        {[
-                            {
-                                text: "CLink HR helped us scale hiring across multiple locations with clear communication and predictable delivery.",
-                                author: "Corporate Client",
-                                role: "HR Head"
-                            },
-                            {
-                                text: "Their structured approach reduced our hiring timelines significantly.",
-                                author: "Strategic Partner",
-                                role: "Operations Manager"
-                            }
-                        ].map((testimonial, i) => (
-                            <motion.div
-                                key={i}
-                                whileHover={{ y: -5 }}
-                                className="bg-white p-10 rounded-3xl shadow-sm border border-brand-100 hover:shadow-xl transition-all duration-300 relative overflow-hidden"
-                            >
-                                <div className="absolute top-0 right-0 w-32 h-32 bg-brand-50 rounded-bl-[100px] -mr-10 -mt-10"></div>
-                                <Quote className="w-12 h-12 text-brand-200 mb-6 relative z-10" strokeWidth={1.5} />
-                                <p className="text-slate-700 text-lg leading-relaxed relative z-10 mb-8 italic">
-                                    "{testimonial.text}"
-                                </p>
-                                <div className="relative z-10 border-t border-slate-100 pt-6">
-                                    <p className="font-bold text-slate-900 text-lg">{testimonial.author}</p>
-                                    <p className="text-brand-600 text-sm font-medium">{testimonial.role}</p>
-                                </div>
-                            </motion.div>
-                        ))}
-                    </div>
-                </div>
-            </section >
-
-
-
-
+            <Testimonials />
 
             {/* ===== Partner Ecosystem Highlight Section ===== */}
             < section className="py-24 bg-white relative overflow-hidden" >

@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import Testimonials from '../../components/Testimonials';
 import { Network, Handshake, Globe, ArrowRight, ShieldCheck, TrendingUp, Users, Target, Zap, Layout } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -21,7 +22,7 @@ const IPPPartnerProgram = () => {
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8 }}
+                        transition={{ duration: 0.4 }}
                     >
                         <span className="inline-block py-1 px-3 rounded-full bg-accent-500/10 border border-accent-500/20 text-accent-400 text-xs font-bold tracking-widest uppercase mb-6 backdrop-blur-md">
                             Partnership
@@ -159,6 +160,8 @@ const IPPPartnerProgram = () => {
                     </div>
                 </div>
             </section>
+
+            <Testimonials />
         </div>
     );
 };

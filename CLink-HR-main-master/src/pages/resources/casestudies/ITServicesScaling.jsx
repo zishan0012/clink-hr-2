@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
+import Testimonials from '../../../components/Testimonials';
 import {
     Building2,
     Users,
@@ -521,6 +522,8 @@ const ITServicesScaling = () => {
                     </Link>
                 </div>
             </div>
+
+            <Testimonials />
         </div>
     );
 };

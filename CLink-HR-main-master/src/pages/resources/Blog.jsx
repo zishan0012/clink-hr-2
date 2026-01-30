@@ -1,8 +1,16 @@
 import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
+import Testimonials from '../../components/Testimonials';
 import { Link } from 'react-router-dom';
 import { Calendar, User, Clock, ArrowRight, Lock } from 'lucide-react';
 
+import blog1 from '../../assets/blog-img/1.jpg';
+import blog2 from '../../assets/blog-img/2.jpg';
+import blog3 from '../../assets/blog-img/3.jpg';
+import blog4 from '../../assets/blog-img/4.jpg';
+import blog5 from '../../assets/blog-img/5.jpg';
+import blog6 from '../../assets/blog-img/6.jpg';
+import blog7 from '../../assets/blog-img/7.jpg';
 const Blog = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -45,7 +53,7 @@ const Blog = () => {
                             readTime: "8 min read",
                             tag: "Industry Trends",
                             link: "/resources/blog/future-of-hr-outsourcing-2026",
-                            color: "from-brand-800 to-brand-600"
+                            image: blog1
                         },
                         {
                             title: "Permanent vs Temporary Staffing: How to Choose the Right Strategy",
@@ -54,7 +62,7 @@ const Blog = () => {
                             readTime: "6 min read",
                             tag: "Workforce Strategy",
                             link: "/resources/blog/permanent-vs-temporary-staffing",
-                            color: "from-accent-600 to-brand-700" // Typo fix: accent
+                            image: blog2
                         },
                         {
                             title: "How Effective Payroll & Compliance Services Can Save Your Business Time and Money",
@@ -63,7 +71,7 @@ const Blog = () => {
                             readTime: "7 min read",
                             tag: "Operational Efficiency",
                             link: "/resources/blog/payroll-compliance-benefits",
-                            color: "from-amber-600 to-orange-700"
+                            image: blog3
                         },
                         {
                             title: "How Independent Prime Partners (IPP) Are Transforming Talent Acquisition",
@@ -72,7 +80,7 @@ const Blog = () => {
                             readTime: "9 min read",
                             tag: "Recruitment Evolution",
                             link: "/resources/blog/independent-prime-partners-ipp",
-                            color: "from-blue-600 to-indigo-700"
+                            image: blog4
                         },
                         {
                             title: "How BPP Are Powering the Next Generation of Talent & Business Growth",
@@ -81,7 +89,7 @@ const Blog = () => {
                             readTime: "10 min read",
                             tag: "Partnership Evolution",
                             link: "/resources/blog/business-prime-partners-bpp",
-                            color: "from-purple-600 to-pink-700"
+                            image: blog5
                         },
                         {
                             title: "Executive Search & Leadership Hiring: Best Practices for Identifying Top Talent",
@@ -90,7 +98,7 @@ const Blog = () => {
                             readTime: "12 min read",
                             tag: "Leadership Strategy",
                             link: "/resources/blog/executive-search-leadership-hiring",
-                            color: "from-red-600 to-orange-700"
+                            image: blog6
                         },
                         {
                             title: "Workforce Transformation in India: HR Insights for 2026 & Beyond",
@@ -99,7 +107,7 @@ const Blog = () => {
                             readTime: "11 min read",
                             tag: "HR Trends 2026",
                             link: "/resources/blog/workforce-transformation-india-2026",
-                            color: "from-emerald-600 to-teal-700"
+                            image: blog7
                         }
                     ].map((blog, index) => (
                         <motion.div
@@ -109,12 +117,12 @@ const Blog = () => {
                             transition={{ delay: 0.1 * (index + 1) }}
                             className={`bg-white rounded-2xl shadow-sm overflow-hidden hover:shadow-xl transition-all duration-300 border border-slate-100 group flex flex-col h-full ${index === 6 ? 'lg:col-start-2' : ''}`}
                         >
-                            <div className={`h-56 bg-gradient-to-br ${blog.color} relative overflow-hidden group-hover:scale-105 transition-transform duration-500`}>
-                                <div className="absolute inset-0 flex items-center justify-center opacity-30">
-                                    <svg className="w-24 h-24 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
-                                    </svg>
-                                </div>
+                            <div className="h-56 relative overflow-hidden">
+                                <img
+                                    src={blog.image}
+                                    alt={blog.title}
+                                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                />
                                 <div className="absolute top-4 left-4 bg-accent-500 text-brand-900 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
                                     {blog.tag}
                                 </div>
@@ -150,6 +158,8 @@ const Blog = () => {
 
                 </div>
             </div>
+
+            <Testimonials />
         </div>
     );
 };

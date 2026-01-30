@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import Testimonials from '../../components/Testimonials';
 import { ShieldCheck, Target, UserX, TrendingUp, Zap, Layers, Award, CheckCircle, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -136,6 +137,8 @@ const WhyJoinIPP = () => {
                     </h2>
                 </div>
             </section>
+
+            <Testimonials />
         </div>
     );
 };

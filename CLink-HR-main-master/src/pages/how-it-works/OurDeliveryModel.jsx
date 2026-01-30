@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Testimonials from "../../components/Testimonials";
 import deliveryModelHero from '../../assets/how-it-works-img/delivery-model-hero.jpg';
 import {
     ShieldCheck,
@@ -41,7 +42,7 @@ const OurDeliveryModel = () => {
                     <motion.div
                         initial={{ opacity: 0, y: 40 }}
                         animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8 }}
+                        transition={{ duration: 0.4 }}
                         className="max-w-4xl"
                     >
                         <span className="inline-block mb-6 px-4 py-1 rounded-full bg-brand-800/50 border border-brand-700 text-brand-200 text-xs font-bold tracking-widest uppercase backdrop-blur-md">
@@ -384,6 +385,8 @@ const OurDeliveryModel = () => {
                 <div className="absolute top-0 right-0 w-96 h-96 bg-accent-500 rounded-full blur-3xl opacity-10 -mr-48 -mt-48" />
                 <div className="absolute bottom-0 left-0 w-96 h-96 bg-brand-600 rounded-full blur-3xl opacity-20 -ml-48 -mb-48" />
             </section>
+
+            <Testimonials />
         </div>
     );
 };

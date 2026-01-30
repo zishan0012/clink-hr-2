@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import Testimonials from '../../components/Testimonials';
 import partnerInquiryHero from '../../assets/contact-img/partner-inquiry-hero.jpg';
 import { Handshake, CheckCircle, TrendingUp, ShieldCheck, Globe, Send, UserCheck, Briefcase } from 'lucide-react';
 
@@ -172,6 +173,8 @@ const PartnerInquiry = () => {
                     </h2>
                 </div>
             </section>
+
+            <Testimonials />
         </div>
     );
 };
