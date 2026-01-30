@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import Testimonials from '../../components/Testimonials';
 import { CheckCircle, FileText, UserCheck, Layout, BookOpen, Target, Rocket, PlayCircle } from 'lucide-react';
 
 const IPPOnboardingProcess = () => {
@@ -136,6 +137,8 @@ const IPPOnboardingProcess = () => {
                     </h2>
                 </div>
             </section>
+
+            <Testimonials />
         </div>
     );
 };

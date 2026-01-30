@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import Testimonials from '../../../components/Testimonials';
 import {
     Settings,
     Users,
@@ -22,19 +23,24 @@ const HROperationsSupport = () => {
             {/* Hero Section */}
             <section className="bg-brand-950 py-32 relative overflow-hidden">
                 <div className="absolute inset-0">
-                    <img
+                    <motion.img
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ duration: 0.6 }}
                         src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80"
                         alt="HR Operations Support"
                         className="w-full h-full object-cover"
+                        loading="eager"
+                        fetchPriority="high"
                     />
                     <div className="absolute inset-0 bg-brand-950/50"></div>
                 </div>
 
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <motion.div
-                        initial={{ opacity: 0, y: 30 }}
+                        initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8 }}
+                        transition={{ duration: 0.5 }}
                         className="max-w-3xl"
                     >
                         <span className="inline-block py-1 px-3 rounded-full bg-brand-800/50 border border-brand-700 text-brand-200 text-xs font-bold tracking-widest uppercase mb-6 backdrop-blur-md">
@@ -165,6 +171,8 @@ const HROperationsSupport = () => {
                     </div>
                 </div>
             </section>
+
+            <Testimonials />
         </div>
     );
 };

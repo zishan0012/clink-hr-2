@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import Testimonials from '../../components/Testimonials';
 import { Briefcase, Users, Award, TrendingUp, CheckCircle, Globe, Building2, ShieldCheck, Zap } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -9,19 +10,24 @@ const AboutUs = () => {
             {/* --- Hero Section --- */}
             <section className="relative bg-brand-950 py-32 overflow-hidden">
                 <div className="absolute inset-0">
-                    <img
+                    <motion.img
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ duration: 0.6 }}
                         src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2850&q=80"
                         alt="Indian Corporate Team"
                         className="w-full h-full object-cover"
+                        loading="eager"
+                        fetchPriority="high"
                     />
                     <div className="absolute inset-0 bg-brand-950/50"></div>
                 </div>
 
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <motion.div
-                        initial={{ opacity: 0, y: 30 }}
+                        initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8 }}
+                        transition={{ duration: 0.5 }}
                     >
                         <span className="inline-block py-1 px-3 rounded-full bg-brand-800/50 border border-brand-700 text-brand-300 text-xs font-bold tracking-widest uppercase mb-6 backdrop-blur-md">
                             Who We Are
@@ -148,6 +154,8 @@ const AboutUs = () => {
                     </div>
                 </div>
             </section>
+
+            <Testimonials />
         </div>
     );
 };

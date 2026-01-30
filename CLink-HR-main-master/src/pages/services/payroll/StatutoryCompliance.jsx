@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import Testimonials from '../../../components/Testimonials';
 import {
     Activity,
     ShieldCheck,
@@ -21,10 +22,15 @@ const StatutoryCompliance = () => {
             {/* Hero Section */}
             <section className="bg-brand-950 py-32 relative overflow-hidden">
                 <div className="absolute inset-0">
-                    <img
+                    <motion.img
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ duration: 0.6 }}
                         src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
                         alt="Compliance and Regulation"
                         className="w-full h-full object-cover"
+                        loading="eager"
+                        fetchPriority="high"
                     />
                     <div className="absolute inset-0 bg-brand-950/50"></div>
                 </div>
@@ -32,9 +38,9 @@ const StatutoryCompliance = () => {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <div className="grid lg:grid-cols-2 gap-12 items-center">
                         <motion.div
-                            initial={{ opacity: 0, x: -30 }}
+                            initial={{ opacity: 0, x: -20 }}
                             animate={{ opacity: 1, x: 0 }}
-                            transition={{ duration: 0.8 }}
+                            transition={{ duration: 0.5 }}
                         >
                             <span className="inline-block py-1 px-3 rounded-full bg-brand-600/20 border border-brand-500/30 text-brand-300 text-xs font-bold tracking-widest uppercase mb-6 backdrop-blur-md">
                                 Workforce Compliance Support
@@ -54,9 +60,9 @@ const StatutoryCompliance = () => {
                         </motion.div>
 
                         <motion.div
-                            initial={{ opacity: 0, y: 30 }}
+                            initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.8, delay: 0.2 }}
+                            transition={{ duration: 0.5, delay: 0.1 }}
                             className="relative block"
                         >
                             <div className="absolute inset-0 bg-brand-400/20 rounded-full blur-3xl scale-125"></div>
@@ -64,6 +70,8 @@ const StatutoryCompliance = () => {
                                 src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80"
                                 alt="Compliance Documentation"
                                 className="relative z-10 rounded-[2.5rem] shadow-2xl border border-white/10 w-full object-cover h-[400px]"
+                                loading="eager"
+                                fetchPriority="high"
                             />
                             <div className="absolute -bottom-6 -right-6 bg-white p-4 rounded-2xl shadow-xl z-20 flex items-center gap-3 border border-slate-100">
                                 <div className="w-10 h-10 bg-brand-50 rounded-full flex items-center justify-center text-brand-600">
@@ -338,6 +346,8 @@ const StatutoryCompliance = () => {
                     </div>
                 </div>
             </section>
+
+            <Testimonials />
         </div>
     );
 };

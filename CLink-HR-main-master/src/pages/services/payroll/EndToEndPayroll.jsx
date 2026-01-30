@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import Testimonials from '../../../components/Testimonials';
 import {
     Activity,
     ShieldCheck,
@@ -16,10 +17,15 @@ const EndToEndPayroll = () => {
             {/* Hero Section */}
             <section className="bg-brand-950 py-32 relative overflow-hidden">
                 <div className="absolute inset-0">
-                    <img
+                    <motion.img
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ duration: 0.6 }}
                         src="https://images.unsplash.com/photo-1554224155-1696413575b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
                         alt="End-to-End Payroll Management"
                         className="w-full h-full object-cover"
+                        loading="eager"
+                        fetchPriority="high"
                     />
                     <div className="absolute inset-0 bg-brand-950/50"></div>
                 </div>
@@ -27,9 +33,9 @@ const EndToEndPayroll = () => {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <div className="grid lg:grid-cols-2 gap-12 items-center">
                         <motion.div
-                            initial={{ opacity: 0, x: -30 }}
+                            initial={{ opacity: 0, x: -20 }}
                             animate={{ opacity: 1, x: 0 }}
-                            transition={{ duration: 0.8 }}
+                            transition={{ duration: 0.5 }}
                         >
                             <span className="inline-block py-1 px-3 rounded-full bg-brand-800/50 border border-brand-700 text-brand-200 text-xs font-bold tracking-widest uppercase mb-6 backdrop-blur-md">
                                 Total Management
@@ -51,7 +57,7 @@ const EndToEndPayroll = () => {
                         <motion.div
                             initial={{ opacity: 0, x: 20 }}
                             animate={{ opacity: 1, x: 0 }}
-                            transition={{ duration: 0.8 }}
+                            transition={{ duration: 0.5, delay: 0.1 }}
                             className="relative block"
                         >
                             <div className="absolute inset-0 bg-brand-400/20 rounded-full blur-3xl"></div>
@@ -251,6 +257,8 @@ const EndToEndPayroll = () => {
                     </div>
                 </div>
             </section>
+
+            <Testimonials />
         </div>
     );
 };

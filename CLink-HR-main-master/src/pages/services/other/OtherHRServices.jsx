@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import Testimonials from '../../../components/Testimonials';
 import {
     FileCheck,
     BookOpen,
@@ -59,7 +60,7 @@ const OtherHRServices = () => {
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8 }}
+                        transition={{ duration: 0.4 }}
                     >
                         <span className="inline-block py-1 px-3 rounded-full bg-brand-800/50 border border-brand-700 text-brand-200 text-xs font-bold tracking-widest uppercase mb-6 backdrop-blur-md">
                             Specialized Support
@@ -232,6 +233,8 @@ const OtherHRServices = () => {
                     </div>
                 </div>
             </section>
+
+            <Testimonials />
         </div>
     );
 };

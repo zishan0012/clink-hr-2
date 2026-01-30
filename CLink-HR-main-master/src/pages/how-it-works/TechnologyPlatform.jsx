@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Testimonials from "../../components/Testimonials";
 import technologyPlatformHero from '../../assets/how-it-works-img/technology-platform-hero.jpg';
 import {
     Layout,
@@ -41,7 +42,7 @@ const TechnologyPlatform = () => {
                     <motion.div
                         initial={{ opacity: 0, y: 40 }}
                         animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8 }}
+                        transition={{ duration: 0.4 }}
                         className="max-w-4xl"
                     >
                         <span className="inline-block mb-6 px-4 py-1 rounded-full bg-brand-800/50 border border-brand-700 text-brand-200 text-xs font-bold tracking-widest uppercase backdrop-blur-md">
@@ -358,6 +359,8 @@ const TechnologyPlatform = () => {
                     </motion.div>
                 </div>
             </section>
+
+            <Testimonials />
         </div>
     );
 };

@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import Testimonials from '../../../components/Testimonials';
 import { Link } from 'react-router-dom';
 import {
     Building2,
@@ -144,6 +145,8 @@ const CaseStudies = () => {
                     ))}
                 </div>
             </div>
+
+            <Testimonials />
         </div>
     );
 };

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import Testimonials from '../../components/Testimonials';
 import {
     Plus,
     Minus,
@@ -128,7 +129,7 @@ const FAQsClients = () => {
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8 }}
+                        transition={{ duration: 0.4 }}
                     >
                         <span className="inline-block py-1.5 px-4 rounded-full bg-brand-800/50 border border-brand-700 text-brand-200 text-sm font-bold tracking-widest uppercase mb-6 shadow-lg backdrop-blur-md">
                             Resource Center
@@ -190,6 +191,8 @@ const FAQsClients = () => {
                     </div>
                 </div>
             </section>
+
+            <Testimonials />
         </div>
     );
 };

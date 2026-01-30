@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
+import Testimonials from '../../../components/Testimonials';
 import hrTrendsHero from '../../../assets/blog-img/HR Trends 2026.jpg';
 import { Calendar, Clock, User, ArrowLeft, TrendingUp, Users, Laptop, Award, ShieldCheck, BarChart3, Rocket, CheckCircle, Zap } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -14,26 +15,32 @@ const WorkforceTransformationIndia = () => {
             {/* HERO SECTION */}
             <section className="relative bg-brand-950 py-20 pb-32 overflow-hidden">
                 <div className="absolute inset-0">
-                    <img
+                    <motion.img
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ duration: 0.4 }}
                         src={hrTrendsHero}
                         alt="HR Trends 2026"
                         className="w-full h-full object-cover"
+                        loading="eager"
+                        fetchPriority="high"
                     />
                     <div className="absolute inset-0 bg-brand-950/60"></div>
                 </div>
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 relative z-10">
                     <motion.div
-                        initial={{ opacity: 0, y: 20 }}
+                        initial={{ opacity: 0, y: 15 }}
                         animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.4 }}
                         className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-800/50 border border-brand-700 text-brand-200 text-xs font-bold tracking-widest uppercase mb-6 backdrop-blur-md"
                     >
                         <span className="w-2 h-2 rounded-full bg-emerald-500"></span>
                         HR Trends 2026
                     </motion.div>
                     <motion.h1
-                        initial={{ opacity: 0, y: 30 }}
+                        initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.1 }}
+                        transition={{ duration: 0.4, delay: 0 }}
                         className="text-3xl md:text-5xl lg:text-6xl font-extrabold text-white mb-8 leading-tight"
                     >
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-300">Workforce Transformation</span> <br className="hidden md:block" />
@@ -43,7 +50,7 @@ const WorkforceTransformationIndia = () => {
                     <motion.div
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
-                        transition={{ delay: 0.2 }}
+                        transition={{ duration: 0.4, delay: 0.1 }}
                         className="flex flex-wrap items-center gap-6 text-slate-300 text-sm md:text-base"
                     >
                         <div className="flex items-center gap-2">
@@ -254,8 +261,10 @@ const WorkforceTransformationIndia = () => {
                         <ArrowLeft className="w-4 h-4" /> Back to Blog
                     </Link>
                 </div>
-            </div>
-        </div>
+            </div >
+
+            <Testimonials />
+        </div >
     );
 };
 

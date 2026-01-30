@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import Testimonials from '../../components/Testimonials';
 import supportHero from '../../assets/contact-img/support-hero.jpg';
 import { LifeBuoy, Users, Briefcase, Monitor, Clock, Send, MessageSquare } from 'lucide-react';
 
@@ -192,6 +193,8 @@ const Support = () => {
                     </h2>
                 </div>
             </section>
+
+            <Testimonials />
         </div>
     );
 };

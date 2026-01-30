@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import Testimonials from '../../components/Testimonials';
 import payrollInquiryHero from '../../assets/contact-img/payroll-inquiry-hero.jpg';
 import { Calculator, FileSpreadsheet, ShieldCheck, Globe, Headphones, CheckCircle, Send, Briefcase } from 'lucide-react';
 
@@ -165,6 +166,8 @@ const PayrollInquiry = () => {
                     </h2>
                 </div>
             </section>
+
+            <Testimonials />
         </div>
     );
 };

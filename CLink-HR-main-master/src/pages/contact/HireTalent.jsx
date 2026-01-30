@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import Testimonials from '../../components/Testimonials';
 import hireTalentHero from '../../assets/contact-img/hire-talent-hero.jpg';
 import { Users, Clock, CheckSquare, DollarSign, Headphones, Layers, Zap, Briefcase, Globe, Send, UserCheck } from 'lucide-react';
 
@@ -175,6 +176,8 @@ const HireTalent = () => {
                     </h2>
                 </div>
             </section>
+
+            <Testimonials />
         </div>
     );
 };
