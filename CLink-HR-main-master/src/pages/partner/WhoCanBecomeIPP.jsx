@@ -151,7 +151,7 @@ const WhoCanBecomeIPP = () => {
                     <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-8 italic tracking-tight leading-tight">
                         "If you can deliver quality hires and want to build your own recruitment brand, <span className="text-brand-600">you are ready to become an IPP.</span>"
                     </h2>
-                    <RouterLink to="/partners/become-partner" className="inline-block bg-brand-600 text-white px-10 py-4 rounded-full font-bold hover:bg-brand-700 transition-all shadow-xl hover:shadow-brand-500/30">
+                    <RouterLink to="/partners/become-ipp-partner" className="inline-block bg-brand-600 text-white px-10 py-4 rounded-full font-bold hover:bg-brand-700 transition-all shadow-xl hover:shadow-brand-500/30">
                         Apply Now
                     </RouterLink>
                 </div>

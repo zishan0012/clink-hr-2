@@ -104,11 +104,11 @@ export const NAVIGATION = [
     label: 'How It Works',
     path: '/how-it-works',
     children: [
-      { label: 'Our Delivery Model', path: '/pages/howitworks/ourdeliverymodel' },
-      { label: 'IPP Partner Network', path: '/pages/howitworks/ipppartnernetwork' },
-      { label: 'Quality & SLA Framework', path: '/pages/howitworks/quality&slaframework/' },
-      { label: 'Technology Platform (Zryoss)', path: '/pages/howitworks/technologyplatform(zryoss)/' },
-      { label: 'Requirement Distribution System', path: '/pages/howitworks/requirementdistributionsystem/' }
+      { label: 'Our Delivery Model', path: '/how-it-works/delivery-model' },
+      { label: 'IPP Partner Network', path: '/how-it-works/ipp-partner-network' },
+      { label: 'Quality & SLA Framework', path: '/how-it-works/quality-sla-framework' },
+      { label: 'Technology Platform (Zryoss)', path: '/how-it-works/technology-platform' },
+      { label: 'Requirement Distribution System', path: '/how-it-works/requirement-distribution' }
     ]
   },
   {
@@ -163,8 +163,8 @@ export const FOOTER_LINKS = {
     { label: 'Case Studies', path: '/company/case-studies' }
   ],
   legal: [
-    { label: 'Privacy Policy', path: '/legal/privacy' },
-    { label: 'Terms & Conditions', path: '/legal/terms' },
-    { label: 'Refund & Cancellation', path: '/legal/refund' }
+    { label: 'Privacy Policy', path: '/privacy' },
+    { label: 'Terms & Conditions', path: '/terms' },
+    { label: 'Refund & Cancellation', path: '/refund-cancellation' }
   ]
 };

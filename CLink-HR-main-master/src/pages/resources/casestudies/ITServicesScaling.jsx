@@ -30,10 +30,16 @@ const ITServicesScaling = () => {
     return (
         <div className="min-h-screen bg-white pt-20">
             {/* HERO SECTION */}
-            <section className="relative bg-brand-950 py-20 pb-32 overflow-hidden">
-                <div className="absolute inset-0 opacity-20">
-                    <div className="absolute top-0 right-0 w-full h-full bg-[radial-gradient(circle_at_70%_30%,#3b82f6_0%,transparent_60%)]" />
+            <section className="relative bg-brand-950 py-32 overflow-hidden">
+                <div className="absolute inset-0">
+                    <img
+                        src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
+                        alt="IT Services Scaling"
+                        className="w-full h-full object-cover"
+                    />
+                    <div className="absolute inset-0 bg-brand-950/70"></div>
                 </div>
+
                 <div className="max-w-5xl mx-auto px-4 sm:px-6 relative z-10">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}

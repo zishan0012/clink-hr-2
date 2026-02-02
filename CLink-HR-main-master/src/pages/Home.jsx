@@ -1,5 +1,5 @@
 ﻿import React, { useEffect, useState } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Rocket, Building2, Globe, Coins, Users, FileText, CheckCircle, BarChart, Server, Briefcase, Shirt, GraduationCap, Truck, Video, ShoppingBag, Quote, Activity } from 'lucide-react';
 import Testimonials from '../components/Testimonials';
@@ -204,15 +204,15 @@ const Home = () => {
                         transition={{ duration: 0.5, delay: 0.2 }}
                         className="flex flex-col sm:flex-row gap-6"
                     >
-                        <button className="group relative bg-brand-600 text-white px-10 py-5 rounded-full font-bold overflow-hidden transition-all hover:scale-105 shadow-2xl hover:shadow-brand-500/40">
+                        <Link to="/contact/hire-talent" className="group relative bg-brand-600 text-white px-10 py-5 rounded-full font-bold overflow-hidden transition-all hover:scale-105 shadow-2xl hover:shadow-brand-500/40 block w-fit">
                             <span className="relative flex items-center gap-3 text-lg">
                                 Hire Talent <Rocket className="w-6 h-6 group-hover:rotate-12 transition-transform" />
                             </span>
-                        </button>
+                        </Link>
 
-                        <button className="group bg-white/10 backdrop-blur-md text-white px-10 py-5 rounded-full font-bold border border-white/20 hover:bg-white hover:text-brand-900 transition-all hover:border-white shadow-xl text-lg">
+                        <Link to="/contact" className="group bg-white/10 backdrop-blur-md text-white px-10 py-5 rounded-full font-bold border border-white/20 hover:bg-white hover:text-brand-900 transition-all hover:border-white shadow-xl text-lg block w-fit">
                             Talk to Us Today
-                        </button>
+                        </Link>
                     </motion.div>
 
                 </div>
@@ -496,9 +496,9 @@ const Home = () => {
                     </div>
 
                     <div className="mt-16 text-center">
-                        <button className="bg-brand-600 text-white px-8 py-4 rounded-xl font-bold hover:bg-brand-700 transition-all shadow-lg hover:-translate-y-1">
+                        <Link to="/services" className="inline-block bg-brand-600 text-white px-8 py-4 rounded-xl font-bold hover:bg-brand-700 transition-all shadow-lg hover:-translate-y-1">
                             Explore Our Services
-                        </button>
+                        </Link>
                     </div>
 
                 </div>
@@ -688,7 +688,7 @@ const Home = () => {
                                 </div>
                             ))}
                             {/* Duplicate Set Set */}
-                            {[...clients, ...clients].map((item, idx) => (
+                            {/* {[...clients, ...clients].map((item, idx) => (
                                 <div key={idx} className="relative group/item flex flex-col items-center justify-center gap-4 min-w-[120px] transition-opacity">
                                     <div className="w-24 h-24 rounded-full border border-slate-200 bg-white shadow-sm flex items-center justify-center transition-all group-hover/item:shadow-xl group-hover/item:scale-110">
                                         <img
@@ -701,7 +701,7 @@ const Home = () => {
                                         <p className="font-bold text-slate-900 text-sm">{item.name}</p>
                                     </div>
                                 </div>
-                            ))}
+                            ))} */}
                         </div>
                     </div>
                 </div>
@@ -733,9 +733,9 @@ const Home = () => {
                                 </p>
 
                                 <div className="flex flex-col sm:flex-row gap-4">
-                                    <button className="bg-brand-600 text-white px-8 py-4 rounded-xl font-bold hover:bg-brand-500 transition-all shadow-lg hover:-translate-y-1 flex items-center justify-center gap-2">
+                                    <Link to="/partners" className="bg-brand-600 text-white px-8 py-4 rounded-xl font-bold hover:bg-brand-500 transition-all shadow-lg hover:-translate-y-1 flex items-center justify-center gap-2">
                                         Partner With Us <Briefcase className="w-5 h-5" />
-                                    </button>
+                                    </Link>
                                 </div>
                             </div>
 
@@ -800,9 +800,9 @@ const Home = () => {
                         </div>
                     </div>
 
-                    <button className="bg-brand-600 text-white px-10 py-4 rounded-xl font-bold hover:bg-brand-500 transition-all shadow-lg hover:-translate-y-1">
+                    <Link to="/partners/become-ipp-partner" className="inline-block bg-brand-600 text-white px-10 py-4 rounded-xl font-bold hover:bg-brand-500 transition-all shadow-lg hover:-translate-y-1">
                         Become an IPP Partner
-                    </button>
+                    </Link>
                 </div>
             </section >
 
@@ -831,9 +831,9 @@ const Home = () => {
                             </div>
 
                             <div>
-                                <button className="bg-slate-900 text-white px-8 py-4 rounded-xl font-bold hover:bg-slate-800 transition-all shadow-lg hover:shadow-xl hover:-translate-y-1">
+                                <Link to="/contact" className="inline-block bg-slate-900 text-white px-8 py-4 rounded-xl font-bold hover:bg-slate-800 transition-all shadow-lg hover:shadow-xl hover:-translate-y-1">
                                     Book a Demo
-                                </button>
+                                </Link>
                             </div>
                         </div>
                         <div className="mt-12 lg:mt-0 relative group perspective-1000">
@@ -883,19 +883,19 @@ const Home = () => {
                             </div>
 
                             <div className="mt-10 flex gap-4">
-                                <a
-                                    href="/about"
+                                <Link
+                                    to="/company/about"
                                     className="inline-flex items-center justify-center bg-brand-600 text-white px-8 py-3 rounded-full font-bold hover:bg-brand-700 transition-all shadow-lg hover:-translate-y-1"
                                 >
                                     Our Story
                                     <span className="ml-2">→</span>
-                                </a>
-                                <a
-                                    href="/team"
+                                </Link>
+                                <Link
+                                    to="/company/about"
                                     className="inline-flex items-center justify-center bg-white text-slate-900 border border-slate-200 px-8 py-3 rounded-full font-bold hover:bg-slate-50 transition-all shadow-sm hover:-translate-y-1"
                                 >
                                     Meet the Team
-                                </a>
+                                </Link>
                             </div>
                         </div>
 
@@ -939,14 +939,14 @@ const Home = () => {
                     <div className="flex flex-col sm:flex-row justify-center gap-6">
                         <button
                             onClick={() => setOpenForm(true)}
-                            className="bg-white text-brand-600 px-12 py-5 rounded-2xl font-bold hover:bg-brand-50 transition-all shadow-xl hover:-translate-y-1 text-lg"
+                            className="bg-white text-brand-600 px-12 py-5 rounded-2xl font-bold hover:bg-brand-50 transition-all shadow-xl hover:-translate-y-1 text-lg flex items-center justify-center"
                         >
                             Submit Your Requirement
                         </button>
 
                         <button
                             onClick={() => setOpenBusinessForm(true)}
-                            className="bg-transparent border-2 border-brand-300 text-white px-12 py-5 rounded-2xl font-bold hover:bg-brand-700 hover:border-brand-200 transition-all shadow-xl hover:-translate-y-1 text-lg"
+                            className="bg-transparent border-2 border-brand-300 text-white px-12 py-5 rounded-2xl font-bold hover:bg-brand-700 hover:border-brand-200 transition-all shadow-xl hover:-translate-y-1 text-lg flex items-center justify-center"
                         >
                             Schedule a Consultation
                         </button>

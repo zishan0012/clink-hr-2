@@ -92,6 +92,11 @@ import HireTalent from './pages/contact/HireTalent';
 import PayrollInquiry from './pages/contact/PayrollInquiry';
 import PartnerInquiry from './pages/contact/PartnerInquiry';
 import Support from './pages/contact/Support';
+import Disclaimer from './pages/company/Disclaimer';
+import PrivacyPolicy from './pages/company/PrivacyPolicy';
+import TermsConditions from './pages/company/TermsConditions';
+import RefundCancellation from './pages/company/RefundCancellation';
+import CookiePolicy from './pages/company/CookiePolicy';
 
 const App = () => {
   return (
@@ -101,6 +106,11 @@ const App = () => {
 
       <main className="flex-grow">
         <Routes>
+          <Route path="/disclaimer" element={<Disclaimer />} />
+          <Route path="/privacy" element={<PrivacyPolicy />} />
+          <Route path="/terms" element={<TermsConditions />} />
+          <Route path="/refund-cancellation" element={<RefundCancellation />} />
+          <Route path="/cookies" element={<CookiePolicy />} />
           {/* Main Service Routes */}
           <Route path="/" element={<Home />} />
           <Route path="/company/about" element={<AboutUs />} />
@@ -170,11 +180,6 @@ const App = () => {
           <Route path="/industries/startups" element={<Startups />} />
 
           <Route path="/how-it-works" element={<HowItWorks />} />
-          <Route path="/pages/howitworks/ourdeliverymodel" element={<OurDeliveryModel />} />
-          <Route path="/pages/howitworks/ipppartnernetwork" element={<IPPPartnerNetwork />} />
-          <Route path="/pages/howitworks/quality&slaframework/" element={<QualitySLAFramework />} />
-          <Route path="/pages/howitworks/technologyplatform(zryoss)/" element={<TechnologyPlatform />} />
-          <Route path="/pages/howitworks/requirementdistributionsystem/" element={<RequirementDistribution />} />
           <Route path="/how-it-works/delivery-model" element={<OurDeliveryModel />} />
           <Route path="/how-it-works/ipp-partner-network" element={<IPPPartnerNetwork />} />
           <Route path="/how-it-works/quality-sla-framework" element={<QualitySLAFramework />} />
