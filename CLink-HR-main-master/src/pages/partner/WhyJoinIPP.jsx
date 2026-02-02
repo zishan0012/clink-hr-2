@@ -121,7 +121,7 @@ const WhyJoinIPP = () => {
                             </ul>
                         </div>
                         <div className="shrink-0">
-                            <Link to="/partners/become-partner" className="bg-brand-600 text-white px-10 py-5 rounded-full font-bold hover:bg-brand-700 transition-all shadow-xl flex items-center gap-2 text-lg">
+                            <Link to="/partners/become-ipp-partner" className="bg-brand-600 text-white px-10 py-5 rounded-full font-bold hover:bg-brand-700 transition-all shadow-xl flex items-center gap-2 text-lg">
                                 Join as a Partner <ArrowRight className="w-6 h-6" />
                             </Link>
                         </div>

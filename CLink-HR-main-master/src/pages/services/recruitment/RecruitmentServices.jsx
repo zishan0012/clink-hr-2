@@ -93,7 +93,7 @@ const RecruitmentServices = () => {
                             <Link to="/contact/hire-talent" className="bg-brand-600 text-white px-8 py-4 rounded-full font-bold hover:bg-brand-500 transition-all shadow-lg flex items-center justify-center gap-2">
                                 Submit Requirement <ArrowRight className="w-5 h-5" />
                             </Link>
-                            <Link to="/contact/hire-talent" className="px-8 py-4 rounded-full font-bold border border-white/30 text-white hover:bg-white hover:text-brand-900 transition-all backdrop-blur-sm">
+                            <Link to="/contact" className="px-8 py-4 rounded-full font-bold border border-white/30 text-white hover:bg-white hover:text-brand-900 transition-all backdrop-blur-sm">
                                 Talk to Our Team
                             </Link>
                         </div>

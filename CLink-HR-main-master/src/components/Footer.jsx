@@ -96,9 +96,10 @@ const Footer = () => {
             &copy; {currentYear} CLink HR. All rights reserved.
           </div>
           <div className="flex items-center space-x-6 text-sm text-slate-500">
-            <a href="#privacy" className="hover:text-brand-400 transition-colors">Privacy Policy</a>
-            <a href="#terms" className="hover:text-brand-400 transition-colors">Terms of Service</a>
-            <a href="#cookies" className="hover:text-brand-400 transition-colors">Cookie Policy</a>
+            <Link to="/privacy" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="hover:text-brand-400 transition-colors">Privacy Policy</Link>
+            <Link to="/disclaimer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="hover:text-brand-400 transition-colors">Disclaimer</Link>
+            <Link to="/terms" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="hover:text-brand-400 transition-colors">Terms of Service</Link>
+            <Link to="/cookies" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="hover:text-brand-400 transition-colors">Cookie Policy</Link>
           </div>
         </div>
       </div>

@@ -159,7 +159,7 @@ const FAQsPartners = () => {
                                         <Briefcase className="w-5 h-5" />
                                         Join as an IPP
                                     </Link>
-                                    <Link to="/contact" className="group flex items-center justify-center gap-3 bg-white/10 text-white border border-white/20 px-8 py-3 rounded-full font-bold hover:bg-white hover:text-brand-900 transition-all">
+                                    <Link to="/contact/partner-inquiry" className="group flex items-center justify-center gap-3 bg-white/10 text-white border border-white/20 px-8 py-3 rounded-full font-bold hover:bg-white hover:text-brand-900 transition-all">
                                         <DollarSign className="w-5 h-5" />
                                         Partner Inquiry
                                     </Link>

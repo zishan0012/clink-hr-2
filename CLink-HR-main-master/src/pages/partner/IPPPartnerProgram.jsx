@@ -34,7 +34,7 @@ const IPPPartnerProgram = () => {
                             Build Your Recruitment Business with Confidence. The IPP Partner Program by CLink HR is designed for professionals who want to scale their own recruitment brand without the burden of backend operations.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4">
-                            <Link to="/partners/become-partner" className="bg-accent-600 text-white px-8 py-4 rounded-full font-bold hover:bg-accent-700 transition-all shadow-lg hover:shadow-accent-500/25 flex items-center justify-center gap-2">
+                            <Link to="/partners/become-ipp-partner" className="bg-accent-600 text-white px-8 py-4 rounded-full font-bold hover:bg-accent-700 transition-all shadow-lg hover:shadow-accent-500/25 flex items-center justify-center gap-2">
                                 Join Program <ArrowRight className="w-5 h-5" />
                             </Link>
                         </div>
