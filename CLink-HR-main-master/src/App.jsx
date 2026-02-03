@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
+import ScrollToTopButton from './components/ScrollToTopButton';
 import Home from './pages/Home';
 
 import AboutUs from './pages/company/AboutUs';
@@ -102,6 +103,7 @@ const App = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <ScrollToTop />
+      <ScrollToTopButton />
       <Navbar />
 
       <main className="flex-grow">

@@ -17,6 +17,7 @@ import {
     Layout
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import startuphiringhero from '../../../assets/solutions-img/Startup Hiring Solutions-hero.jpg';
 
 const StartupHiringSolutions = () => {
     return (
@@ -25,7 +26,7 @@ const StartupHiringSolutions = () => {
             <section className="bg-brand-950 py-32 relative overflow-hidden">
                 <div className="absolute inset-0">
                     <img
-                        src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80"
+                        src={startuphiringhero}
                         alt="Startup Team"
                         className="w-full h-full object-cover"
                     />

@@ -19,6 +19,8 @@ import {
     HardHat
 } from "lucide-react";
 import { Link } from "react-router-dom";
+import manufacturingHero from "../../assets/industries-img/Manufacturing & Engineering-hero.jpg";
+
 
 const Manufacturing = () => {
     return (
@@ -31,7 +33,7 @@ const Manufacturing = () => {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 0.6 }}
-                        src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80"
+                        src={manufacturingHero}
                         className="w-full h-full object-cover"
                         alt="Manufacturing & Engineering"
                         loading="eager"

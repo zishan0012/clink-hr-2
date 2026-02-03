@@ -20,6 +20,8 @@ import {
     FileText
 } from "lucide-react";
 import { Link } from "react-router-dom";
+import startupsHero from "../../assets/industries-img/Startups-hero.jpg";
+
 
 const Startups = () => {
     return (
@@ -32,7 +34,7 @@ const Startups = () => {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 0.6 }}
-                        src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80"
+                        src={startupsHero}
                         className="w-full h-full object-cover"
                         alt="Startup Growth & Innovation"
                         loading="eager"

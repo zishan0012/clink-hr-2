@@ -19,6 +19,8 @@ import {
     Settings
 } from "lucide-react";
 import { Link } from "react-router-dom";
+import itSoftwareHero from "../../assets/industries-img/IT & Software-hero.jpg";
+
 
 const ITSoftware = () => {
     return (
@@ -31,7 +33,7 @@ const ITSoftware = () => {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 0.6 }}
-                        src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80"
+                        src={itSoftwareHero}
                         className="w-full h-full object-cover"
                         alt="IT & Software Industry"
                         loading="eager"

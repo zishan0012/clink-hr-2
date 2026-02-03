@@ -19,6 +19,8 @@ import {
     Calendar
 } from "lucide-react";
 import { Link } from "react-router-dom";
+import logisticsHero from "../../assets/industries-img/Logistics & Supply Chain-hero.jpg";
+
 
 const Logistics = () => {
     return (
@@ -31,7 +33,7 @@ const Logistics = () => {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 0.6 }}
-                        src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80"
+                        src={logisticsHero}
                         className="w-full h-full object-cover"
                         alt="Logistics & Supply Chain Operations"
                         loading="eager"

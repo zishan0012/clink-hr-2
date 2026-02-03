@@ -20,6 +20,8 @@ import {
     FileText
 } from "lucide-react";
 import { Link } from "react-router-dom";
+import educationHero from "../../assets/industries-img/Education & Training-hero.jpg";
+
 
 const Education = () => {
     return (
@@ -32,7 +34,7 @@ const Education = () => {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 0.6 }}
-                        src="https://i.pinimg.com/1200x/71/ee/65/71ee6561621ab5a15c8d467f35ec2d84.jpg"
+                        src={educationHero}
                         className="w-full h-full object-cover"
                         alt="Education & Training Excellence"
                         loading="eager"
