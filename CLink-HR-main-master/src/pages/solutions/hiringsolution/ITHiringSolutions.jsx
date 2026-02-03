@@ -18,6 +18,7 @@ import {
     ArrowRight
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import ithiringhero from '../../../assets/solutions-img/IT Hiring Solutions-hero.jpg';
 
 const ITHiringSolutions = () => {
     return (
@@ -26,7 +27,7 @@ const ITHiringSolutions = () => {
             <section className="bg-brand-950 py-32 relative overflow-hidden">
                 <div className="absolute inset-0">
                     <img
-                        src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80"
+                        src={ithiringhero}
                         alt="IT Hiring Team"
                         className="w-full h-full object-cover"
                     />

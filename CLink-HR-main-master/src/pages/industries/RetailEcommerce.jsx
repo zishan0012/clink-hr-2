@@ -20,6 +20,8 @@ import {
     Calendar
 } from "lucide-react";
 import { Link } from "react-router-dom";
+import retailHero from "../../assets/industries-img/Retail & E-Commerce-hero.jpg";
+
 
 const RetailEcommerce = () => {
     return (
@@ -32,7 +34,7 @@ const RetailEcommerce = () => {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 0.6 }}
-                        src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80"
+                        src={retailHero}
                         className="w-full h-full object-cover"
                         alt="Retail & E-commerce Operations"
                         loading="eager"

@@ -14,6 +14,7 @@ import {
     Briefcase
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import businesshrhero from '../../assets/solutions-img/Business HR main page-hero.jpg';
 
 const BusinessHRSolutions = () => {
     return (
@@ -22,7 +23,7 @@ const BusinessHRSolutions = () => {
             <section className="bg-brand-950 py-32 relative overflow-hidden">
                 <div className="absolute inset-0">
                     <img
-                        src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1574&q=80"
+                        src={businesshrhero}
                         alt="Business HR Solutions"
                         className="w-full h-full object-cover"
                     />

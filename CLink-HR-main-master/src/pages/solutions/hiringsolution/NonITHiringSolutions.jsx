@@ -16,6 +16,7 @@ import {
     Shield
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import nonithiringhero from '../../../assets/solutions-img/Non-IT Hiring Solutions-hero.jpg';
 
 const NonITHiringSolutions = () => {
     return (
@@ -24,7 +25,7 @@ const NonITHiringSolutions = () => {
             <section className="bg-brand-950 py-32 relative overflow-hidden">
                 <div className="absolute inset-0">
                     <img
-                        src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1632&q=80"
+                        src={nonithiringhero}
                         alt="Non-IT Hiring Team"
                         className="w-full h-full object-cover"
                     />

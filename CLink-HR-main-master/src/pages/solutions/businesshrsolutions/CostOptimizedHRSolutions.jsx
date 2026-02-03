@@ -20,6 +20,7 @@ import {
     Shield
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import costoptimizedhero from '../../../assets/solutions-img/Cost-Optimized HR Solutions-hero.jpg';
 
 const CostOptimizedHRSolutions = () => {
     return (
@@ -28,7 +29,7 @@ const CostOptimizedHRSolutions = () => {
             <section className="bg-brand-950 py-32 relative overflow-hidden">
                 <div className="absolute inset-0">
                     <img
-                        src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1471&q=80"
+                        src={costoptimizedhero}
                         alt="Cost Optimized HR"
                         className="w-full h-full object-cover"
                     />

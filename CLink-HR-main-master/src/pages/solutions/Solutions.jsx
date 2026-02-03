@@ -16,6 +16,7 @@ import {
     Layers
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import solutionhero from '../../assets/solutions-img/solutions main page-hero.jpg';
 
 const Solutions = () => {
     return (
@@ -24,7 +25,7 @@ const Solutions = () => {
             <section className="bg-brand-950 py-32 relative overflow-hidden">
                 <div className="absolute inset-0">
                     <img
-                        src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80"
+                        src={solutionhero}
                         alt="HR Solutions"
                         className="w-full h-full object-cover"
                     />

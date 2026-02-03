@@ -93,7 +93,7 @@ const Footer = () => {
         {/* Bottom Section: Copyright & Legal */}
         <div className="border-t border-slate-900 pt-8 mt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="text-slate-500 text-sm">
-            &copy; {currentYear} CLink HR. All rights reserved.
+            &copy; {currentYear} CLink HR | Powered by <span className="text-accent-500">CLink Consultancy Pvt. Ltd.</span> | All rights reserved.
           </div>
           <div className="flex items-center space-x-6 text-sm text-slate-500">
             <Link to="/privacy" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="hover:text-brand-400 transition-colors">Privacy Policy</Link>

@@ -19,6 +19,8 @@ import {
     Globe
 } from "lucide-react";
 import { Link } from "react-router-dom";
+import bfsiHero from "../../assets/industries-img/BFSI & Fintech-hero.jpg";
+
 
 const BFSI = () => {
     return (
@@ -31,7 +33,7 @@ const BFSI = () => {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 0.6 }}
-                        src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80"
+                        src={bfsiHero}
                         className="w-full h-full object-cover"
                         alt="BFSI & Fintech Operations"
                         loading="eager"

@@ -19,6 +19,7 @@ import {
     FileCheck
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import multilocationhero from '../../../assets/solutions-img/Multi-Location Workforce Solutions-hero.jpg';
 
 const MultiLocationWorkforceSolutions = () => {
     return (
@@ -27,7 +28,7 @@ const MultiLocationWorkforceSolutions = () => {
             <section className="bg-brand-950 py-32 relative overflow-hidden">
                 <div className="absolute inset-0">
                     <img
-                        src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80"
+                        src={multilocationhero}
                         alt="Multi-Location Workforce"
                         className="w-full h-full object-cover"
                     />

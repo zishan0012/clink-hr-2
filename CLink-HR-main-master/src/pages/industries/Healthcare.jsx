@@ -19,6 +19,8 @@ import {
     Dna
 } from "lucide-react";
 import { Link } from "react-router-dom";
+import healthcareHero from "../../assets/industries-img/Healthcare Solutions-hero.jpg";
+
 
 const Healthcare = () => {
     return (
@@ -31,7 +33,7 @@ const Healthcare = () => {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 0.6 }}
-                        src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1453&q=80"
+                        src={healthcareHero}
                         className="w-full h-full object-cover"
                         alt="Healthcare Logistics"
                         loading="eager"
