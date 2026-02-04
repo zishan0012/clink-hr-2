@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Testimonials from '../../../components/Testimonials';
+import complianceHero from '../../../assets/services-img/Compliance-hero.jpg';
 import {
     Activity,
     ShieldCheck,
@@ -26,7 +27,7 @@ const StatutoryCompliance = () => {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 0.6 }}
-                        src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+                        src={complianceHero}
                         alt="Compliance and Regulation"
                         className="w-full h-full object-cover"
                         loading="eager"
@@ -46,9 +47,13 @@ const StatutoryCompliance = () => {
                                 Workforce Compliance Support
                             </span>
                             <h1 className="text-4xl md:text-7xl font-extrabold text-white mb-8 leading-[1.1] tracking-tight">
-                                Compliance-Ready <br />
-                                <span className="text-accent-500">Workforce Operations</span>
+                                <span className="whitespace-nowrap">Compliance-Ready</span>
+                                <br />
+                                <span className="text-accent-500 whitespace-nowrap">
+                                    Workforce Operations
+                                </span>
                             </h1>
+
                             <p className="text-xl md:text-2xl text-slate-200 leading-relaxed font-light mb-10 max-w-2xl">
                                 Stay aligned with workforce regulations while reducing <span className="text-white font-medium text-accent-400">operational risk</span> and administrative burden through centralized control.
                             </p>
@@ -59,7 +64,7 @@ const StatutoryCompliance = () => {
                             </div>
                         </motion.div>
 
-                        <motion.div
+                        {/* <motion.div
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5, delay: 0.1 }}
@@ -82,7 +87,7 @@ const StatutoryCompliance = () => {
                                     <p className="text-sm font-bold text-slate-900">Mitigated</p>
                                 </div>
                             </div>
-                        </motion.div>
+                        </motion.div> */}
                     </div>
                 </div>
             </section>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Testimonials from '../../../components/Testimonials';
+import otherHRHero from '../../../assets/services-img/Other HR main pade-hero.jpg';
 import {
     FileCheck,
     BookOpen,
@@ -48,10 +49,15 @@ const OtherHRServices = () => {
             {/* Hero Section */}
             <section className="bg-brand-950 py-32 relative overflow-hidden">
                 <div className="absolute inset-0">
-                    <img
-                        src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+                    <motion.img
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ duration: 0.6 }}
+                        src={otherHRHero}
                         alt="Other HR Services"
                         className="w-full h-full object-cover"
+                        loading="eager"
+                        fetchPriority="high"
                     />
                     <div className="absolute inset-0 bg-brand-950/50"></div>
                 </div>

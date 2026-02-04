@@ -3,6 +3,8 @@ import { motion } from 'framer-motion';
 import Testimonials from '../../components/Testimonials';
 import { PieChart, TrendingUp, CreditCard, DollarSign, BarChart3, ShieldCheck, CheckCircle } from 'lucide-react';
 
+import earningsHero from '../../assets/partners-img/IPP Earnings & Payout Model-hero.jpg';
+
 const IPPEarningsPayout = () => {
     return (
         <div className="min-h-screen bg-slate-50">
@@ -10,7 +12,7 @@ const IPPEarningsPayout = () => {
             <section className="bg-brand-950 py-40 text-white relative overflow-hidden">
                 <div className="absolute inset-0">
                     <img
-                        src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2011&q=80"
+                        src={earningsHero}
                         alt="IPP Earnings"
                         className="w-full h-full object-cover"
                     />

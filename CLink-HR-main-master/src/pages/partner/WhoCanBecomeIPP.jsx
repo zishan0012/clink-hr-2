@@ -4,6 +4,8 @@ import Testimonials from '../../components/Testimonials';
 import { Briefcase, UserCheck, GraduationCap, Building, Link, CheckCircle, XCircle, Search, Rocket } from 'lucide-react';
 import { Link as RouterLink } from 'react-router-dom';
 
+import whoCanBecomeIPPHero from '../../assets/partners-img/Who Can Become an IPP-hero.jpg';
+
 const WhoCanBecomeIPP = () => {
     return (
         <div className="min-h-screen bg-slate-50">
@@ -11,7 +13,7 @@ const WhoCanBecomeIPP = () => {
             <section className="relative bg-brand-950 py-40 overflow-hidden">
                 <div className="absolute inset-0">
                     <img
-                        src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+                        src={whoCanBecomeIPPHero}
                         alt="Who Can Become IPP"
                         className="w-full h-full object-cover"
                     />

@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Testimonials from '../../../components/Testimonials';
+import hrOpsHero from '../../../assets/services-img/HR Operations-hero.jpg';
 import {
     Settings,
     Users,
@@ -27,7 +28,7 @@ const HROperationsSupport = () => {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 0.6 }}
-                        src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80"
+                        src={hrOpsHero}
                         alt="HR Operations Support"
                         className="w-full h-full object-cover"
                         loading="eager"

@@ -4,6 +4,8 @@ import Testimonials from '../../components/Testimonials';
 import { Network, Handshake, Globe, ArrowRight, ShieldCheck, TrendingUp, Users, Target, Zap, Layout } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
+import partnerProgramHero from '../../assets/partners-img/IPP Partner Program-hero.jpg';
+
 const IPPPartnerProgram = () => {
     return (
         <div className="min-h-screen bg-slate-50">
@@ -11,7 +13,7 @@ const IPPPartnerProgram = () => {
             <section className="relative bg-brand-950 py-40 overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     <img
-                        src="https://images.unsplash.com/photo-1556761175-4b46a572b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=1974&q=80"
+                        src={partnerProgramHero}
                         alt="Partner Program"
                         className="w-full h-full object-cover"
                     />

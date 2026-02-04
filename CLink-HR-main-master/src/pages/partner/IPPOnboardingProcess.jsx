@@ -3,6 +3,8 @@ import { motion } from 'framer-motion';
 import Testimonials from '../../components/Testimonials';
 import { CheckCircle, FileText, UserCheck, Layout, BookOpen, Target, Rocket, PlayCircle } from 'lucide-react';
 
+import onboardingHero from '../../assets/partners-img/IPP Onboarding Process-hero.jpg';
+
 const IPPOnboardingProcess = () => {
     const steps = [
         {
@@ -48,7 +50,7 @@ const IPPOnboardingProcess = () => {
             <section className="bg-brand-950 py-40 text-white relative overflow-hidden">
                 <div className="absolute inset-0">
                     <img
-                        src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+                        src={onboardingHero}
                         alt="IPP Onboarding"
                         className="w-full h-full object-cover"
                     />
