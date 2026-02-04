@@ -3,6 +3,8 @@ import { motion } from 'framer-motion';
 import Testimonials from '../../components/Testimonials';
 import { Send, User, Mail, Phone, MapPin, Linkedin, Briefcase, Award, CheckCircle } from 'lucide-react';
 
+import becomeIPPHero from '../../assets/partners-img/become an ipp partner-hero.jpg';
+
 const BecomeIPPPartner = () => {
     const [formData, setFormData] = useState({
         fullName: '',
@@ -33,7 +35,7 @@ const BecomeIPPPartner = () => {
             <section className="bg-brand-950 py-40 relative overflow-hidden">
                 <div className="absolute inset-0">
                     <img
-                        src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2850&q=80"
+                        src={becomeIPPHero}
                         alt="Join the Ecosystem"
                         className="w-full h-full object-cover"
                     />

@@ -4,6 +4,8 @@ import Testimonials from '../../components/Testimonials';
 import { ShieldCheck, Target, UserX, TrendingUp, Zap, Layers, Award, CheckCircle, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
+import whyJoinIPPHero from '../../assets/partners-img/Why Join as an IPP-hero.jpg';
+
 const WhyJoinIPP = () => {
     const reasons = [
         {
@@ -49,7 +51,7 @@ const WhyJoinIPP = () => {
             <section className="bg-brand-950 py-40 relative overflow-hidden text-white">
                 <div className="absolute inset-0">
                     <img
-                        src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2071&q=80"
+                        src={whyJoinIPPHero}
                         alt="Why Join IPP"
                         className="w-full h-full object-cover"
                     />

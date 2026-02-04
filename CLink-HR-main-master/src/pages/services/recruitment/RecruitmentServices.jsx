@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Testimonials from '../../../components/Testimonials';
+import recruitmentHero from '../../../assets/services-img/Recruitment services main page-hero.jpg';
 import {
     Users,
     Search,
@@ -63,7 +64,7 @@ const RecruitmentServices = () => {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 0.6 }}
-                        src="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&auto=format&fit=crop&w=1469&q=80"
+                        src={recruitmentHero}
                         alt="Recruitment Strategy"
                         className="w-full h-full object-cover"
                         loading="eager"

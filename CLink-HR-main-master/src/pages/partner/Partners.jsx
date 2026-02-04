@@ -17,6 +17,8 @@ import {
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
+import partnerHero from '../../assets/partners-img/partner main page-hero.jpg';
+
 const Partners = () => {
     return (
         <div className="min-h-screen bg-slate-50">
@@ -24,7 +26,7 @@ const Partners = () => {
             <section className="bg-brand-950 py-32 relative overflow-hidden">
                 <div className="absolute inset-0">
                     <img
-                        src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?ixlib=rb-4.0.3&auto=format&fit=crop&w=1587&q=80"
+                        src={partnerHero}
                         alt="Partner with CLink HR"
                         className="w-full h-full object-cover"
                     />

@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Testimonials from '../../../components/Testimonials';
+import endToEndHero from '../../../assets/services-img/End-to-End-hero.jpg';
 import {
     Activity,
     ShieldCheck,
@@ -21,7 +22,7 @@ const EndToEndPayroll = () => {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 0.6 }}
-                        src="https://images.unsplash.com/photo-1554224155-1696413575b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+                        src={endToEndHero}
                         alt="End-to-End Payroll Management"
                         className="w-full h-full object-cover"
                         loading="eager"
@@ -54,7 +55,7 @@ const EndToEndPayroll = () => {
                             </div>
                         </motion.div>
 
-                        <motion.div
+                        {/* <motion.div
                             initial={{ opacity: 0, x: 20 }}
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.5, delay: 0.1 }}
@@ -65,9 +66,9 @@ const EndToEndPayroll = () => {
                                 src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80"
                                 alt="Payroll Visualization"
                                 className="relative z-10 rounded-[2.5rem] shadow-2xl border border-white/10 w-full object-cover h-[450px]"
-                            />
-                            {/* Floating elements to add premium feel */}
-                            <div className="absolute -bottom-6 -right-6 bg-white p-4 rounded-2xl shadow-xl z-20 flex items-center gap-3 border border-slate-100">
+                            /> */}
+                        {/* Floating elements to add premium feel */}
+                        {/* <div className="absolute -bottom-6 -right-6 bg-white p-4 rounded-2xl shadow-xl z-20 flex items-center gap-3 border border-slate-100">
                                 <div className="w-10 h-10 bg-green-50 rounded-full flex items-center justify-center text-green-600">
                                     <CheckCircle className="w-6 h-6" />
                                 </div>
@@ -76,7 +77,7 @@ const EndToEndPayroll = () => {
                                     <p className="text-sm font-bold text-slate-900">Compliant</p>
                                 </div>
                             </div>
-                        </motion.div>
+                        </motion.div> */}
                     </div>
                 </div>
             </section>
