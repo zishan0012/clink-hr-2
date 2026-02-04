@@ -1,4 +1,5 @@
 import React from 'react';
+import refund from '../../assets/company-img/refund.avif';
 
 const RefundCancellation = () => {
     const sections = [
@@ -91,7 +92,7 @@ const RefundCancellation = () => {
                 backgroundColor: '#0f172a',
                 padding: '140px 20px',
                 textAlign: 'center',
-                backgroundImage: 'url("https://images.unsplash.com/photo-1762151717091-4e0633e0c431?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cmVmdW5kfGVufDB8fDB8fHww")',
+                backgroundImage: 'url(' + refund + ')',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 overflow: 'hidden'

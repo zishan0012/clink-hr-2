@@ -11,6 +11,7 @@ import {
     CheckCircle
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import ourapproach from '../../assets/company-img/ourapproach.avif';
 
 const StepCard = ({ number, title, description, icon: Icon, benefits, isLast }) => (
     <div className="relative">
@@ -100,7 +101,7 @@ const OurApproach = () => {
             <section className="bg-brand-950 py-32 relative overflow-hidden">
                 <div className="absolute inset-0">
                     <img
-                        src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+                        src={ourapproach}
                         alt="Methodology"
                         className="w-full h-full object-cover"
                     />

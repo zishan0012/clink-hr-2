@@ -1,4 +1,5 @@
 import React from 'react';
+import terms from '../../assets/company-img/terms.avif';
 
 const TermsConditions = () => {
     const sections = [
@@ -85,7 +86,7 @@ const TermsConditions = () => {
                 backgroundColor: '#0f172a',
                 padding: '140px 20px',
                 textAlign: 'center',
-                backgroundImage: 'url("https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80")',
+                backgroundImage: 'url(' + terms + ')',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 overflow: 'hidden'

@@ -12,6 +12,8 @@ import {
     Search
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import faqpartners from '../../assets/faq/faq-partners.avif';
+
 
 const AccordionItem = ({ question, answer, isOpen, onClick }) => {
     return (
@@ -84,7 +86,7 @@ const FAQsPartners = () => {
             <section className="bg-brand-950 py-32 relative overflow-hidden">
                 <div className="absolute inset-0">
                     <img
-                        src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=2064&q=80"
+                        src={faqpartners}
                         alt="Partnership Handshake"
                         className="w-full h-full object-cover"
                     />

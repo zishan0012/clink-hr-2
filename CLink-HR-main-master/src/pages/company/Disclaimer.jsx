@@ -1,5 +1,7 @@
 import React from 'react';
 
+import disclaimer from '../../assets/company-img/disclaimer.avif';
+
 const Disclaimer = () => {
     // Standard sections data
     const sections = [
@@ -104,7 +106,7 @@ const Disclaimer = () => {
                 backgroundColor: '#0f172a',
                 padding: '140px 20px',
                 textAlign: 'center',
-                backgroundImage: 'url("https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80")',
+                backgroundImage: 'url(' + disclaimer + ')',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 overflow: 'hidden'

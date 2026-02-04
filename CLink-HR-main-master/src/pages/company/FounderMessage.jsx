@@ -2,6 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import Testimonials from '../../components/Testimonials';
 import { Quote, Briefcase, Target, Users, TrendingUp, CheckCircle, Zap, ShieldCheck } from 'lucide-react';
+import foundermsg2 from '../../assets/company-img/foundermsg2.avif';
+import foundermsg1 from '../../assets/company-img/foundermsg1.avif';
 
 const FounderMessage = () => {
     return (
@@ -10,7 +12,7 @@ const FounderMessage = () => {
             <section className="bg-brand-950 py-32 relative overflow-hidden">
                 <div className="absolute inset-0">
                     <img
-                        src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+                        src={foundermsg2}
                         alt="Corporate Background"
                         className="w-full h-full object-cover"
                     />
@@ -43,7 +45,7 @@ const FounderMessage = () => {
                             {/* Left Column: Image Area */}
                             <div className="lg:col-span-5 relative min-h-[500px] lg:min-h-full">
                                 <img
-                                    src="https://images.unsplash.com/photo-1556157382-97eda2d62296?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80"
+                                    src={foundermsg1}
                                     alt="Founder Portrait"
                                     className="absolute inset-0 w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000"
                                 />

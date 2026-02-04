@@ -3,6 +3,8 @@ import { motion } from 'framer-motion';
 import Testimonials from '../../components/Testimonials';
 import { Briefcase, Users, Award, TrendingUp, CheckCircle, Globe, Building2, ShieldCheck, Zap } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import about2 from '../../assets/company-img/about2.png';
+import about1 from '../../assets/company-img/about1.avif';
 
 const AboutUs = () => {
     return (
@@ -14,7 +16,7 @@ const AboutUs = () => {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 0.6 }}
-                        src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2850&q=80"
+                        src={about1}
                         alt="Indian Corporate Team"
                         className="w-full h-full object-cover"
                         loading="eager"
@@ -50,7 +52,7 @@ const AboutUs = () => {
                         <div className="relative">
                             <div className="absolute -inset-4 bg-brand-100 rounded-[2.5rem] transform -rotate-3 opacity-30"></div>
                             <img
-                                src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80"
+                                src={about2}
                                 alt="Strategy Meeting"
                                 className="relative rounded-[2rem] shadow-2xl w-full object-cover h-[550px]"
                             />

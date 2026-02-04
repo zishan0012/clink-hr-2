@@ -1,5 +1,5 @@
 import React from 'react';
-
+import privacy from '../../assets/company-img/privacy.avif';
 const PrivacyPolicy = () => {
     const sections = [
         {
@@ -118,7 +118,7 @@ const PrivacyPolicy = () => {
                 backgroundColor: '#0f172a',
                 padding: '140px 20px',
                 textAlign: 'center',
-                backgroundImage: 'url("https://plus.unsplash.com/premium_photo-1677093905933-22469186a34b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cHJpdmFjeSUyMHBvbGljeXxlbnwwfHwwfHx8MA%3D%3D")',
+                backgroundImage: 'url(' + privacy + ')',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 overflow: 'hidden'

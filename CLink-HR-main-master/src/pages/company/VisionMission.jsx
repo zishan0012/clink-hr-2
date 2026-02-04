@@ -13,6 +13,8 @@ import {
     ShieldCheck
 } from 'lucide-react';
 
+import vision1 from '../../assets/company-img/vision1.avif';
+
 const VisionMission = () => {
     return (
         <div className="min-h-screen bg-slate-50">
@@ -20,7 +22,7 @@ const VisionMission = () => {
             <section className="bg-brand-950 py-32 relative overflow-hidden">
                 <div className="absolute inset-0">
                     <img
-                        src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+                        src={vision1}
                         alt="Skyscrapers"
                         className="w-full h-full object-cover"
                     />

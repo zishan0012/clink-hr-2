@@ -15,6 +15,11 @@ import {
     Zap
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import careers1 from '../../assets/company-img/careers1.avif';
+import careers2 from '../../assets/company-img/careers2.avif';
+import careers3 from '../../assets/company-img/careers3.avif';
+import careers4 from '../../assets/company-img/careers4.avif';
+import careers5 from '../../assets/company-img/careers5.avif';
 
 const JobCard = ({ title, location, type, department, delay }) => (
     <motion.div
@@ -64,7 +69,7 @@ const Careers = () => {
             <section className="bg-brand-950 py-32 relative overflow-hidden">
                 <div className="absolute inset-0">
                     <img
-                        src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2071&q=80"
+                        src={careers1}
                         alt="Indian Office Culture"
                         className="w-full h-full object-cover"
                     />
@@ -149,16 +154,16 @@ const Careers = () => {
 
                     <div className="grid md:grid-cols-4 gap-4 h-[600px]">
                         <div className="md:col-span-2 md:row-span-2 relative rounded-[3rem] overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Team" className="w-full h-full object-cover" />
+                            <img src={careers2} alt="Team" className="w-full h-full object-cover" />
                         </div>
                         <div className="relative rounded-[2.5rem] overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1632&q=80" alt="Meeting" className="w-full h-full object-cover" />
+                            <img src={careers3} alt="Meeting" className="w-full h-full object-cover" />
                         </div>
                         <div className="relative rounded-[2.5rem] overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Office" className="w-full h-full object-cover" />
+                            <img src={careers4} alt="Office" className="w-full h-full object-cover" />
                         </div>
                         <div className="md:col-span-2 relative rounded-[2.5rem] overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Brainstorming" className="w-full h-full object-cover" />
+                            <img src={careers5} alt="Brainstorming" className="w-full h-full object-cover" />
                         </div>
                     </div>
                 </div>

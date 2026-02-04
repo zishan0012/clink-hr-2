@@ -12,6 +12,7 @@ import {
     DollarSign,
     Shield
 } from 'lucide-react';
+import casestudy from '../../../assets/case-studies/casestudy.avif';
 
 const CaseStudies = () => {
     const caseStudies = [
@@ -44,7 +45,7 @@ const CaseStudies = () => {
             <div className="relative bg-brand-900 py-32 overflow-hidden">
                 <div className="absolute inset-0">
                     <img
-                        src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
+                        src={casestudy}
                         alt="Success Stories"
                         className="w-full h-full object-cover"
                     />

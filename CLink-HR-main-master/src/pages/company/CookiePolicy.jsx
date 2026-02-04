@@ -1,4 +1,5 @@
 import React from 'react';
+import cookies1 from '../../assets/company-img/cookies.avif';
 
 const CookiePolicy = () => {
     const sections = [
@@ -69,7 +70,7 @@ const CookiePolicy = () => {
                 backgroundColor: '#0f172a',
                 padding: '140px 20px',
                 textAlign: 'center',
-                backgroundImage: 'url("https://images.unsplash.com/photo-1516321497487-e288fb19713f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80")',
+                backgroundImage: 'url(' + cookies1 + ')',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 overflow: 'hidden'

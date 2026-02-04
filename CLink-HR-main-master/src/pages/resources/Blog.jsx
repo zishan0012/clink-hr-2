@@ -11,6 +11,7 @@ import blog4 from '../../assets/blog-img/4.jpg';
 import blog5 from '../../assets/blog-img/5.jpg';
 import blog6 from '../../assets/blog-img/6.jpg';
 import blog7 from '../../assets/blog-img/7.jpg';
+import bloghero from '../../assets/blog-img/blog-hero.avif';
 const Blog = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -21,7 +22,7 @@ const Blog = () => {
             <div className="bg-brand-950 py-32 relative overflow-hidden">
                 <div className="absolute inset-0">
                     <img
-                        src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+                        src={bloghero}
                         alt="Insights & Blog"
                         className="w-full h-full object-cover"
                     />

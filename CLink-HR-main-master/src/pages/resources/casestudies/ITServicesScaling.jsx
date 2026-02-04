@@ -21,6 +21,7 @@ import {
     ArrowLeft
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import it from '../../../assets/case-studies/it.avif';
 
 const ITServicesScaling = () => {
     useEffect(() => {
@@ -33,7 +34,7 @@ const ITServicesScaling = () => {
             <section className="relative bg-brand-950 py-32 overflow-hidden">
                 <div className="absolute inset-0">
                     <img
-                        src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
+                        src={it}
                         alt="IT Services Scaling"
                         className="w-full h-full object-cover"
                     />

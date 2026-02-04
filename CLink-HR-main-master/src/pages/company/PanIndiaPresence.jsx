@@ -13,6 +13,12 @@ import {
     Briefcase
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import panindia1 from '../../assets/company-img/panindia1.avif';
+import panindia2 from '../../assets/company-img/panindia2.avif';
+import panindia3 from '../../assets/company-img/panindia3.avif';
+import panindia4 from '../../assets/company-img/panindia4.avif';
+import panindia5 from '../../assets/company-img/panindia5.avif';
+import panindia6 from '../../assets/company-img/panindia6.avif';
 
 const RegionCard = ({ title, desc, img, delay }) => (
     <motion.div
@@ -42,7 +48,7 @@ const PanIndiaPresence = () => {
             <section className="bg-brand-950 py-32 relative overflow-hidden">
                 <div className="absolute inset-0">
                     <img
-                        src="https://images.unsplash.com/photo-1532375810709-75b1da00537c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2076&q=80"
+                        src={panindia1}
                         alt="India Gate - Pan India"
                         className="w-full h-full object-cover"
                     />
@@ -80,25 +86,25 @@ const PanIndiaPresence = () => {
                         <RegionCard
                             title="Metro Hubs"
                             desc="Delhi NCR, Mumbai, Bangalore, Hyderabad, Chennai, Kolkata"
-                            img="https://images.unsplash.com/photo-1596176530529-78163a4f7af2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1527&q=80"
+                            img={panindia2}
                             delay={0}
                         />
                         <RegionCard
                             title="Tier-2 Growth"
                             desc="Pune, Ahmedabad, Jaipur, Indore, Chandigarh"
-                            img="https://images.unsplash.com/photo-1599661046289-e31897846e41?ixlib=rb-4.0.3&auto=format&fit=crop&w=1527&q=80"
+                            img={panindia3}
                             delay={0.1}
                         />
                         <RegionCard
                             title="Industrial Belts"
                             desc="Manufacturing clusters in Gujarat, Maharashtra, TN"
-                            img="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80"
+                            img={panindia4}
                             delay={0.2}
                         />
                         <RegionCard
                             title="Tech Parks"
                             desc="Noida, Kochi, Trivandrum, Bhubaneswar"
-                            img="https://images.unsplash.com/photo-1532009877282-3340270e0529?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80"
+                            img={panindia5}
                             delay={0.3}
                         />
                     </div>
@@ -139,7 +145,7 @@ const PanIndiaPresence = () => {
                         <div className="relative">
                             <div className="absolute inset-0 bg-brand-200 rounded-[3rem] rotate-3 opacity-30"></div>
                             <img
-                                src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?ixlib=rb-4.0.3&auto=format&fit=crop&w=1742&q=80"
+                                src={panindia6}
                                 alt="Pan India Connectivity"
                                 className="relative rounded-[3rem] shadow-2xl border-4 border-white"
                             />
