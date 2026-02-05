@@ -24,13 +24,13 @@ const WhoCanBecomeIPP = () => {
                         initial={{ opacity: 0, scale: 0.95 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.4 }}
-                    >
+                    ><div className="inline-block bg-brand-800/50 backdrop-blur-md border border-brand-700 px-6 py-2 rounded-full text-sm font-bold text-brand-200 mb-6 uppercase tracking-widest">
+                            For Recruiters Ready to Build Their Own Brand
+                        </div>
                         <h1 className="text-4xl md:text-7xl font-extrabold text-white mb-6">
                             Who Can Become an <span className="text-accent-500">IPP?</span>
                         </h1>
-                        <div className="inline-block bg-white/10 backdrop-blur-md border border-white/10 px-6 py-2 rounded-full text-sm font-bold text-accent-400 mb-6 uppercase tracking-widest">
-                            For Recruiters Ready to Build Their Own Brand
-                        </div>
+
                         <p className="text-xl md:text-2xl text-slate-200 mb-8 font-light max-w-4xl leading-relaxed">
                             The Independent Prime Partner (IPP) model is designed for professionals and firms who want to operate as independent recruitment businesses, while being supported by a structured delivery ecosystem. If you can deliver quality hiring outcomes, you can become an IPP.
                         </p>

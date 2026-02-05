@@ -51,6 +51,9 @@ const HowIPPModelWorks = () => {
                     <div className="absolute inset-0 bg-brand-950/50"></div>
                 </div>
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                    <div className="inline-block bg-brand-800/50 backdrop-blur-md border border-brand-700 px-6 py-2 rounded-full text-sm font-bold text-brand-200 mb-6 uppercase tracking-widest">
+                        IPP Work Model
+                    </div>
                     <motion.h1
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -61,9 +64,9 @@ const HowIPPModelWorks = () => {
                     <p className="text-xl md:text-2xl text-slate-200 mb-8 font-light max-w-4xl leading-relaxed">
                         The IPP (Independent Prime Partner) Model allows recruitment professionals to operate under your own brand, while leveraging the CLink HR + Zryoss ecosystem for clients, coordination, and backend support.
                     </p>
-                    <div className="inline-block bg-white/10 backdrop-blur-md border border-white/10 px-6 py-3 rounded-full text-base font-medium text-accent-400">
+                    {/* <div className="inline-block bg-white/10 backdrop-blur-md border border-white/10 px-6 py-3 rounded-full text-base font-medium text-accent-400">
                         It’s designed to deliver speed, scale, and quality without the overhead of building internal teams.
-                    </div>
+                    </div> */}
                 </div>
             </section>
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Testimonials from '../../components/Testimonials';
+import contactusHero from '../../assets/contact-img/contactus-hero.avif';
 import { Mail, Phone, MapPin, Send, MessageSquare, Clock, Globe, Facebook, Twitter, Instagram, Linkedin, Briefcase } from 'lucide-react';
 
 const ContactUs = () => {
@@ -11,7 +12,7 @@ const ContactUs = () => {
             <section className="bg-brand-950 py-32 relative overflow-hidden">
                 <div className="absolute inset-0">
                     <img
-                        src="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80"
+                        src={contactusHero}
                         alt="Contact Us"
                         className="w-full h-full object-cover"
                     />
