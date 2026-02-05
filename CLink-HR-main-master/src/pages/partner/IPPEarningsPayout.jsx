@@ -19,6 +19,9 @@ const IPPEarningsPayout = () => {
                     <div className="absolute inset-0 bg-brand-950/50"></div>
                 </div>
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                    <div className="inline-block bg-brand-800/50 backdrop-blur-md border border-brand-700 px-6 py-2 rounded-full text-sm font-bold text-brand-200 mb-6 uppercase tracking-widest">
+                        Transparent, Performance-Driven, and Scalable
+                    </div>
                     <motion.h1
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -26,9 +29,6 @@ const IPPEarningsPayout = () => {
                     >
                         IPP Earnings & <span className="text-accent-500">Payout Model</span>
                     </motion.h1>
-                    <div className="inline-block bg-white/10 backdrop-blur-md border border-white/10 px-6 py-2 rounded-full text-sm font-bold text-accent-400 mb-6 uppercase tracking-widest">
-                        Transparent, Performance-Driven, and Scalable
-                    </div>
                     <p className="text-xl md:text-2xl text-slate-200 mb-8 font-light max-w-4xl leading-relaxed">
                         CLink HR’s IPP Earnings & Payout Model is designed to reward performance, ensure transparency, and provide predictable income for Independent Prime Partners (IPP). All payouts are processed centrally through the Zryoss platform, giving IPPs visibility and control over their earnings.
                     </p>

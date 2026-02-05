@@ -27,10 +27,10 @@ const Footer = () => {
 
             {/* Social Links */}
             <div className="flex items-center space-x-4 pt-2">
-              <SocialLink href="#" icon={<Facebook size={20} />} label="Facebook" />
-              <SocialLink href="#" icon={<Twitter size={20} />} label="Twitter" />
-              <SocialLink href="#" icon={<Linkedin size={20} />} label="LinkedIn" />
-              <SocialLink href="#" icon={<Instagram size={20} />} label="Instagram" />
+              <SocialLink href="https://www.facebook.com/ClinkHR" icon={<Facebook size={20} />} label="Facebook" />
+              <SocialLink href="https://x.com/ClinkHR" icon={<Twitter size={20} />} label="Twitter" />
+              <SocialLink href="https://www.linkedin.com/company/clink-hr-services/" icon={<Linkedin size={20} />} label="LinkedIn" />
+              {/* <SocialLink href="#" icon={<Instagram size={20} />} label="Instagram" /> */}
             </div>
           </div>
 
@@ -108,14 +108,18 @@ const Footer = () => {
 };
 
 // Helper Component for Social Links
-const SocialLink = ({ href, icon, label }) => (
-  <a
-    href={href}
-    aria-label={label}
-    className="bg-slate-900 p-2 rounded-full text-slate-400 hover:bg-brand-600 hover:text-white transition-all duration-300 transform hover:scale-110"
-  >
-    {icon}
-  </a>
-);
+const SocialLink = ({ href, icon, label }) => {
+  return (
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label={label}
+      className="bg-slate-900 p-2 rounded-full text-slate-400 hover:bg-brand-600 hover:text-white transition-all duration-300 transform hover:scale-110"
+    >
+      {icon}
+    </a>
+  );
+};
 
 export default Footer;
