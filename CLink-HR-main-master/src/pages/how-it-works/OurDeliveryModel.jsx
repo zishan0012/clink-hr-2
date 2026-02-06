@@ -49,16 +49,15 @@ const OurDeliveryModel = () => {
                             How It Works
                         </span>
 
-                        <h1 className="text-4xl md:text-7xl font-extrabold text-white mb-6 leading-[1.1] tracking-tight">
+                        <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-[1.1] tracking-tight">
                             Our <span className="text-accent-500">Delivery Model</span>
                         </h1>
-                        <h2 className="text-2xl md:text-3xl font-bold text-white mb-8 opacity-90">
+                        <h2 className="text-xl md:text-2xl font-bold text-white mb-8 opacity-90">
                             A Centralized, Scalable HR Delivery Framework
                         </h2>
 
                         <p className="text-xl md:text-2xl text-slate-200 mb-8 font-light max-w-4xl leading-relaxed">
-                            CLink HR operates on a centralized HR coordination model designed to deliver speed, scale, and consistency—without building large in-house execution teams.
-                            We work with organizations and route execution through independent IPP partners operating within the Zryoss ecosystem, allowing faster closures, broader reach, and controlled delivery.
+                            A centralized coordination model that leverages the Zryoss ecosystem to deliver speed, scale, and consistency without the limits of traditional HR execution.
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4">
@@ -354,7 +353,7 @@ const OurDeliveryModel = () => {
                         whileInView={{ opacity: 1, scale: 1 }}
                         className="mb-16"
                     >
-                        <h2 className="text-3xl md:text-6xl font-extrabold text-white mb-8 tracking-tight leading-tight">
+                        <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-8 tracking-tight leading-tight">
                             Centralized Coordination. <br />
                             <span className="text-accent-400">Distributed Execution.</span> <br />
                             Scalable Results.

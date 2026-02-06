@@ -54,17 +54,15 @@ const Education = () => {
                             Industries We Serve
                         </span>
 
-                        <h1 className="text-4xl md:text-7xl font-extrabold text-white mb-4 leading-[1.1] tracking-tight">
+                        <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-4 leading-[1.1] tracking-tight">
                             Education & <span className="text-accent-500">Training</span>
                         </h1>
-                        <h2 className="text-2xl md:text-3xl font-bold text-white mb-8 opacity-90">
+                        <h2 className="text-xl md:text-2xl font-bold text-white mb-8 opacity-90">
                             HR Solutions for Educational Institutions and Training Organizations
                         </h2>
 
                         <p className="text-xl md:text-2xl text-slate-200 mb-8 font-light max-w-4xl leading-relaxed">
-                            The Education & Training industry requires a workforce that is skilled, compliant, and motivated to deliver high-quality learning experiences.
-                            CLink HR provides end-to-end HR, recruitment, payroll, and workforce management solutions tailored for schools, colleges, universities, coaching centers, and skill development organizations.
-                            We help institutions focus on teaching and learning excellence while we manage workforce operations efficiently.
+                            Comprehensive HR and recruitment solutions for educational institutions, allowing you to focus on academic excellence while we manage your workforce.
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4">
@@ -72,7 +70,7 @@ const Education = () => {
                                 to="/contact/hire-talent"
                                 className="bg-brand-600 text-white px-8 py-4 rounded-full font-bold hover:bg-brand-500 transition-all shadow-lg flex items-center justify-center gap-2"
                             >
-                                Explore Education HR Solutions <ArrowRight className="w-5 h-5" />
+                                Explore Education <ArrowRight className="w-5 h-5" />
                             </Link>
                         </div>
                     </motion.div>

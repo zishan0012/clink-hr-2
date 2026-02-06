@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Testimonials from '../../components/Testimonials';
-import { Network, Handshake, Globe, ArrowRight, ShieldCheck, TrendingUp, Users, Target, Zap, Layout } from 'lucide-react';
+import { Network, Handshake, Globe, ArrowRight, ShieldCheck, TrendingUp, Users, Target, Zap, Layout, Search, CheckCircle } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 import partnerProgramHero from '../../assets/partners-img/IPP Partner Program-hero.jpg';
@@ -29,14 +29,14 @@ const IPPPartnerProgram = () => {
                         <span className="inline-block py-1 px-3 rounded-full bg-brand-800/50 border border-brand-700 text-brand-200 text-xs font-bold tracking-widest uppercase mb-6 backdrop-blur-md">
                             Partnership
                         </span>
-                        <h1 className="text-4xl md:text-7xl font-extrabold text-white mb-6 tracking-tight leading-tight">
+                        <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold text-white mb-6 tracking-tight leading-tight">
                             IPP Partner <span className="text-accent-500">Program</span>
                         </h1>
                         <p className="text-xl md:text-2xl text-slate-300 max-w-4xl leading-relaxed mb-10">
                             Build Your Recruitment Business with Confidence. The IPP Partner Program by CLink HR is designed for professionals who want to scale their own recruitment brand without the burden of backend operations.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4">
-                            <Link to="/partners/become-ipp-partner" className="bg-accent-600 text-white px-8 py-4 rounded-full font-bold hover:bg-accent-700 transition-all shadow-lg hover:shadow-accent-500/25 flex items-center justify-center gap-2">
+                            <Link to="/partners/become-ipp-partner" className="bg-brand-600 text-white px-8 py-4 rounded-full font-bold hover:bg-brand-500 transition-all shadow-lg hover:shadow-brand-500/25 flex items-center justify-center gap-2">
                                 Join Program <ArrowRight className="w-5 h-5" />
                             </Link>
                         </div>
@@ -90,7 +90,7 @@ const IPPPartnerProgram = () => {
                                 ].map((section, i) => (
                                     <div key={i} className="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
                                         <h3 className="text-lg font-bold text-brand-800 mb-4 flex items-center gap-2">
-                                            <CheckCircle className="w-5 h-5 text-accent-500" /> {section.title}
+                                            <CheckCircle className="w-5 h-5 text-brand-500" /> {section.title}
                                         </h3>
                                         <ul className="space-y-2 pl-7">
                                             {section.items.map((li, j) => (
@@ -107,11 +107,11 @@ const IPPPartnerProgram = () => {
                                 <h2 className="text-3xl font-bold mb-8">Division of Responsibilities</h2>
 
                                 <div className="mb-10">
-                                    <h3 className="text-xl font-bold text-accent-400 mb-4 flex items-center gap-2"><Zap className="w-5 h-5" /> What IPP Partners Focus On</h3>
+                                    <h3 className="text-xl font-bold text-brand-400 mb-4 flex items-center gap-2"><Zap className="w-5 h-5" /> What IPP Partners Focus On</h3>
                                     <ul className="space-y-3">
-                                        <li className="flex gap-3 text-slate-300"><span className="text-accent-500">✓</span> Sourcing and screening candidates</li>
-                                        <li className="flex gap-3 text-slate-300"><span className="text-accent-500">✓</span> Managing interviews and closures</li>
-                                        <li className="flex gap-3 text-slate-300"><span className="text-accent-500">✓</span> Delivering quality outcomes</li>
+                                        <li className="flex gap-3 text-slate-300"><span className="text-brand-500">✓</span> Sourcing and screening candidates</li>
+                                        <li className="flex gap-3 text-slate-300"><span className="text-brand-500">✓</span> Managing interviews and closures</li>
+                                        <li className="flex gap-3 text-slate-300"><span className="text-brand-500">✓</span> Delivering quality outcomes</li>
                                     </ul>
                                     <p className="mt-4 text-sm text-slate-400 italic">Everything else is handled centrally.</p>
                                 </div>
@@ -156,7 +156,7 @@ const IPPPartnerProgram = () => {
                             <span>From niche roles to bulk hiring</span> •
                             <span>From startups to enterprise clients</span>
                         </div>
-                        <p className="text-3xl md:text-5xl font-bold text-accent-400 italic tracking-tight">
+                        <p className="text-3xl md:text-5xl font-bold text-brand-400 italic tracking-tight">
                             "Build your brand. Deliver with confidence. Scale with structure."
                         </p>
                     </div>
@@ -168,7 +168,5 @@ const IPPPartnerProgram = () => {
     );
 };
 
-// Helper components for icons used in map (imported purely for cleaner code structure logic)
-import { Search, CheckCircle } from 'lucide-react';
 
 export default IPPPartnerProgram;

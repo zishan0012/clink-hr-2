@@ -43,7 +43,7 @@ const Partners = () => {
                         <span className="inline-block py-1 px-3 rounded-full bg-brand-800/50 border border-brand-700 text-brand-200 text-xs font-bold tracking-widest uppercase mb-6 backdrop-blur-md">
                             Partnership Program
                         </span>
-                        <h1 className="text-4xl md:text-8xl font-extrabold text-white mb-8 tracking-tight leading-[1.1]">
+                        <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold text-white mb-8 tracking-tight leading-[1.1]">
                             Become an <br />
                             <span className="text-accent-500">IPP Partner.</span>
                         </h1>
@@ -66,7 +66,7 @@ const Partners = () => {
             <section className="py-24 bg-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
-                        <span className="text-accent-600 font-bold uppercase tracking-widest text-sm mb-4 block">Why Partner with CLink HR</span>
+                        <span className="text-brand-600 font-bold uppercase tracking-widest text-sm mb-4 block">Why Partner with CLink HR</span>
                         <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-6 leading-tight">
                             Build Your <span className="text-brand-600">Recruitment Business</span>
                         </h2>
@@ -158,7 +158,7 @@ const Partners = () => {
                             >
                                 <div className="flex flex-col md:flex-row gap-8">
                                     <div className="shrink-0">
-                                        <div className="w-20 h-20 bg-slate-50 rounded-2xl flex items-center justify-center text-accent-500 group-hover:bg-accent-600 group-hover:text-white transition-all shadow-sm">
+                                        <div className="w-20 h-20 bg-slate-50 rounded-2xl flex items-center justify-center text-brand-500 group-hover:bg-brand-600 group-hover:text-white transition-all shadow-sm">
                                             <item.icon className="w-10 h-10" strokeWidth={1.5} />
                                         </div>
                                     </div>
@@ -255,7 +255,7 @@ const Partners = () => {
             <section className="py-24 bg-slate-900 text-center">
                 <div className="max-w-4xl mx-auto px-4">
                     <h2 className="text-4xl md:text-5xl font-bold text-white mb-8 tracking-tight">
-                        Ready to Build Your <span className="text-accent-500">Recruitment Business?</span>
+                        Ready to Build Your <span className="text-brand-500">Recruitment Business?</span>
                     </h2>
                     <p className="text-xl text-slate-300 mb-12 leading-relaxed font-light">
                         Join hundreds of successful IPP partners who are scaling their recruitment business with CLink HR.

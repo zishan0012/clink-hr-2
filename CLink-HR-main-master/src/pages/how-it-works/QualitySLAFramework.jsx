@@ -48,15 +48,15 @@ const QualitySLAFramework = () => {
                             How It Works
                         </span>
 
-                        <h1 className="text-4xl md:text-7xl font-extrabold text-white mb-6 leading-[1.1] tracking-tight">
+                        <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-[1.1] tracking-tight">
                             Quality & <span className="text-accent-500">SLA Framework</span>
                         </h1>
-                        <h2 className="text-2xl md:text-3xl font-bold text-white mb-8 opacity-90 leading-tight">
+                        <h2 className="text-xl md:text-2xl font-bold text-white mb-8 opacity-90 leading-tight">
                             Consistent Quality Across a Distributed Delivery Network
                         </h2>
 
                         <p className="text-xl md:text-2xl text-slate-200 mb-8 font-light max-w-4xl leading-relaxed">
-                            CLink HR follows a centralized Quality & SLA Framework to ensure reliable, predictable, and high-quality delivery—even while execution is carried out by independent IPP partners across the Zryoss ecosystem.
+                            Predictable and high-quality delivery through a centralized framework, ensuring consistency even across a distributed partner network.
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4">
@@ -418,7 +418,7 @@ const QualitySLAFramework = () => {
                         className="space-y-8"
                     >
                         <ShieldCheck className="w-20 h-20 text-accent-400 mx-auto" />
-                        <h2 className="text-4xl md:text-6xl font-extrabold italic tracking-tight">
+                        <h2 className="text-4xl md:text-4xl font-extrabold italic tracking-tight">
                             Central Standards. <br />
                             <span className="text-accent-400">Measurable Outcomes.</span> <br />
                             Scalable Quality.

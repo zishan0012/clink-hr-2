@@ -49,7 +49,7 @@ const TechnologyPlatform = () => {
                             The Tech Backbone
                         </span>
 
-                        <h1 className="text-4xl md:text-7xl font-extrabold text-white mb-6 leading-[1.1] tracking-tight">
+                        <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-[1.1] tracking-tight">
                             Technology <span className="text-accent-500">Platform (Zryoss)</span>
                         </h1>
                         <h2 className="text-2xl md:text-3xl font-bold text-white mb-8 opacity-90 leading-tight">
@@ -57,7 +57,7 @@ const TechnologyPlatform = () => {
                         </h2>
 
                         <p className="text-xl md:text-2xl text-slate-200 mb-8 font-light max-w-4xl leading-relaxed">
-                            Zryoss is the technology platform that powers CLink HR’s distributed delivery model. It connects clients, CLink HR, and IPP partners into a single, structured, and transparent ecosystem—ensuring speed, control, and scalability.
+                            Zryoss is the technology engine connecting clients and partners into a single, transparent ecosystem for high-speed HR delivery and scalability.
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4">
@@ -343,7 +343,7 @@ const TechnologyPlatform = () => {
                         className="space-y-8"
                     >
                         <Cpu className="w-20 h-20 text-accent-400 mx-auto" />
-                        <h2 className="text-4xl md:text-6xl font-extrabold italic tracking-tight uppercase">
+                        <h2 className="text-4xl md:text-4xl font-extrabold italic tracking-tight uppercase">
                             Technology that connects people, <br />
                             <span className="text-accent-400">processes, and performance</span> <br />
                             — at scale.

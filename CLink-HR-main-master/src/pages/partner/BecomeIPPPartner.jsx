@@ -51,15 +51,15 @@ const BecomeIPPPartner = () => {
                         <span className="inline-block py-1 px-3 rounded-full bg-brand-800/50 border border-brand-700 text-brand-200 text-xs font-bold tracking-widest uppercase mb-6 backdrop-blur-md">
                             Join the Ecosystem
                         </span>
-                        <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-6 tracking-tight">
+                        <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold text-white mb-6 tracking-tight">
                             Start Your Journey as an <br /><span className="text-accent-500">Independent Prime Partner</span>
                         </h1>
                         <p className="text-xl md:text-2xl text-slate-200 mb-8 font-light max-w-4xl leading-relaxed">
                             CLink HR’s IPP Partner Program enables recruitment professionals and firms to build and grow their own recruitment brand while leveraging our structured ecosystem and technology platform (Zryoss).
                         </p>
-                        <p className="text-xl md:text-2xl text-slate-200 mb-8 font-light max-w-4xl leading-relaxed">
+                        {/* <p className="text-xl md:text-2xl text-slate-200 mb-8 font-light max-w-4xl leading-relaxed">
                             Become an IPP to focus on delivery, maximize earnings, and scale your recruitment business—without the hassle of client acquisition or backend operations.
-                        </p>
+                        </p> */}
                     </motion.div>
                 </div>
             </section>
@@ -76,7 +76,7 @@ const BecomeIPPPartner = () => {
                             className="bg-white rounded-3xl p-8 shadow-md border border-slate-100"
                         >
                             <h2 className="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-3">
-                                <Award className="text-accent-600 w-6 h-6" /> Why Become an IPP Partner?
+                                <Award className="text-brand-600 w-6 h-6" /> Why Become an IPP Partner?
                             </h2>
                             <ul className="grid sm:grid-cols-2 gap-4">
                                 {[
@@ -97,7 +97,7 @@ const BecomeIPPPartner = () => {
                         {/* Who Can Become an IPP */}
                         <div className="bg-white rounded-3xl p-8 shadow-md border border-slate-100">
                             <h2 className="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-3">
-                                <User className="text-accent-600 w-6 h-6" /> Who Can Become an IPP?
+                                <User className="text-brand-600 w-6 h-6" /> Who Can Become an IPP?
                             </h2>
                             <div className="flex flex-wrap gap-3 mb-6">
                                 {["Independent recruiters", "Boutique recruitment firms", "Domain-specialized hiring experts", "HR entrepreneurs"].map((tag, i) => (
@@ -106,7 +106,7 @@ const BecomeIPPPartner = () => {
                                     </span>
                                 ))}
                             </div>
-                            <p className="text-slate-500 italic border-l-4 border-accent-500 pl-4">
+                            <p className="text-slate-500 italic border-l-4 border-brand-500 pl-4">
                                 "Capability, experience, and commitment matter more than size or team structure."
                             </p>
                         </div>
@@ -139,7 +139,7 @@ const BecomeIPPPartner = () => {
                         </div>
 
                         {/* Key Benefits */}
-                        <div className="bg-accent-50 rounded-3xl p-8 border border-accent-100">
+                        <div className="bg-brand-50 rounded-3xl p-8 border border-brand-100">
                             <h2 className="text-2xl font-bold text-brand-900 mb-6">Key Benefits</h2>
                             <div className="grid sm:grid-cols-2 gap-6">
                                 <div className="bg-white p-5 rounded-xl shadow-sm">
@@ -254,7 +254,7 @@ const BecomeIPPPartner = () => {
                                         placeholder="Brief goals..."
                                     ></textarea>
                                 </div>
-                                <button type="submit" className="w-full bg-accent-600 text-white font-bold py-3.5 rounded-xl hover:bg-accent-700 transition-all shadow-lg hover:shadow-accent-500/30 flex items-center justify-center gap-2">
+                                <button type="submit" className="w-full bg-brand-600 text-white font-bold py-3.5 rounded-xl hover:bg-brand-500 transition-all shadow-lg hover:shadow-brand-500/30 flex items-center justify-center gap-2">
                                     <Send className="w-4 h-4" /> Submit Application
                                 </button>
 
@@ -263,7 +263,7 @@ const BecomeIPPPartner = () => {
                                     <p className="text-sm font-bold text-brand-900">
                                         Deliver quality hires. Build your brand.
                                     </p>
-                                    <p className="text-sm text-accent-600 font-bold">
+                                    <p className="text-sm text-brand-600 font-bold">
                                         Scale with support.
                                     </p>
                                 </div>

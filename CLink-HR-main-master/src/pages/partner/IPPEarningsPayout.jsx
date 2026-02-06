@@ -25,7 +25,7 @@ const IPPEarningsPayout = () => {
                     <motion.h1
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
-                        className="text-4xl md:text-6xl font-extrabold mb-6"
+                        className="text-3xl md:text-5xl lg:text-7xl font-bold mb-6 text-white tracking-tight"
                     >
                         IPP Earnings & <span className="text-accent-500">Payout Model</span>
                     </motion.h1>
@@ -49,9 +49,9 @@ const IPPEarningsPayout = () => {
                         </div>
                         <h3 className="text-xl font-bold text-slate-900 mb-4">1. Performance-Based Earnings</h3>
                         <ul className="space-y-3 text-slate-600 text-sm">
-                            <li className="flex gap-2"><div className="w-1.5 h-1.5 rounded-full bg-accent-500 mt-1.5 shrink-0"></div>IPP partners earn based on successful candidate placements</li>
-                            <li className="flex gap-2"><div className="w-1.5 h-1.5 rounded-full bg-accent-500 mt-1.5 shrink-0"></div>The payout is tied to closures, not just submissions</li>
-                            <li className="flex gap-2"><div className="w-1.5 h-1.5 rounded-full bg-accent-500 mt-1.5 shrink-0"></div>High-quality, on-time delivery can increase opportunities and priority allocations</li>
+                            <li className="flex gap-2"><div className="w-1.5 h-1.5 rounded-full bg-brand-500 mt-1.5 shrink-0"></div>IPP partners earn based on successful candidate placements</li>
+                            <li className="flex gap-2"><div className="w-1.5 h-1.5 rounded-full bg-brand-500 mt-1.5 shrink-0"></div>The payout is tied to closures, not just submissions</li>
+                            <li className="flex gap-2"><div className="w-1.5 h-1.5 rounded-full bg-brand-500 mt-1.5 shrink-0"></div>High-quality, on-time delivery can increase opportunities and priority allocations</li>
                         </ul>
                     </div>
 
@@ -63,9 +63,9 @@ const IPPEarningsPayout = () => {
                         <h3 className="text-xl font-bold text-slate-900 mb-4">2. Role-Based Payout Structure</h3>
                         <p className="text-sm text-slate-600 mb-2">Payouts vary depending on:</p>
                         <ul className="space-y-3 text-slate-600 text-sm">
-                            <li className="flex gap-2"><div className="w-1.5 h-1.5 rounded-full bg-accent-500 mt-1.5 shrink-0"></div>Role complexity and seniority</li>
-                            <li className="flex gap-2"><div className="w-1.5 h-1.5 rounded-full bg-accent-500 mt-1.5 shrink-0"></div>Industry and specialization</li>
-                            <li className="flex gap-2"><div className="w-1.5 h-1.5 rounded-full bg-accent-500 mt-1.5 shrink-0"></div>Volume and SLA requirements</li>
+                            <li className="flex gap-2"><div className="w-1.5 h-1.5 rounded-full bg-brand-500 mt-1.5 shrink-0"></div>Role complexity and seniority</li>
+                            <li className="flex gap-2"><div className="w-1.5 h-1.5 rounded-full bg-brand-500 mt-1.5 shrink-0"></div>Industry and specialization</li>
+                            <li className="flex gap-2"><div className="w-1.5 h-1.5 rounded-full bg-brand-500 mt-1.5 shrink-0"></div>Volume and SLA requirements</li>
                         </ul>
                         <p className="text-xs text-brand-600 font-bold mt-4">Complex or high-value roles earn proportionally higher payouts.</p>
                     </div>
@@ -78,36 +78,36 @@ const IPPEarningsPayout = () => {
                         <h3 className="text-xl font-bold text-slate-900 mb-4">3. Transparent Tracking via Zryoss</h3>
                         <p className="text-sm text-slate-600 mb-2">All earnings are tracked in real-time through the Zryoss dashboard. IPPs can view:</p>
                         <ul className="space-y-3 text-slate-600 text-sm">
-                            <li className="flex gap-2"><div className="w-1.5 h-1.5 rounded-full bg-accent-500 mt-1.5 shrink-0"></div>Active requirements</li>
-                            <li className="flex gap-2"><div className="w-1.5 h-1.5 rounded-full bg-accent-500 mt-1.5 shrink-0"></div>Submissions made</li>
-                            <li className="flex gap-2"><div className="w-1.5 h-1.5 rounded-full bg-accent-500 mt-1.5 shrink-0"></div>Pending and approved closures & expected payouts</li>
+                            <li className="flex gap-2"><div className="w-1.5 h-1.5 rounded-full bg-brand-500 mt-1.5 shrink-0"></div>Active requirements</li>
+                            <li className="flex gap-2"><div className="w-1.5 h-1.5 rounded-full bg-brand-500 mt-1.5 shrink-0"></div>Submissions made</li>
+                            <li className="flex gap-2"><div className="w-1.5 h-1.5 rounded-full bg-brand-500 mt-1.5 shrink-0"></div>Pending and approved closures & expected payouts</li>
                         </ul>
                     </div>
 
                     {/* Card 4 */}
-                    <div className="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl transition-all group lg:col-span-1.5">
+                    <div className="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl transition-all group">
                         <div className="w-14 h-14 bg-brand-50 rounded-2xl flex items-center justify-center text-brand-600 mb-6 group-hover:bg-brand-600 group-hover:text-white transition-colors">
                             <CreditCard className="w-7 h-7" />
                         </div>
                         <h3 className="text-xl font-bold text-slate-900 mb-4">4. Centralized Payout Processing</h3>
                         <p className="text-sm text-slate-600 mb-2">Once a closure is validated by CLink HR:</p>
                         <ul className="space-y-3 text-slate-600 text-sm">
-                            <li className="flex gap-2"><div className="w-1.5 h-1.5 rounded-full bg-accent-500 mt-1.5 shrink-0"></div>Payouts are approved and scheduled</li>
-                            <li className="flex gap-2"><div className="w-1.5 h-1.5 rounded-full bg-accent-500 mt-1.5 shrink-0"></div>No disputes or delays</li>
-                            <li className="flex gap-2"><div className="w-1.5 h-1.5 rounded-full bg-accent-500 mt-1.5 shrink-0"></div>All payments processed securely through the ecosystem</li>
+                            <li className="flex gap-2"><div className="w-1.5 h-1.5 rounded-full bg-brand-500 mt-1.5 shrink-0"></div>Payouts are approved and scheduled</li>
+                            <li className="flex gap-2"><div className="w-1.5 h-1.5 rounded-full bg-brand-500 mt-1.5 shrink-0"></div>No disputes or delays</li>
+                            <li className="flex gap-2"><div className="w-1.5 h-1.5 rounded-full bg-brand-500 mt-1.5 shrink-0"></div>All payments processed securely through the ecosystem</li>
                         </ul>
                     </div>
 
                     {/* Card 5 */}
-                    <div className="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl transition-all group lg:col-span-1.5">
+                    <div className="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl transition-all group">
                         <div className="w-14 h-14 bg-brand-50 rounded-2xl flex items-center justify-center text-brand-600 mb-6 group-hover:bg-brand-600 group-hover:text-white transition-colors">
                             <DollarSign className="w-7 h-7" />
                         </div>
                         <h3 className="text-xl font-bold text-slate-900 mb-4">5. Scalable Income Opportunities</h3>
                         <ul className="space-y-3 text-slate-600 text-sm">
-                            <li className="flex gap-2"><div className="w-1.5 h-1.5 rounded-full bg-accent-500 mt-1.5 shrink-0"></div>Work on multiple roles simultaneously</li>
-                            <li className="flex gap-2"><div className="w-1.5 h-1.5 rounded-full bg-accent-500 mt-1.5 shrink-0"></div>Take up bulk or high-value requirements</li>
-                            <li className="flex gap-2"><div className="w-1.5 h-1.5 rounded-full bg-accent-500 mt-1.5 shrink-0"></div>Higher performance leads to more allocations and higher income</li>
+                            <li className="flex gap-2"><div className="w-1.5 h-1.5 rounded-full bg-brand-500 mt-1.5 shrink-0"></div>Work on multiple roles simultaneously</li>
+                            <li className="flex gap-2"><div className="w-1.5 h-1.5 rounded-full bg-brand-500 mt-1.5 shrink-0"></div>Take up bulk or high-value requirements</li>
+                            <li className="flex gap-2"><div className="w-1.5 h-1.5 rounded-full bg-brand-500 mt-1.5 shrink-0"></div>Higher performance leads to more allocations and higher income</li>
                         </ul>
                     </div>
                 </div>
@@ -128,8 +128,8 @@ const IPPEarningsPayout = () => {
                                     { title: "Scalable", desc: "Income grows as you take more responsibilities and closures" }
                                 ].map((item, i) => (
                                     <div key={i} className="flex gap-4">
-                                        <div className="w-10 h-10 rounded-full bg-accent-50 flex items-center justify-center shrink-0">
-                                            <CheckCircle className="w-5 h-5 text-accent-600" />
+                                        <div className="w-10 h-10 rounded-full bg-brand-50 flex items-center justify-center shrink-0">
+                                            <CheckCircle className="w-5 h-5 text-brand-600" />
                                         </div>
                                         <div>
                                             <h4 className="font-bold text-slate-900">{item.title}</h4>
@@ -168,7 +168,7 @@ const IPPEarningsPayout = () => {
             {/* Key Statement CTA */}
             <section className="py-24 bg-slate-50 text-center">
                 <div className="max-w-4xl mx-auto px-4">
-                    <div className="w-20 h-1 mx-auto bg-accent-500 mb-8"></div>
+                    <div className="w-20 h-1 mx-auto bg-brand-500 mb-8"></div>
                     <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-6 italic tracking-tight">
                         "Your performance drives your earnings. <br /> We handle the process, coordination, and payouts."
                     </h2>

@@ -52,16 +52,15 @@ const IPPPartnerNetwork = () => {
                             How It Works
                         </span>
 
-                        <h1 className="text-4xl md:text-7xl font-extrabold text-white mb-6 leading-[1.1] tracking-tight">
+                        <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-[1.1] tracking-tight">
                             Partner <span className="text-accent-500">Onboarding</span> (IPP)
                         </h1>
-                        <h2 className="text-2xl md:text-3xl font-bold text-white mb-8 opacity-90">
+                        <h2 className="text-xl md:text-2xl font-bold text-white mb-8 opacity-90">
                             Become an Independent Partner with Centralized Support
                         </h2>
 
                         <p className="text-xl md:text-2xl text-slate-200 mb-8 font-light max-w-4xl leading-relaxed">
-                            CLink HR partners with Independent Placement Partners (IPP) through the Zryoss ecosystem to deliver recruitment and HR services at scale.
-                            Our partner onboarding model is designed to help professionals build and grow their own recruitment brand, while CLink HR and Zryoss handle infrastructure, coordination, clients, and backend operations.
+                            Empowering recruitment professionals to grow their own brand with the support of CLink HR’s infrastructure and the Zryoss technology ecosystem.
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4">
@@ -379,7 +378,7 @@ const IPPPartnerNetwork = () => {
                         whileInView={{ opacity: 1, scale: 1 }}
                         className="mb-12"
                     >
-                        <h2 className="text-4xl md:text-6xl font-extrabold text-slate-900 mb-8 tracking-tight italic">
+                        <h2 className="text-4xl md:text-4xl font-extrabold text-slate-900 mb-8 tracking-tight italic">
                             Build Your Brand. <br />
                             <span className="text-brand-600">Focus on Hiring.</span> <br />
                             Let the Ecosystem <br /> Handle the Rest.

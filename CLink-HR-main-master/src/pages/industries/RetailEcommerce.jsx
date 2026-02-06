@@ -54,17 +54,15 @@ const RetailEcommerce = () => {
                             Industries We Serve
                         </span>
 
-                        <h1 className="text-4xl md:text-7xl font-extrabold text-white mb-4 leading-[1.1] tracking-tight">
+                        <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-4 leading-[1.1] tracking-tight">
                             Retail & <span className="text-accent-500">E-Commerce</span>
                         </h1>
-                        <h2 className="text-2xl md:text-3xl font-bold text-white mb-8 opacity-90">
+                        <h2 className="text-xl md:text-2xl font-bold text-white mb-8 opacity-90">
                             HR Solutions Tailored for Retail & E-Commerce
                         </h2>
 
                         <p className="text-xl md:text-2xl text-slate-200 mb-8 font-light max-w-4xl leading-relaxed">
-                            The Retail & E-Commerce industry requires a workforce that is high-volume, flexible, and customer-focused.
-                            CLink HR delivers tailored HR, recruitment, payroll, and workforce management solutions to support stores, warehouses, fulfillment centers, and online retail operations.
-                            We help businesses scale operations, manage high-volume hiring, and maintain compliance, ensuring smooth business continuity.
+                            High-volume hiring and flexible HR solutions built for the rapid demands of retail, e-commerce, and modern fulfillment centers.
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4">
@@ -72,7 +70,7 @@ const RetailEcommerce = () => {
                                 to="/contact/hire-talent"
                                 className="bg-brand-600 text-white px-8 py-4 rounded-full font-bold hover:bg-brand-500 transition-all shadow-lg flex items-center justify-center gap-2"
                             >
-                                Explore Retail HR Solutions <ArrowRight className="w-5 h-5" />
+                                Explore Retail <ArrowRight className="w-5 h-5" />
                             </Link>
                         </div>
                     </motion.div>

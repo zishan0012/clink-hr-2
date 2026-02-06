@@ -54,17 +54,15 @@ const Startups = () => {
                             Industries We Serve
                         </span>
 
-                        <h1 className="text-4xl md:text-7xl font-extrabold text-white mb-4 leading-[1.1] tracking-tight">
+                        <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-4 leading-[1.1] tracking-tight">
                             Start<span className="text-accent-500">ups</span>
                         </h1>
-                        <h2 className="text-2xl md:text-3xl font-bold text-white mb-8 opacity-90">
+                        <h2 className="text-xl md:text-2xl font-bold text-white mb-8 opacity-90">
                             HR Solutions Tailored for Startups
                         </h2>
 
                         <p className="text-xl md:text-2xl text-slate-200 mb-8 font-light max-w-4xl leading-relaxed">
-                            Startups operate in a fast-paced, high-growth environment where speed, flexibility, and cost-efficiency are critical.
-                            CLink HR provides end-to-end HR, recruitment, payroll, and workforce management solutions specifically designed to meet the unique needs of startups and scaleups.
-                            We help startups build agile HR frameworks, scale teams rapidly, and maintain compliance without adding unnecessary overhead.
+                            Agile HR frameworks and rapid recruitment solutions designed for startups and scaleups to build high-performing teams without the overhead.
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4">

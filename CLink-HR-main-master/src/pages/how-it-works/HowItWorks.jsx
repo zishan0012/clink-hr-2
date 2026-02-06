@@ -40,7 +40,7 @@ const HowItWorks = () => {
                         <span className="inline-block py-1 px-3 rounded-full bg-brand-800/50 border border-brand-700 text-brand-200 text-xs font-bold tracking-widest uppercase mb-6 backdrop-blur-md">
                             Our Process
                         </span>
-                        <h1 className="text-4xl md:text-8xl font-extrabold text-white mb-8 tracking-tight leading-[1.1]">
+                        <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-8 tracking-tight leading-[1.1]">
                             How CLink HR <br />
                             <span className="text-accent-500">Works.</span>
                         </h1>
@@ -220,7 +220,7 @@ const HowItWorks = () => {
             {/* CTA Section */}
             <section className="py-24 bg-slate-900 text-center">
                 <div className="max-w-4xl mx-auto px-4">
-                    <h2 className="text-4xl md:text-5xl font-bold text-white mb-8 tracking-tight">
+                    <h2 className="text-4xl md:text-4xl font-bold text-white mb-8 tracking-tight">
                         Ready to Experience <span className="text-accent-500">The CLink HR Difference?</span>
                     </h2>
                     <p className="text-xl text-slate-300 mb-12 leading-relaxed font-light">

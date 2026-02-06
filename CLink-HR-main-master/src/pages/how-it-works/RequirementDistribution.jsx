@@ -55,15 +55,15 @@ const RequirementDistribution = () => {
                             Delivery Engine
                         </span>
 
-                        <h1 className="text-4xl md:text-7xl font-extrabold text-white mb-6 leading-[1.1] tracking-tight">
+                        <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-[1.1] tracking-tight">
                             Requirement <br /><span className="text-accent-500">Distribution System</span>
                         </h1>
-                        <h2 className="text-2xl md:text-3xl font-bold text-white mb-8 opacity-90 leading-tight">
+                        <h2 className="text-xl md:text-2xl font-bold text-white mb-8 opacity-90 leading-tight">
                             Smart, Structured & Scalable Delivery Engine
                         </h2>
 
                         <p className="text-xl md:text-2xl text-slate-200 mb-8 font-light max-w-4xl leading-relaxed">
-                            CLink HR’s Requirement Distribution System is designed to ensure that every hiring or HR requirement reaches the right execution partner (IPP) at the right time—without delays, confusion, or dependency.
+                            Ensuring every hiring requirement reaches the right execution partner at the right time through a structured, dependency-free delivery engine.
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4">
@@ -401,7 +401,7 @@ const RequirementDistribution = () => {
                         className="space-y-10"
                     >
                         <Network className="w-24 h-24 text-accent-400 mx-auto" />
-                        <h2 className="text-4xl md:text-7xl font-black italic tracking-tighter uppercase leading-none">
+                        <h2 className="text-4xl md:text-4xl font-black italic tracking-tighter uppercase leading-none">
                             Right requirement. <br />
                             Right partner. <br />
                             <span className="text-accent-400 underline decoration-accent-500/30">Right speed.</span>

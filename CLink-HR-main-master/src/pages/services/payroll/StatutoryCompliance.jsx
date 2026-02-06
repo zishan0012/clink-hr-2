@@ -46,7 +46,7 @@ const StatutoryCompliance = () => {
                             <span className="inline-block py-1 px-3 rounded-full bg-brand-600/20 border border-brand-500/30 text-brand-300 text-xs font-bold tracking-widest uppercase mb-6 backdrop-blur-md">
                                 Workforce Compliance Support
                             </span>
-                            <h1 className="text-4xl md:text-7xl font-extrabold text-white mb-8 leading-[1.1] tracking-tight">
+                            <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold text-white mb-8 leading-[1.1] tracking-tight">
                                 <span className="whitespace-nowrap">Compliance-Ready</span>
                                 <br />
                                 <span className="text-accent-500 whitespace-nowrap">
