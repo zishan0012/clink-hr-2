@@ -117,7 +117,7 @@ const OurApproach = () => {
                         <span className="inline-block py-1 px-3 rounded-full bg-brand-800/50 border border-brand-700 text-brand-200 text-xs font-bold tracking-widest uppercase mb-6 backdrop-blur-md">
                             The Methodology
                         </span>
-                        <h1 className="text-4xl md:text-8xl font-extrabold text-white mb-8 tracking-tight leading-[1.1]">
+                        <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold text-white mb-8 tracking-tight leading-[1.1]">
                             The <span className="text-accent-500">Method</span> Behind <br /> Our Execution.
                         </h1>
                         <p className="text-xl md:text-2xl text-slate-200 max-w-3xl font-light leading-relaxed">

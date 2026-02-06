@@ -53,17 +53,15 @@ const ITSoftware = () => {
                             Industries We Serve
                         </span>
 
-                        <h1 className="text-4xl md:text-7xl font-extrabold text-white mb-4 leading-[1.1] tracking-tight">
+                        <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-4 leading-[1.1] tracking-tight">
                             IT & <span className="text-accent-500">Software</span>
                         </h1>
-                        <h2 className="text-2xl md:text-3xl font-bold text-white mb-8 opacity-90">
+                        <h2 className="text-xl md:text-2xl font-bold text-white mb-8 opacity-90">
                             HR Solutions Designed for the Technology Ecosystem
                         </h2>
 
                         <p className="text-xl md:text-2xl text-slate-200 mb-8 font-light max-w-4xl leading-relaxed">
-                            The IT & Software industry operates in a fast-paced, innovation-driven environment where speed, flexibility, and compliance are critical.
-                            CLink HR provides end-to-end HR, hiring, payroll, and workforce solutions tailored for technology companies across growth stages.
-                            From startups and SaaS companies to large IT services firms, we enable tech growth with precision.
+                            Tailored HR, hiring, and payroll solutions designed for the fast-paced technology ecosystem—from agile startups to large-scale IT services firms.
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4">
@@ -71,7 +69,7 @@ const ITSoftware = () => {
                                 to="/contact/hire-talent"
                                 className="bg-brand-600 text-white px-8 py-4 rounded-full font-bold hover:bg-brand-500 transition-all shadow-lg flex items-center justify-center gap-2"
                             >
-                                Explore IT & Software HR Solutions <ArrowRight className="w-5 h-5" />
+                                Explore IT & Software <ArrowRight className="w-5 h-5" />
                             </Link>
                         </div>
                     </motion.div>

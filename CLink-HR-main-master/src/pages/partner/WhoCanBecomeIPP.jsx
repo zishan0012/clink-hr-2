@@ -27,7 +27,7 @@ const WhoCanBecomeIPP = () => {
                     ><div className="inline-block bg-brand-800/50 backdrop-blur-md border border-brand-700 px-6 py-2 rounded-full text-sm font-bold text-brand-200 mb-6 uppercase tracking-widest">
                             For Recruiters Ready to Build Their Own Brand
                         </div>
-                        <h1 className="text-4xl md:text-7xl font-extrabold text-white mb-6">
+                        <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold text-white mb-6">
                             Who Can Become an <span className="text-accent-500">IPP?</span>
                         </h1>
 
@@ -80,7 +80,7 @@ const WhoCanBecomeIPP = () => {
                             <ul className="space-y-2">
                                 {item.items.map((point, i) => (
                                     <li key={i} className="flex items-start gap-2 text-slate-600 text-sm">
-                                        <div className="w-1.5 h-1.5 rounded-full bg-accent-500 mt-2 shrink-0"></div>
+                                        <div className="w-1.5 h-1.5 rounded-full bg-brand-500 mt-2 shrink-0"></div>
                                         <span>{point}</span>
                                     </li>
                                 ))}
@@ -90,14 +90,14 @@ const WhoCanBecomeIPP = () => {
 
                     {/* What We Look For Card */}
                     <div className="bg-brand-900 p-8 rounded-3xl shadow-xl text-white flex flex-col justify-center">
-                        <div className="w-14 h-14 bg-white/10 rounded-2xl flex items-center justify-center text-accent-400 mb-6">
+                        <div className="w-14 h-14 bg-white/10 rounded-2xl flex items-center justify-center text-brand-400 mb-6">
                             <Search className="w-7 h-7" />
                         </div>
                         <h3 className="text-xl font-bold mb-4">What We Look For</h3>
                         <ul className="space-y-3">
-                            <li className="flex gap-2 text-slate-300 text-sm"><CheckCircle className="w-4 h-4 text-accent-500 shrink-0 mt-0.5" /> Proven recruitment experience</li>
-                            <li className="flex gap-2 text-slate-300 text-sm"><CheckCircle className="w-4 h-4 text-accent-500 shrink-0 mt-0.5" /> Ability to manage closures independently</li>
-                            <li className="flex gap-2 text-slate-300 text-sm"><CheckCircle className="w-4 h-4 text-accent-500 shrink-0 mt-0.5" /> Commitment to quality & timelines</li>
+                            <li className="flex gap-2 text-slate-300 text-sm"><CheckCircle className="w-4 h-4 text-brand-500 shrink-0 mt-0.5" /> Proven recruitment experience</li>
+                            <li className="flex gap-2 text-slate-300 text-sm"><CheckCircle className="w-4 h-4 text-brand-500 shrink-0 mt-0.5" /> Ability to manage closures independently</li>
+                            <li className="flex gap-2 text-slate-300 text-sm"><CheckCircle className="w-4 h-4 text-brand-500 shrink-0 mt-0.5" /> Commitment to quality & timelines</li>
                         </ul>
                         <p className="mt-6 text-xs text-slate-400 italic border-t border-brand-800 pt-4">
                             "Team size is not a limitation—capability matters more."

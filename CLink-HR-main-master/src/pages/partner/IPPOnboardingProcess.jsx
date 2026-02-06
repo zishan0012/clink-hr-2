@@ -66,7 +66,7 @@ const IPPOnboardingProcess = () => {
                         <div className="inline-block bg-brand-800/50 backdrop-blur-md border border-brand-700 px-6 py-2 rounded-full text-sm font-bold text-brand-200 mb-6 uppercase tracking-widest">
                             Start Your Journey as an Independent Prime Partner
                         </div>
-                        <h1 className="text-4xl md:text-6xl font-extrabold mb-6">
+                        <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold mb-6">
                             IPP <span className="text-accent-500">Onboarding</span> Process
                         </h1>
                         <p className="text-xl md:text-2xl text-slate-200 mb-8 font-light max-w-4xl leading-relaxed">
@@ -101,7 +101,7 @@ const IPPOnboardingProcess = () => {
                                 </div>
                                 <p className="text-slate-600 text-lg leading-relaxed">{step.desc}</p>
                                 {i === 2 && (
-                                    <div className="mt-4 p-3 bg-accent-50 text-accent-800 text-sm font-bold rounded-lg inline-block border border-accent-100">
+                                    <div className="mt-4 p-3 bg-brand-50 text-brand-800 text-sm font-bold rounded-lg inline-block border border-brand-100">
                                         You remain independent while backed by a structured ecosystem.
                                     </div>
                                 )}

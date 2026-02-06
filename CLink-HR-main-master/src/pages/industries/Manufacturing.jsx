@@ -53,17 +53,15 @@ const Manufacturing = () => {
                             Industries We Serve
                         </span>
 
-                        <h1 className="text-4xl md:text-7xl font-extrabold text-white mb-4 leading-[1.1] tracking-tight">
+                        <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-4 leading-[1.1] tracking-tight">
                             Manufacturing & <span className="text-accent-500">Engineering</span>
                         </h1>
-                        <h2 className="text-2xl md:text-3xl font-bold text-white mb-8 opacity-90">
+                        <h2 className="text-xl md:text-2xl font-bold text-white mb-8 opacity-90">
                             HR Solutions Built for Manufacturing Excellence
                         </h2>
 
                         <p className="text-xl md:text-2xl text-slate-200 mb-8 font-light max-w-4xl leading-relaxed">
-                            The Manufacturing & Engineering industry requires efficient workforce management, compliance, and operational continuity.
-                            CLink HR delivers end-to-end HR, hiring, payroll, and workforce solutions tailored for manufacturing plants, production units, and engineering operations.
-                            We help businesses manage large, distributed, and skilled workforces while ensuring compliance and productivity.
+                            Precision-driven HR and workforce solutions for manufacturing plants and engineering units, ensuring operational continuity and compliance at scale.
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4">
@@ -71,7 +69,7 @@ const Manufacturing = () => {
                                 to="/contact/hire-talent"
                                 className="bg-brand-600 text-white px-8 py-4 rounded-full font-bold hover:bg-brand-500 transition-all shadow-lg flex items-center justify-center gap-2"
                             >
-                                Explore Manufacturing HR Solutions <ArrowRight className="w-5 h-5" />
+                                Explore Manufacturing <ArrowRight className="w-5 h-5" />
                             </Link>
                         </div>
                     </motion.div>

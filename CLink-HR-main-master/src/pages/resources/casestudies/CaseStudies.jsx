@@ -56,7 +56,7 @@ const CaseStudies = () => {
                     <motion.h1
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
-                        className="text-4xl md:text-6xl font-bold text-white mb-6"
+                        className="text-3xl md:text-5xl lg:text-7xl font-bold text-white mb-6"
                     >
                         Success Stories & Case Studies
                     </motion.h1>

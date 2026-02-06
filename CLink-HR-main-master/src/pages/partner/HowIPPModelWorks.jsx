@@ -57,7 +57,7 @@ const HowIPPModelWorks = () => {
                     <motion.h1
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
-                        className="text-4xl md:text-6xl font-extrabold mb-6"
+                        className="text-3xl md:text-5xl lg:text-7xl font-bold mb-6"
                     >
                         Independent Delivery with <br /><span className="text-accent-500">Centralized Support</span>
                     </motion.h1>
@@ -96,8 +96,8 @@ const HowIPPModelWorks = () => {
                                     <p className="text-slate-600 leading-relaxed max-w-md mx-auto md:mx-0 inline-block">{step.desc}</p>
                                 </div>
 
-                                <div className="relative z-10 w-16 h-16 rounded-full bg-white border-4 border-accent-100 shadow-xl flex items-center justify-center shrink-0">
-                                    <step.icon className="w-8 h-8 text-accent-600" />
+                                <div className="relative z-10 w-16 h-16 rounded-full bg-white border-4 border-brand-100 shadow-xl flex items-center justify-center shrink-0">
+                                    <step.icon className="w-8 h-8 text-brand-600" />
                                     <div className="absolute -top-2 -right-2 bg-brand-900 text-white text-xs font-bold w-6 h-6 rounded-full flex items-center justify-center">
                                         {i + 1}
                                     </div>
@@ -138,7 +138,7 @@ const HowIPPModelWorks = () => {
 
                         <div className="bg-slate-900 rounded-[2.5rem] p-10 border border-slate-800 text-white">
                             <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
-                                <TrendingUp className="w-8 h-8 text-accent-500" /> For Clients
+                                <TrendingUp className="w-8 h-8 text-brand-500" /> For Clients
                             </h3>
                             <ul className="space-y-4">
                                 {[
@@ -147,7 +147,7 @@ const HowIPPModelWorks = () => {
                                     "Central coordination ensures accountability and transparency"
                                 ].map((item, i) => (
                                     <li key={i} className="flex items-start gap-3">
-                                        <div className="w-6 h-6 rounded-full bg-slate-800 flex items-center justify-center text-accent-500 shrink-0 mt-0.5 text-sm font-bold shadow-sm">✓</div>
+                                        <div className="w-6 h-6 rounded-full bg-slate-800 flex items-center justify-center text-brand-500 shrink-0 mt-0.5 text-sm font-bold shadow-sm">✓</div>
                                         <span className="text-slate-300 font-medium">{item}</span>
                                     </li>
                                 ))}

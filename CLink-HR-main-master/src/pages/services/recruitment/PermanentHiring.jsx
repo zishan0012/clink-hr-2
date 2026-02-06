@@ -43,7 +43,7 @@ const PermanentHiring = () => {
                         <span className="inline-block py-1 px-3 rounded-full bg-brand-800/50 border border-brand-700 text-brand-200 text-xs font-bold tracking-widest uppercase mb-6 backdrop-blur-md">
                             Recruitment Services
                         </span>
-                        <h1 className="text-4xl md:text-8xl font-extrabold text-white mb-8 tracking-tight leading-[1.1]">
+                        <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold text-white mb-8 tracking-tight leading-[1.1]">
                             Permanent <br />
                             <span className="text-accent-500">Hiring Solutions</span>
                         </h1>

@@ -66,7 +66,7 @@ const WhyJoinIPP = () => {
                     ><div className="inline-block bg-brand-800/50 backdrop-blur-md border border-brand-700 px-6 py-2 rounded-full text-sm font-bold text-brand-200 mb-6 uppercase tracking-widest">
                             Build Your Own Recruitment Brand with Support
                         </div>
-                        <h1 className="text-4xl md:text-6xl font-extrabold mb-6 tracking-tight">
+                        <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold mb-6 tracking-tight">
                             Why Join as an <span className="text-accent-500">IPP?</span>
                         </h1>
 
@@ -135,7 +135,7 @@ const WhyJoinIPP = () => {
             <section className="py-24 bg-slate-50 text-center">
                 <div className="max-w-4xl mx-auto px-4">
                     <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-6 italic tracking-tight">
-                        "Operate independently. Focus on delivery. <br /><span className="text-accent-500">Scale with structure and support.</span>"
+                        "Operate independently. Focus on delivery. <br /><span className="text-brand-500">Scale with structure and support.</span>"
                     </h2>
                 </div>
             </section>

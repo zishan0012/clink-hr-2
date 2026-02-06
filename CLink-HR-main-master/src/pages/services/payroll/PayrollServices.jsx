@@ -81,7 +81,7 @@ const PayrollServices = () => {
                         <span className="inline-block py-1 px-3 rounded-full bg-brand-600/20 border border-brand-500/30 text-brand-300 text-xs font-bold tracking-widest uppercase mb-6 backdrop-blur-md">
                             Operational Excellence
                         </span>
-                        <h1 className="text-4xl md:text-8xl font-extrabold text-white mb-8 tracking-tight leading-[1.1]">
+                        <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold text-white mb-8 tracking-tight leading-[1.1]">
                             Payroll & <br />
                             <span className="text-accent-500">HR Operations</span>
                         </h1>

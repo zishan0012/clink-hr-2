@@ -40,7 +40,7 @@ const Support = () => {
                         <span className="inline-block py-1 px-3 rounded-full bg-brand-800/50 border border-brand-700 text-brand-200 text-xs font-bold tracking-widest uppercase mb-6 backdrop-blur-md">
                             Help Center
                         </span>
-                        <h1 className="text-4xl md:text-6xl text-white font-extrabold mb-6 max-w-2xl tracking-tight">
+                        <h1 className="text-3xl md:text-5xl lg:text-7xl text-white font-bold mb-6 max-w-4xl tracking-tight">
                             Reliable Support for <span className="text-accent-500">Clients & IPP Partners</span>
                         </h1>
                         <p className="text-xl md:text-2xl text-slate-300 leading-relaxed max-w-3xl">

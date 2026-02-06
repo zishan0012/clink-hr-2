@@ -53,17 +53,15 @@ const Logistics = () => {
                             Industries We Serve
                         </span>
 
-                        <h1 className="text-4xl md:text-7xl font-extrabold text-white mb-4 leading-[1.1] tracking-tight">
+                        <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-4 leading-[1.1] tracking-tight">
                             Logistics & <span className="text-accent-500">Supply Chain</span>
                         </h1>
-                        <h2 className="text-2xl md:text-3xl font-bold text-white mb-8 opacity-90">
+                        <h2 className="text-xl md:text-2xl font-bold text-white mb-8 opacity-90">
                             HR Solutions for Logistics & Supply Chain Businesses
                         </h2>
 
                         <p className="text-xl md:text-2xl text-slate-200 mb-8 font-light max-w-4xl leading-relaxed">
-                            The Logistics & Supply Chain industry requires a workforce that is efficient, scalable, and compliant to ensure smooth operations from warehouses to delivery networks.
-                            CLink HR delivers end-to-end HR, recruitment, payroll, and workforce management solutions tailored for logistics companies, warehousing operations, and transportation networks.
-                            We help businesses manage large, distributed teams across multiple locations while maintaining compliance and operational efficiency.
+                            Scalable HR and recruitment solutions for logistics and supply chain networks, managing distributed teams with speed and operational precision.
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4">
@@ -71,7 +69,7 @@ const Logistics = () => {
                                 to="/contact/hire-talent"
                                 className="bg-brand-600 text-white px-8 py-4 rounded-full font-bold hover:bg-brand-500 transition-all shadow-lg flex items-center justify-center gap-2"
                             >
-                                Explore Logistics HR Solutions <ArrowRight className="w-5 h-5" />
+                                Explore Logistics <ArrowRight className="w-5 h-5" />
                             </Link>
                         </div>
                     </motion.div>
