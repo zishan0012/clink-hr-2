@@ -19,12 +19,12 @@ const WhoCanBecomeIPP = () => {
                     />
                     <div className="absolute inset-0 bg-brand-950/50"></div>
                 </div>
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div className="max-w-7xl ml-0 mr-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <motion.div
                         initial={{ opacity: 0, scale: 0.95 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.4 }}
-                    ><div className="inline-block bg-brand-800/50 backdrop-blur-md border border-brand-700 px-6 py-2 rounded-full text-sm font-bold text-brand-200 mb-6 uppercase tracking-widest">
+                    ><div className="inline-block bg-brand-800/50 backdrop-blur-md border border-brand-700 px-6 py-2 rounded-full text-sm font-semibold text-brand-200 mb-6 uppercase tracking-widest">
                             For Recruiters Ready to Build Their Own Brand
                         </div>
                         <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold text-white mb-6">
@@ -153,7 +153,7 @@ const WhoCanBecomeIPP = () => {
                     <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-8 italic tracking-tight leading-tight">
                         "If you can deliver quality hires and want to build your own recruitment brand, <span className="text-brand-600">you are ready to become an IPP.</span>"
                     </h2>
-                    <RouterLink to="/partners/become-ipp-partner" className="inline-block bg-brand-600 text-white px-10 py-4 rounded-full font-bold hover:bg-brand-700 transition-all shadow-xl hover:shadow-brand-500/30">
+                    <RouterLink to="/partners/become-ipp-partner" className="inline-block bg-brand-600 text-white px-10 py-4 rounded-full font-semibold hover:bg-brand-700 transition-all shadow-xl hover:shadow-brand-500/30">
                         Apply Now
                     </RouterLink>
                 </div>

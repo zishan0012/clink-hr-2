@@ -13,10 +13,33 @@ const HireTalent = () => {
         hiringNeeds: ''
     });
 
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData((prev) => ({
+            ...prev,
+            [name]: value,
+        }));
+    };
+
     const handleSubmit = (e) => {
         e.preventDefault();
+
+        // phone validation (10 digits)
+        if (formData.phone.length !== 10) {
+            alert("Phone number must be exactly 10 digits!");
+            return;
+        }
+
         console.log("Hiring Request:", formData);
         alert("Thank you! Our recruitment team will assist you shortly.");
+
+        setFormData({
+            companyName: '',
+            contactPerson: '',
+            email: '',
+            phone: '',
+            hiringNeeds: ''
+        });
     };
 
     return (
@@ -32,13 +55,13 @@ const HireTalent = () => {
                     <div className="absolute inset-0 bg-brand-950/60"></div>
                 </div>
 
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div className="max-w-7xl ml-0 mr-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6 }}
                     >
-                        <span className="inline-block py-1 px-3 rounded-full bg-brand-800/50 border border-brand-700 text-brand-200 text-xs font-bold tracking-widest uppercase mb-6 backdrop-blur-md">
+                        <span className="inline-block py-1 px-3 rounded-full bg-brand-800/50 border border-brand-700 text-brand-200 text-xs font-semibold tracking-widest uppercase mb-6 backdrop-blur-md">
                             Recruitment Solutions
                         </span>
                         <h1 className="text-3xl md:text-5xl lg:text-7xl text-white font-bold mb-6 tracking-tight">
@@ -141,21 +164,77 @@ const HireTalent = () => {
                             <form onSubmit={handleSubmit} className="space-y-4">
                                 <div>
                                     <label className="block text-xs font-bold text-slate-700 mb-1">Company Name</label>
-                                    <input type="text" className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-brand-500 focus:bg-white focus:outline-none text-sm transition-all" placeholder="Your Company" required />
+                                    <input
+                                        type="text"
+                                        name="companyName"
+                                        value={formData.companyName}
+                                        onChange={handleChange}
+                                        className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-brand-500 focus:bg-white focus:outline-none text-sm transition-all"
+                                        placeholder="Your Company"
+                                        required
+                                    />
                                 </div>
                                 <div>
                                     <label className="block text-xs font-bold text-slate-700 mb-1">Contact Person</label>
-                                    <input type="text" className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-brand-500 focus:bg-white focus:outline-none text-sm transition-all" placeholder="Full Name" required />
+                                    <input
+                                        type="text"
+                                        name="contactPerson"
+                                        value={formData.contactPerson}
+                                        onChange={handleChange}
+                                        className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-brand-500 focus:bg-white focus:outline-none text-sm transition-all"
+                                        placeholder="Full Name"
+                                        required
+                                    />
                                 </div>
-                                <div>
-                                    <label className="block text-xs font-bold text-slate-700 mb-1">Work Email</label>
-                                    <input type="email" className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-brand-500 focus:bg-white focus:outline-none text-sm transition-all" placeholder="email@company.com" required />
+                                <div className="grid grid-cols-2 gap-3">
+                                    <div>
+                                        <label className="block text-xs font-bold text-slate-700 mb-1">Work Email</label>
+                                        <input
+                                            type="email"
+                                            name="email"
+                                            value={formData.email}
+                                            onChange={handleChange}
+                                            className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-brand-500 focus:bg-white focus:outline-none text-sm transition-all"
+                                            placeholder="email@company.com"
+                                            required
+                                        />
+                                    </div>
+                                    <div>
+                                        <label className="block text-xs font-bold text-slate-700 mb-1">Phone</label>
+                                        <div className="flex">
+                                            <span className="inline-flex items-center px-3 rounded-l-xl border border-r-0 border-slate-200 bg-slate-100 text-slate-500 font-bold text-sm">
+                                                +91
+                                            </span>
+                                            <input
+                                                type="tel"
+                                                name="phone"
+                                                value={formData.phone}
+                                                onChange={(e) => {
+                                                    const value = e.target.value.replace(/\D/g, '');
+                                                    if (value.length <= 10) {
+                                                        setFormData(prev => ({ ...prev, phone: value }));
+                                                    }
+                                                }}
+                                                className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-r-xl focus:ring-2 focus:ring-brand-500 focus:bg-white focus:outline-none text-sm transition-all"
+                                                placeholder="10-digit number"
+                                                maxLength={10}
+                                                required
+                                            />
+                                        </div>
+                                    </div>
                                 </div>
                                 <div>
                                     <label className="block text-xs font-bold text-slate-700 mb-1">Hiring Needs</label>
-                                    <textarea rows="3" className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-brand-500 focus:bg-white focus:outline-none text-sm transition-all" placeholder="Briefly describe roles..."></textarea>
+                                    <textarea
+                                        rows="3"
+                                        name="hiringNeeds"
+                                        value={formData.hiringNeeds}
+                                        onChange={handleChange}
+                                        className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-brand-500 focus:bg-white focus:outline-none text-sm transition-all"
+                                        placeholder="Briefly describe roles..."
+                                    ></textarea>
                                 </div>
-                                <button type="submit" className="w-full bg-brand-600 text-white font-bold py-3.5 rounded-xl hover:bg-brand-700 transition-all shadow-lg flex items-center justify-center gap-2">
+                                <button type="submit" className="w-full bg-brand-600 text-white font-semibold py-3.5 rounded-xl hover:bg-brand-700 transition-all shadow-lg flex items-center justify-center gap-2">
                                     Start Hiring <Send className="w-4 h-4" />
                                 </button>
                                 <div className="text-center mt-3">

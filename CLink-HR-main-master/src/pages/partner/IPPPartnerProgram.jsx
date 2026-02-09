@@ -20,13 +20,13 @@ const IPPPartnerProgram = () => {
                     <div className="absolute inset-0 bg-brand-950/50"></div>
                 </div>
 
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div className="max-w-7xl ml-0 mr-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.4 }}
                     >
-                        <span className="inline-block py-1 px-3 rounded-full bg-brand-800/50 border border-brand-700 text-brand-200 text-xs font-bold tracking-widest uppercase mb-6 backdrop-blur-md">
+                        <span className="inline-block py-1 px-3 rounded-full bg-brand-800/50 border border-brand-700 text-brand-200 text-xs font-semibold tracking-widest uppercase mb-6 backdrop-blur-md">
                             Partnership
                         </span>
                         <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold text-white mb-6 tracking-tight leading-tight">
@@ -36,7 +36,7 @@ const IPPPartnerProgram = () => {
                             Build Your Recruitment Business with Confidence. The IPP Partner Program by CLink HR is designed for professionals who want to scale their own recruitment brand without the burden of backend operations.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4">
-                            <Link to="/partners/become-ipp-partner" className="bg-brand-600 text-white px-8 py-4 rounded-full font-bold hover:bg-brand-500 transition-all shadow-lg hover:shadow-brand-500/25 flex items-center justify-center gap-2">
+                            <Link to="/partners/become-ipp-partner" className="bg-brand-600 text-white px-8 py-4 rounded-full font-semibold hover:bg-brand-500 transition-all shadow-lg hover:shadow-brand-500/25 flex items-center justify-center gap-2">
                                 Join Program <ArrowRight className="w-5 h-5" />
                             </Link>
                         </div>

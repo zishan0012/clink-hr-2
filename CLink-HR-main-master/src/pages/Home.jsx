@@ -166,7 +166,8 @@ const Home = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent z-10"></div>
 
                 {/* Content Container */}
-                <div className="relative z-20 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center py-3 pb-10">
+                <div className="relative z-20 w-full ml-0 mr-auto px-6 sm:px-10 lg:px-20 h-full flex flex-col justify-center py-3 pb-10">
+
 
                     <motion.div
                         initial={{ opacity: 0, x: -20 }}
@@ -174,7 +175,7 @@ const Home = () => {
                         transition={{ duration: 0.5 }}
                         className="max-w-5xl"
                     >
-                        <span className="inline-block py-2 px-4 rounded-full bg-brand-800/20 border border-brand-700 text-brand-400 text-xs font-bold tracking-widest uppercase mb-8 backdrop-blur-md shadow-lg">
+                        <span className="inline-block py-2 px-4 rounded-full bg-brand-800/20 border border-brand-700 text-brand-400 text-xs font-semibold tracking-widest uppercase mb-8 backdrop-blur-md shadow-lg">
                             Premier Workforce Solutions
                         </span>
                         <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold leading-tight text-white mb-8 tracking-tight drop-shadow-xl">
@@ -205,21 +206,21 @@ const Home = () => {
                         className="flex flex-col sm:flex-row gap-4"
                     >
                         <Link
-  to="/contact/hire-talent"
-  className="group relative bg-brand-600 text-white px-6 py-3 rounded-full font-semibold overflow-hidden transition-all hover:scale-105 shadow-xl hover:shadow-brand-500/40 block w-fit"
->
-  <span className="relative flex items-center gap-2 text-base">
-    Hire Talent
-    <Rocket className="w-5 h-5 group-hover:rotate-12 transition-transform" />
-  </span>
-</Link>
+                            to="/contact/hire-talent"
+                            className="group relative bg-brand-600 text-white px-6 py-3 rounded-full font-semibold overflow-hidden transition-all hover:scale-105 shadow-xl hover:shadow-brand-500/40 block w-fit"
+                        >
+                            <span className="relative flex items-center gap-2 text-base">
+                                Hire Talent
+                                <Rocket className="w-5 h-5 group-hover:rotate-12 transition-transform" />
+                            </span>
+                        </Link>
 
-<Link
-  to="/contact"
-  className="group bg-white/10 backdrop-blur-md text-white px-6 py-3 rounded-full font-semibold border border-white/20 hover:bg-white hover:text-brand-900 transition-all hover:border-white shadow-lg text-base block w-fit"
->
-  Talk to Us Today
-</Link>
+                        <Link
+                            to="/contact"
+                            className="group bg-white/10 backdrop-blur-md text-white px-6 py-3 rounded-full font-semibold border border-white/20 hover:bg-white hover:text-brand-900 transition-all hover:border-white shadow-lg text-base block w-fit"
+                        >
+                            Talk to Us Today
+                        </Link>
 
                     </motion.div>
 
@@ -880,7 +881,7 @@ const Home = () => {
 
                             <div className="space-y-6 text-xl text-slate-600 leading-relaxed">
                                 <p>
-                                    At <span className="font-bold text-slate-900">CLink HR</span>, we align the diversified and intricate HR needs of our clients by providing reliable and strategic staffing solutions.
+                                    At <span className="font-bold text-slate-900">Clink HR Services</span>  powered by<span className="font-bold text-slate-900"> CLink Consultancy Services</span>, we align the diversified and intricate HR needs of our clients by providing reliable and strategic staffing solutions.
                                 </p>
                                 <p>
                                     Headquartered in Gurgaon, India, we are a subsidiary of the <span className="font-bold text-slate-900">CLink Group</span> and pioneers of organized recruitment services in India.

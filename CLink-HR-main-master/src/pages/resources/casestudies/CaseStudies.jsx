@@ -52,7 +52,7 @@ const CaseStudies = () => {
                     <div className="absolute inset-0 bg-brand-950/80"></div>
                 </div>
 
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div className="max-w-7xl ml-0 mr-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <motion.h1
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -146,7 +146,7 @@ const CaseStudies = () => {
                                 {/* CTA */}
                                 <Link
                                     to={`/resources/case-studies/${study.slug}`}
-                                    className="inline-flex items-center gap-2 bg-brand-600 text-white px-8 py-4 rounded-full font-bold hover:bg-brand-700 transition-all shadow-lg hover:shadow-xl hover:-translate-y-1 transform duration-300"
+                                    className="inline-flex items-center gap-2 bg-brand-600 text-white px-8 py-4 rounded-full font-semibold hover:bg-brand-700 transition-all shadow-lg hover:shadow-xl hover:-translate-y-1 transform duration-300"
                                 >
                                     Read Full Case Study <ArrowRight className="w-5 h-5" />
                                 </Link>

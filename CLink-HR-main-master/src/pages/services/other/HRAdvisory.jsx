@@ -44,13 +44,13 @@ const HRAdvisory = () => {
                     <div className="absolute inset-0 bg-brand-950/50"></div>
                 </div>
 
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div className="max-w-7xl ml-0 mr-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.4 }}
                     >
-                        <span className="inline-block py-1 px-3 rounded-full bg-brand-800/50 border border-brand-700 text-brand-200 text-xs font-bold tracking-widest uppercase mb-6 backdrop-blur-md">
+                        <span className="inline-block py-1 px-3 rounded-full bg-brand-800/50 border border-brand-700 text-brand-200 text-xs font-semibold tracking-widest uppercase mb-6 backdrop-blur-md">
                             Strategic Consulting
                         </span>
                         <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold text-white mb-8 tracking-tight leading-[1.1]">
@@ -134,7 +134,7 @@ const HRAdvisory = () => {
                     <p className="text-xl text-slate-400 mb-12 leading-relaxed max-w-2xl mx-auto font-light">
                         "HR should be a profit center, not a cost center. Let our advisors show you how to optimize your talent ROI."
                     </p>
-                    <Link to="/contact" className="bg-accent-500 text-white px-12 py-5 rounded-full font-bold hover:bg-accent-600 transition-all shadow-xl inline-flex items-center gap-3">
+                    <Link to="/contact" className="bg-accent-500 text-white px-12 py-5 rounded-full font-semibold hover:bg-accent-600 transition-all shadow-xl inline-flex items-center gap-3">
                         Talk to a Strategic Advisor <ArrowRight className="w-5 h-5" />
                     </Link>
                 </div>

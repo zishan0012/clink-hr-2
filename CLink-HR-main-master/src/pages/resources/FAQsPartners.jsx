@@ -93,13 +93,13 @@ const FAQsPartners = () => {
                     <div className="absolute inset-0 bg-brand-950/50"></div>
                 </div>
 
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div className="max-w-7xl mx-auto  px-4 sm:px-6 lg:px-8 relative z-10">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.4 }}
                     >
-                        <span className="inline-block py-1.5 px-4 rounded-full bg-blue-900/50 border border-blue-500/30 text-blue-200 text-sm font-bold tracking-widest uppercase mb-6 backdrop-blur-md shadow-lg">
+                        <span className="inline-block py-1.5 px-4 rounded-full bg-brand-800/50 border border-brand-500/30 text-brand-200 text-sm font-semibold tracking-widest uppercase mb-6 backdrop-blur-md shadow-lg">
                             Partner Ecosystem
                         </span>
                         <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-6">
@@ -157,11 +157,11 @@ const FAQsPartners = () => {
                                     "Growth is better when shared. Join the CLink HR Partner Ecosystem today."
                                 </p>
                                 <div className="flex flex-col sm:flex-row gap-6 justify-center">
-                                    <Link to="/partners" className="group flex items-center justify-center gap-3 bg-brand-500 text-white px-8 py-3 rounded-full font-bold hover:bg-brand-400 transition-all shadow-lg hover:-translate-y-1">
+                                    <Link to="/partners" className="group flex items-center justify-center gap-3 bg-brand-500 text-white px-8 py-3 rounded-full font-semibold hover:bg-brand-400 transition-all shadow-lg hover:-translate-y-1">
                                         <Briefcase className="w-5 h-5" />
                                         Join as an IPP
                                     </Link>
-                                    <Link to="/contact/partner-inquiry" className="group flex items-center justify-center gap-3 bg-white/10 text-white border border-white/20 px-8 py-3 rounded-full font-bold hover:bg-white hover:text-brand-900 transition-all">
+                                    <Link to="/contact/partner-inquiry" className="group flex items-center justify-center gap-3 bg-white/10 text-white border border-white/20 px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-brand-900 transition-all">
                                         <DollarSign className="w-5 h-5" />
                                         Partner Inquiry
                                     </Link>
