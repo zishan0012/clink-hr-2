@@ -33,14 +33,14 @@ const ContractWorkforceManagement = () => {
                     <div className="absolute inset-0 bg-brand-950/50"></div>
                 </div>
 
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div className="max-w-7xl ml-0 mr-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.4 }}
                         className="max-w-4xl"
                     >
-                        <span className="inline-block py-1 px-3 rounded-full bg-brand-800/50 border border-brand-700 text-brand-200 text-xs font-bold tracking-widest uppercase mb-6 backdrop-blur-md">
+                        <span className="inline-block py-1 px-3 rounded-full bg-brand-800/50 border border-brand-700 text-brand-200 text-xs font-semibold tracking-widest uppercase mb-6 backdrop-blur-md">
                             Contract Workforce Management
                         </span>
                         <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold text-white mb-8 tracking-tight leading-[1.1]">
@@ -51,7 +51,7 @@ const ContractWorkforceManagement = () => {
                             CLink HR’s Contract Workforce Management solutions help organizations manage contractual and flexible workforce with clarity, control, and operational efficiency.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4">
-                            <Link to="/contact/hire-talent" className="bg-brand-600 text-white px-8 py-4 rounded-full font-bold hover:bg-brand-500 transition-all shadow-lg flex items-center justify-center gap-2">
+                            <Link to="/contact/hire-talent" className="bg-brand-600 text-white px-8 py-4 rounded-full font-semibold hover:bg-brand-500 transition-all shadow-lg flex items-center justify-center gap-2">
                                 Discuss Workforce Requirements <ArrowRight className="w-5 h-5" />
                             </Link>
                         </div>
@@ -279,10 +279,10 @@ const ContractWorkforceManagement = () => {
                                 Partner with CLink HR to streamline contract workforce management and focus on core business priorities.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                <Link to="/contact/hire-talent" className="bg-brand-600 text-white px-10 py-4 rounded-full font-bold hover:bg-brand-700 transition-all shadow-xl">
+                                <Link to="/contact/hire-talent" className="bg-brand-600 text-white px-10 py-4 rounded-full font-semibold hover:bg-brand-700 transition-all shadow-xl">
                                     Discuss Contract Workforce Requirements
                                 </Link>
-                                <Link to="/contact" className="bg-white text-brand-700 border border-brand-200 px-10 py-4 rounded-full font-bold hover:bg-brand-50 transition-all">
+                                <Link to="/contact" className="bg-white text-brand-700 border border-brand-200 px-10 py-4 rounded-full font-semibold hover:bg-brand-50 transition-all">
                                     Talk to Our Workforce Solutions Team
                                 </Link>
                             </div>

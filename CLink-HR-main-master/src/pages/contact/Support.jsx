@@ -7,15 +7,30 @@ import { LifeBuoy, Users, Briefcase, Monitor, Clock, Send, MessageSquare } from 
 const Support = () => {
     const [ticketData, setTicketData] = useState({
         name: '',
-        userType: 'Client',
+        userType: 'Client Support',
         email: '',
         message: ''
     });
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setTicketData((prev) => ({
+            ...prev,
+            [name]: value,
+        }));
+    };
 
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log("Support Request:", ticketData);
         alert("Your support ticket has been created. We will respond shortly.");
+
+        setTicketData({
+            name: '',
+            userType: 'Client Support',
+            email: '',
+            message: ''
+        });
     };
 
     return (
@@ -31,13 +46,13 @@ const Support = () => {
                     <div className="absolute inset-0 bg-brand-950/60"></div>
                 </div>
 
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div className="max-w-7xl ml-0 mr-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6 }}
                     >
-                        <span className="inline-block py-1 px-3 rounded-full bg-brand-800/50 border border-brand-700 text-brand-200 text-xs font-bold tracking-widest uppercase mb-6 backdrop-blur-md">
+                        <span className="inline-block py-1 px-3 rounded-full bg-brand-800/50 border border-brand-700 text-brand-200 text-xs font-semibold tracking-widest uppercase mb-6 backdrop-blur-md">
                             Help Center
                         </span>
                         <h1 className="text-3xl md:text-5xl lg:text-7xl text-white font-bold mb-6 max-w-4xl tracking-tight">
@@ -75,7 +90,7 @@ const Support = () => {
                                 </ul>
                                 <div className="pt-4 border-t border-slate-100 text-base">
                                     <p className="font-bold text-brand-900">support@clinkhr.com</p>
-                                    <p className="text-slate-500">+91-XXXXXXXXXX</p>
+                                    <p className="text-slate-500">+91 84489 09389</p>
                                 </div>
                             </div>
 
@@ -95,7 +110,7 @@ const Support = () => {
                                 </ul>
                                 <div className="pt-4 border-t border-slate-100 text-base">
                                     <p className="font-bold text-slate-900">ipp-support@clinkhr.com</p>
-                                    <p className="text-slate-500">+91-XXXXXXXXXX</p>
+                                    <p className="text-slate-500">+91 84489 09389</p>
                                 </div>
                             </div>
                         </div>
@@ -147,25 +162,53 @@ const Support = () => {
                             <form onSubmit={handleSubmit} className="space-y-4">
                                 <div>
                                     <label className="block text-xs font-bold text-slate-700 mb-1">Full Name</label>
-                                    <input type="text" className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-brand-500 focus:bg-white focus:outline-none text-sm transition-all" placeholder="Your Name" required />
+                                    <input
+                                        type="text"
+                                        name="name"
+                                        value={ticketData.name}
+                                        onChange={handleChange}
+                                        className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-brand-500 focus:bg-white focus:outline-none text-sm transition-all"
+                                        placeholder="Your Name"
+                                        required
+                                    />
                                 </div>
                                 <div>
                                     <label className="block text-xs font-bold text-slate-700 mb-1">Support Type</label>
-                                    <select className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-brand-500 focus:bg-white focus:outline-none text-sm transition-all">
-                                        <option>Client Support</option>
-                                        <option>IPP Partner Support</option>
-                                        <option>General Inquiry</option>
+                                    <select
+                                        name="userType"
+                                        value={ticketData.userType}
+                                        onChange={handleChange}
+                                        className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-brand-500 focus:bg-white focus:outline-none text-sm transition-all"
+                                    >
+                                        <option value="Client Support">Client Support</option>
+                                        <option value="IPP Partner Support">IPP Partner Support</option>
+                                        <option value="General Inquiry">General Inquiry</option>
                                     </select>
                                 </div>
                                 <div>
                                     <label className="block text-xs font-bold text-slate-700 mb-1">Email Address</label>
-                                    <input type="email" className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-brand-500 focus:bg-white focus:outline-none text-sm transition-all" placeholder="email@example.com" required />
+                                    <input
+                                        type="email"
+                                        name="email"
+                                        value={ticketData.email}
+                                        onChange={handleChange}
+                                        className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-brand-500 focus:bg-white focus:outline-none text-sm transition-all"
+                                        placeholder="email@example.com"
+                                        required
+                                    />
                                 </div>
                                 <div>
                                     <label className="block text-xs font-bold text-slate-700 mb-1">Issue Description</label>
-                                    <textarea rows="3" className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-brand-500 focus:bg-white focus:outline-none text-sm transition-all" placeholder="Describe your issue..."></textarea>
+                                    <textarea
+                                        rows="3"
+                                        name="message"
+                                        value={ticketData.message}
+                                        onChange={handleChange}
+                                        className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-brand-500 focus:bg-white focus:outline-none text-sm transition-all"
+                                        placeholder="Describe your issue..."
+                                    ></textarea>
                                 </div>
-                                <button type="submit" className="w-full bg-brand-600 text-white font-bold py-3.5 rounded-xl hover:bg-brand-700 transition-all shadow-lg flex items-center justify-center gap-2">
+                                <button type="submit" className="w-full bg-brand-600 text-white font-semibold py-3.5 rounded-xl hover:bg-brand-700 transition-all shadow-lg flex items-center justify-center gap-2">
                                     Create Ticket <Send className="w-4 h-4" />
                                 </button>
 

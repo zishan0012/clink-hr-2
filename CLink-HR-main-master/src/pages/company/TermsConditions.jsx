@@ -85,7 +85,7 @@ const TermsConditions = () => {
                 position: 'relative',
                 backgroundColor: '#0f172a',
                 padding: '140px 20px',
-                textAlign: 'center',
+                textAlign: 'left',
                 backgroundImage: 'url(' + terms + ')',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
@@ -94,9 +94,9 @@ const TermsConditions = () => {
                 <div style={{ position: 'absolute', inset: 0, backgroundColor: 'rgba(15, 23, 42, 0.8)', zIndex: 1 }}></div>
                 <div style={{ position: 'relative', zIndex: 2 }}>
                     <h1 style={{ color: '#ffffff', fontSize: '3.5rem', fontWeight: '900', margin: '0 0 20px 0' }}>
-                        Terms & <span style={{ color: '#f97316' }}>Conditions</span>
+                        Terms & <span style={{ color: '#6366f1' }}>Conditions</span>
                     </h1>
-                    <p style={{ color: '#cbd5e1', fontSize: '1.2rem', maxWidth: '750px', margin: '0 auto', lineHeight: '1.6' }}>
+                    <p style={{ color: '#cbd5e1', fontSize: '1.2rem', maxWidth: '750px', margin: '0', lineHeight: '1.6' }}>
                         Please read these terms carefully before accessing our website or using our services.
                     </p>
                 </div>
@@ -117,7 +117,7 @@ const TermsConditions = () => {
                         <article key={idx} style={{ marginBottom: '50px' }}>
                             <h2 style={{
                                 color: '#0f172a',
-                                borderLeft: '5px solid #f97316',
+                                borderLeft: '5px solid #6366f1',
                                 paddingLeft: '15px',
                                 fontSize: '1.75rem',
                                 fontWeight: '700',
@@ -158,7 +158,7 @@ const TermsConditions = () => {
 
             {/* Statement Footer */}
             <div style={{ backgroundColor: '#0f172a', padding: '50px 20px', textAlign: 'center' }}>
-                <p style={{ color: '#f97316', fontSize: '0.9rem', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '15px' }}>
+                <p style={{ color: '#6366f1', fontSize: '0.9rem', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '15px' }}>
                     Terms Statement
                 </p>
                 <p style={{ color: '#ffffff', fontSize: '1.2rem', fontStyle: 'italic', maxWidth: '800px', margin: '0 auto', lineHeight: '1.6' }}>

@@ -8,7 +8,7 @@ import Home from './pages/Home';
 
 import AboutUs from './pages/company/AboutUs';
 import VisionMission from './pages/company/VisionMission';
-import FounderMessage from './pages/company/FounderMessage';
+// import FounderMessage from './pages/company/FounderMessage';
 import OurApproach from './pages/company/OurApproach';
 import PanIndiaPresence from './pages/company/PanIndiaPresence';
 
@@ -117,7 +117,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/company/about" element={<AboutUs />} />
           <Route path="/company/vision-mission" element={<VisionMission />} />
-          <Route path="/company/founder-message" element={<FounderMessage />} />
+          {/* <Route path="/company/founder-message" element={<FounderMessage />} /> */}
           <Route path="/company/our-approach" element={<OurApproach />} />
           <Route path="/company/pan-india" element={<PanIndiaPresence />} />
           <Route path="/company/careers" element={<Careers />} />

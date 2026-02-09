@@ -30,25 +30,25 @@ const WorkforceSolutions = () => {
                     <div className="absolute inset-0 bg-brand-950/70"></div>
                 </div>
 
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div className="max-w-7xl ml-0 mr-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.4 }}
                         className="max-w-3xl"
                     >
-                        <span className="inline-block py-1 px-3 rounded-full bg-brand-800/50 border border-brand-700 text-brand-200 text-xs font-bold tracking-widest uppercase mb-6 backdrop-blur-md">
+                        <span className="inline-block py-1 px-3 rounded-full bg-brand-800/50 border border-brand-700 text-brand-200 text-xs font-semibold tracking-widest uppercase mb-6 backdrop-blur-md">
                             Agile Workforce Management
                         </span>
                         <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold text-white mb-8 tracking-tight leading-[1.1]">
                             Workforce <br />
-                            <span className="text-accent-500">Enablement.</span>
+                            <span className="text-accent-500">Enablement</span>
                         </h1>
                         <p className="text-xl md:text-2xl text-slate-200 leading-relaxed font-light mb-10 max-w-2xl">
                             End-to-end management for <span className="text-white font-medium">distributed & contract teams</span>. Scale your workforce with precision and full compliance.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4">
-                            <Link to="/contact" className="bg-brand-600 text-white px-8 py-4 rounded-full font-bold hover:bg-brand-500 transition-all shadow-lg flex items-center justify-center gap-2">
+                            <Link to="/contact" className="bg-brand-600 text-white px-8 py-4 rounded-full font-semibold hover:bg-brand-500 transition-all shadow-lg flex items-center justify-center gap-2">
                                 Consult With Us <ArrowRight className="w-5 h-5" />
                             </Link>
                         </div>
@@ -159,7 +159,7 @@ const WorkforceSolutions = () => {
                         "Unlock the power of a flexible workforce without the administrative headache."
                     </p>
                     <div className="flex flex-col sm:flex-row gap-6 justify-center">
-                        <Link to="/contact" className="bg-accent-500 text-white px-12 py-5 rounded-full font-bold hover:bg-accent-600 transition-all shadow-2xl flex items-center justify-center gap-3">
+                        <Link to="/contact" className="bg-accent-500 text-white px-12 py-5 rounded-full font-semibold hover:bg-accent-600 transition-all shadow-2xl flex items-center justify-center gap-3">
                             Consultation Call <ArrowRight className="w-5 h-5" />
                         </Link>
                     </div>

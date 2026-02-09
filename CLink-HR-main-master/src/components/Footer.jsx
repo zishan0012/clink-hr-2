@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FOOTER_LINKS } from '../constants';
-import { Facebook, Twitter, Linkedin, Instagram, Mail, Phone, MapPin, ArrowRight } from 'lucide-react';
+import { Facebook, Twitter, Linkedin, Instagram, Mail, Phone, MapPin, Building, ArrowRight } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -61,12 +61,17 @@ const Footer = () => {
             <h3 className="text-accent-500 font-bold uppercase tracking-widest text-[10px]">Reach Us</h3>
             <ul className="space-y-4">
               <li className="flex items-start space-x-3 text-sm text-slate-400">
+                <Building size={18} className="text-accent-500 shrink-0 mt-0.5" />
+                <span>Clink Consultancy Services Private Limited</span>
+              </li>
+              <li className="flex items-start space-x-3 text-sm text-slate-400">
                 <MapPin size={18} className="text-accent-500 shrink-0 mt-0.5" />
-                <span>Plot No 14, Sector 44,<br />Gurgaon, Haryana 122003, India</span>
+                <span>507, 5th Floor, Vipul Trade Center Sector – 48, <br />Sohna Road Gurgaon, Haryana - 122018 , Gurugram, India, Haryana</span>
               </li>
               <li className="flex items-center space-x-3 text-sm text-slate-400">
                 <Phone size={18} className="text-accent-500 shrink-0" />
-                <span>+91 0124 400 1234</span>
+                <span>+91 84489 09389
+                </span>
               </li>
               <li className="flex items-center space-x-3 text-sm text-slate-400">
                 <Mail size={18} className="text-accent-500 shrink-0" />
@@ -93,7 +98,7 @@ const Footer = () => {
         {/* Bottom Section: Copyright & Legal */}
         <div className="border-t border-slate-900 pt-8 mt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="text-slate-500 text-sm">
-            &copy; {currentYear} CLink HR | Powered by <span className="text-accent-500">CLink Consultancy Pvt. Ltd.</span> | All rights reserved.
+            &copy; {currentYear} CLink HR | Powered by <span className="text-accent-500">CLink Consultancy Services Private Limited</span> | All rights reserved.
           </div>
           <div className="flex items-center space-x-6 text-sm text-slate-500">
             <Link to="/privacy" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="hover:text-brand-400 transition-colors">Privacy Policy</Link>

@@ -38,14 +38,14 @@ const TechnologyPlatform = () => {
                     <div className="absolute inset-0 bg-brand-950/50"></div>
                 </div>
 
-                <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="relative z-10 max-w-7xl ml-0 mr-auto px-4 sm:px-6 lg:px-8">
                     <motion.div
                         initial={{ opacity: 0, y: 40 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.4 }}
                         className="max-w-4xl"
                     >
-                        <span className="inline-block mb-6 px-4 py-1 rounded-full bg-brand-800/50 border border-brand-700 text-brand-200 text-xs font-bold tracking-widest uppercase backdrop-blur-md">
+                        <span className="inline-block mb-6 px-4 py-1 rounded-full bg-brand-800/50 border border-brand-700 text-brand-200 text-xs font-semibold tracking-widest uppercase backdrop-blur-md">
                             The Tech Backbone
                         </span>
 
@@ -63,7 +63,7 @@ const TechnologyPlatform = () => {
                         <div className="flex flex-col sm:flex-row gap-4">
                             <Link
                                 to="/contact"
-                                className="bg-brand-600 text-white px-8 py-4 rounded-full font-bold hover:bg-brand-500 transition-all shadow-lg flex items-center justify-center gap-2 text-lg"
+                                className="bg-brand-600 text-white px-8 py-4 rounded-full font-semibold hover:bg-brand-500 transition-all shadow-lg flex items-center justify-center gap-2 text-lg"
                             >
                                 Experience the Platform <ArrowRight className="w-5 h-5" />
                             </Link>
@@ -351,7 +351,7 @@ const TechnologyPlatform = () => {
                         <div className="pt-8">
                             <Link
                                 to="/contact"
-                                className="bg-accent-500 text-brand-950 px-12 py-5 rounded-full font-bold hover:bg-accent-400 transition-all shadow-2xl inline-flex items-center gap-3 text-lg"
+                                className="bg-accent-500 text-brand-950 px-12 py-5 rounded-full font-semibold hover:bg-accent-400 transition-all shadow-2xl inline-flex items-center gap-3 text-lg"
                             >
                                 Learn more about Zryoss <ArrowRight className="w-5 h-5" />
                             </Link>

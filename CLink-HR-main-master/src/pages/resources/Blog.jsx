@@ -28,7 +28,7 @@ const Blog = () => {
                     />
                     <div className="absolute inset-0 bg-brand-950/50"></div>
                 </div>
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div className="max-w-7xl ml-0 mr-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <motion.h1
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -145,7 +145,7 @@ const Blog = () => {
 
                                 <Link
                                     to={blog.link}
-                                    className="inline-flex items-center gap-2 text-brand-600 font-bold hover:gap-3 transition-all"
+                                    className="inline-flex items-center gap-2 text-brand-600 font-semibold hover:gap-3 transition-all"
                                 >
                                     Read Full Article <ArrowRight className="w-4 h-4" />
                                 </Link>

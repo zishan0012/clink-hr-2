@@ -5,7 +5,7 @@ export const NAVIGATION = [
     children: [
       { label: 'About CLink HR', path: '/company/about' },
       { label: 'Vision & Mission', path: '/company/vision-mission' },
-      { label: 'Founder’s Message', path: '/company/founder-message' },
+      // { label: 'Founder’s Message', path: '/company/founder-message' },
       { label: 'Our Approach', path: '/company/our-approach' },
       { label: 'Pan-India Presence', path: '/company/pan-india' },
       { label: 'Careers at CLink HR', path: '/company/careers' },

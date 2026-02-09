@@ -36,26 +36,26 @@ const ComplianceReadyHRSolutions = () => {
                     <div className="absolute inset-0 bg-brand-950/50"></div>
                 </div>
 
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div className="max-w-7xl ml-0 mr-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.4 }}
                         className="max-w-4xl"
                     >
-                        <span className="inline-block py-1 px-3 rounded-full bg-brand-800/50 border border-brand-700 text-brand-200 text-xs font-bold tracking-widest uppercase mb-6 backdrop-blur-md">
+                        <span className="inline-block py-1 px-3 rounded-full bg-brand-800/50 border border-brand-700 text-brand-200 text-xs font-semibold tracking-widest uppercase mb-6 backdrop-blur-md">
                             Compliance-Ready HR Solutions
                         </span>
                         <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold text-white mb-8 tracking-tight leading-[1.1]">
-                            Stay Compliant. <br />
-                            Stay Confident. <br />
-                            <span className="text-accent-500">Stay Scalable.</span>
+                            Stay Compliant <br />
+                            Stay Confident<br />
+                            <span className="text-accent-500">Stay Scalable</span>
                         </h1>
                         <p className="text-xl md:text-2xl text-slate-200 mb-8 font-light max-w-4xl leading-relaxed">
                             CLink HR’s Compliance-Ready HR Solutions help businesses operate with full regulatory confidence—ensuring workforce operations remain audit-ready, regulation-aligned, and risk-controlled.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4">
-                            <Link to="/contact/hire-talent" className="bg-brand-600 text-white px-8 py-4 rounded-full font-bold hover:bg-brand-500 transition-all shadow-lg flex items-center justify-center gap-2">
+                            <Link to="/contact/hire-talent" className="bg-brand-600 text-white px-8 py-4 rounded-full font-semibold hover:bg-brand-500 transition-all shadow-lg flex items-center justify-center gap-2">
                                 Explore Compliance Solutions <ArrowRight className="w-5 h-5" />
                             </Link>
                         </div>
@@ -325,10 +325,10 @@ const ComplianceReadyHRSolutions = () => {
                                 With CLink HR’s Compliance-Ready HR Solutions, compliance becomes a business enabler—not a burden.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                <Link to="/contact/hire-talent" className="bg-accent-500 text-brand-900 px-10 py-4 rounded-full font-bold hover:bg-accent-400 transition-all shadow-xl">
+                                <Link to="/contact/hire-talent" className="bg-accent-500 text-brand-900 px-10 py-4 rounded-full font-semibold hover:bg-accent-400 transition-all shadow-xl">
                                     Explore Compliance Solutions
                                 </Link>
-                                <Link to="/contact" className="bg-transparent border border-white text-white px-10 py-4 rounded-full font-bold hover:bg-white/10 transition-all">
+                                <Link to="/contact" className="bg-transparent border border-white text-white px-10 py-4 rounded-full font-semibold hover:bg-white/10 transition-all">
                                     Talk to Our Compliance Experts
                                 </Link>
                             </div>

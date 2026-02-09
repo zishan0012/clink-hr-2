@@ -58,12 +58,12 @@ const WhyJoinIPP = () => {
                     <div className="absolute inset-0 bg-brand-950/50"></div>
                 </div>
 
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div className="max-w-7xl ml-0 mr-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6 }}
-                    ><div className="inline-block bg-brand-800/50 backdrop-blur-md border border-brand-700 px-6 py-2 rounded-full text-sm font-bold text-brand-200 mb-6 uppercase tracking-widest">
+                    ><div className="inline-block bg-brand-800/50 backdrop-blur-md border border-brand-700 px-6 py-2 rounded-full text-sm font-semibold text-brand-200 mb-6 uppercase tracking-widest">
                             Build Your Own Recruitment Brand with Support
                         </div>
                         <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold mb-6 tracking-tight">
@@ -123,7 +123,7 @@ const WhyJoinIPP = () => {
                             </ul>
                         </div>
                         <div className="shrink-0">
-                            <Link to="/partners/become-ipp-partner" className="bg-brand-600 text-white px-10 py-5 rounded-full font-bold hover:bg-brand-700 transition-all shadow-xl flex items-center gap-2 text-lg">
+                            <Link to="/partners/become-ipp-partner" className="bg-brand-600 text-white px-10 py-5 rounded-full font-semibold hover:bg-brand-700 transition-all shadow-xl flex items-center gap-2 text-lg">
                                 Join as a Partner <ArrowRight className="w-6 h-6" />
                             </Link>
                         </div>

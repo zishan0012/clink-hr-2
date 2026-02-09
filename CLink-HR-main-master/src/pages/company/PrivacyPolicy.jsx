@@ -117,7 +117,7 @@ const PrivacyPolicy = () => {
                 position: 'relative',
                 backgroundColor: '#0f172a',
                 padding: '140px 20px',
-                textAlign: 'center',
+                textAlign: 'left',
                 backgroundImage: 'url(' + privacy + ')',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
@@ -126,9 +126,9 @@ const PrivacyPolicy = () => {
                 <div style={{ position: 'absolute', inset: 0, backgroundColor: 'rgba(15, 23, 42, 0.8)', zIndex: 1 }}></div>
                 <div style={{ position: 'relative', zIndex: 2 }}>
                     <h1 style={{ color: '#ffffff', fontSize: '3.5rem', fontWeight: '900', margin: '0 0 20px 0' }}>
-                        Privacy <span style={{ color: '#f97316' }}>Policy</span>
+                        Privacy <span style={{ color: '#6366f1' }}>Policy</span>
                     </h1>
-                    <p style={{ color: '#cbd5e1', fontSize: '1.2rem', maxWidth: '700px', margin: '0 auto', lineHeight: '1.6' }}>
+                    <p style={{ color: '#cbd5e1', fontSize: '1.2rem', maxWidth: '700px', margin: '0', lineHeight: '1.6' }}>
                         Your privacy is important to us. Learn how we handle and protect your personal data.
                     </p>
                 </div>
@@ -149,7 +149,7 @@ const PrivacyPolicy = () => {
                         <article key={idx} style={{ marginBottom: '50px' }}>
                             <h2 style={{
                                 color: '#0f172a',
-                                borderLeft: '5px solid #f97316',
+                                borderLeft: '5px solid #6366f1',
                                 paddingLeft: '15px',
                                 fontSize: '1.75rem',
                                 fontWeight: '700',
@@ -207,7 +207,7 @@ const PrivacyPolicy = () => {
 
             {/* Statement Footer */}
             <div style={{ backgroundColor: '#0f172a', padding: '50px 20px', textAlign: 'center' }}>
-                <p style={{ color: '#f97316', fontSize: '0.9rem', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '15px' }}>
+                <p style={{ color: '#6366f1', fontSize: '0.9rem', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '15px' }}>
                     Privacy Commitment Statement
                 </p>
                 <p style={{ color: '#ffffff', fontSize: '1.2rem', fontStyle: 'italic', maxWidth: '800px', margin: '0 auto', lineHeight: '1.6' }}>
