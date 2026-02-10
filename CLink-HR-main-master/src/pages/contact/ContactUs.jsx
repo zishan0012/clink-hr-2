@@ -94,7 +94,7 @@ const ContactUs = () => {
                                     </div>
                                     <div className="pl-4 border-l-2 border-brand-100">
                                         <div className="flex items-center gap-2 text-slate-700 mb-1">
-                                            <Phone className="w-4 h-4 text-brand-500" /> <span className="font-bold">+91 84489 09389</span>
+                                            <Phone className="w-4 h-4 text-brand-500" /> <span className="font-bold">0124 429 9985</span>
                                         </div>
                                         <div className="flex items-center gap-2 text-slate-700">
                                             <Mail className="w-4 h-4 text-brand-500" /> <span className="font-bold">contact@clinkhr.com</span>
@@ -115,7 +115,7 @@ const ContactUs = () => {
                                     </p>
                                     <div className="space-y-1 text-base font-medium text-brand-800">
                                         <p>business@clinkhr.com</p>
-                                        <p>+91 84489 09389</p>
+                                        <p>0124 429 9985</p>
                                     </div>
                                 </div>
 
@@ -129,7 +129,7 @@ const ContactUs = () => {
                                     </p>
                                     <div className="space-y-1 text-base font-medium text-slate-800">
                                         <p>partner@clinkhr.com</p>
-                                        <p>+91 84489 09389</p>
+                                        <p>0124 429 9985</p>
                                     </div>
                                 </div>
                             </div>
