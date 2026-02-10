@@ -66,11 +66,11 @@ const Footer = () => {
               </li>
               <li className="flex items-start space-x-3 text-sm text-slate-400">
                 <MapPin size={18} className="text-accent-500 shrink-0 mt-0.5" />
-                <span>507, 5th Floor, Vipul Trade Center Sector – 48, <br />Sohna Road Gurgaon, Haryana - 122018 , Gurugram, India, Haryana</span>
+                <span>507, 5th Floor, Vipul Trade Center Sector – 48, <br />Sohna Road Gurgaon, Haryana - 122018 , Gurugram, India</span>
               </li>
               <li className="flex items-center space-x-3 text-sm text-slate-400">
                 <Phone size={18} className="text-accent-500 shrink-0" />
-                <span>+91 84489 09389
+                <span>0124 429 9985
                 </span>
               </li>
               <li className="flex items-center space-x-3 text-sm text-slate-400">
