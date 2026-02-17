@@ -38,33 +38,32 @@ const OurDeliveryModel = () => {
                     <div className="absolute inset-0 bg-brand-950/50"></div>
                 </div>
 
-                <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="relative z-10 max-w-7xl ml-0 mr-auto px-4 sm:px-6 lg:px-8">
                     <motion.div
                         initial={{ opacity: 0, y: 40 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.4 }}
                         className="max-w-4xl"
                     >
-                        <span className="inline-block mb-6 px-4 py-1 rounded-full bg-brand-800/50 border border-brand-700 text-brand-200 text-xs font-bold tracking-widest uppercase backdrop-blur-md">
+                        <span className="inline-block mb-6 px-4 py-1 rounded-full bg-brand-800/50 border border-brand-700 text-brand-200 text-xs font-semibold tracking-widest uppercase backdrop-blur-md">
                             How It Works
                         </span>
 
-                        <h1 className="text-4xl md:text-7xl font-extrabold text-white mb-6 leading-[1.1] tracking-tight">
+                        <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-[1.1] tracking-tight">
                             Our <span className="text-accent-500">Delivery Model</span>
                         </h1>
-                        <h2 className="text-2xl md:text-3xl font-bold text-white mb-8 opacity-90">
+                        <h2 className="text-xl md:text-2xl font-bold text-white mb-8 opacity-90">
                             A Centralized, Scalable HR Delivery Framework
                         </h2>
 
                         <p className="text-xl md:text-2xl text-slate-200 mb-8 font-light max-w-4xl leading-relaxed">
-                            CLink HR operates on a centralized HR coordination model designed to deliver speed, scale, and consistency—without building large in-house execution teams.
-                            We work with organizations and route execution through independent IPP partners operating within the Zryoss ecosystem, allowing faster closures, broader reach, and controlled delivery.
+                            A centralized coordination model that leverages the Zryoss ecosystem to deliver speed, scale, and consistency without the limits of traditional HR execution.
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4">
                             <Link
                                 to="/contact/partner-inquiry"
-                                className="bg-brand-600 text-white px-8 py-4 rounded-full font-bold hover:bg-brand-500 transition-all shadow-lg flex items-center justify-center gap-2"
+                                className="bg-brand-600 text-white px-8 py-4 rounded-full font-semibold hover:bg-brand-500 transition-all shadow-lg flex items-center justify-center gap-2"
                             >
                                 Inquire About Delivery Model <ArrowRight className="w-5 h-5" />
                             </Link>
@@ -354,7 +353,7 @@ const OurDeliveryModel = () => {
                         whileInView={{ opacity: 1, scale: 1 }}
                         className="mb-16"
                     >
-                        <h2 className="text-3xl md:text-6xl font-extrabold text-white mb-8 tracking-tight leading-tight">
+                        <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-8 tracking-tight leading-tight">
                             Centralized Coordination. <br />
                             <span className="text-accent-400">Distributed Execution.</span> <br />
                             Scalable Results.
@@ -368,13 +367,13 @@ const OurDeliveryModel = () => {
                     <div className="flex flex-col sm:flex-row gap-6 justify-center">
                         <Link
                             to="/contact/partner-inquiry"
-                            className="bg-accent-500 text-brand-900 px-12 py-5 rounded-full font-bold hover:bg-accent-400 transition-all shadow-2xl"
+                            className="bg-accent-500 text-brand-900 px-12 py-5 rounded-full font-semibold hover:bg-accent-400 transition-all shadow-2xl"
                         >
                             Explore Our Ecosystem
                         </Link>
                         <Link
                             to="/contact"
-                            className="bg-transparent border-2 border-white/30 text-white px-12 py-5 rounded-full font-bold hover:bg-white/10 hover:border-white transition-all backdrop-blur-sm"
+                            className="bg-transparent border-2 border-white/30 text-white px-12 py-5 rounded-full font-semibold hover:bg-white/10 hover:border-white transition-all backdrop-blur-sm"
                         >
                             Talk to Our Experts
                         </Link>

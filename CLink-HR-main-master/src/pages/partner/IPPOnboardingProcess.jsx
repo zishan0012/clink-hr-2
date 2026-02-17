@@ -57,18 +57,18 @@ const IPPOnboardingProcess = () => {
                     <div className="absolute inset-0 bg-brand-950/50"></div>
                 </div>
 
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div className="max-w-7xl ml-0 mr-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6 }}
                     >
-                        <h1 className="text-4xl md:text-6xl font-extrabold mb-6">
+                        <div className="inline-block bg-brand-800/50 backdrop-blur-md border border-brand-700 px-6 py-2 rounded-full text-sm font-semibold text-brand-200 mb-6 uppercase tracking-widest">
+                            Start Your Journey as an Independent Prime Partner
+                        </div>
+                        <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold mb-6">
                             IPP <span className="text-accent-500">Onboarding</span> Process
                         </h1>
-                        <p className="text-xl text-slate-300 max-w-3xl mb-6">
-                            Start Your Journey as an Independent Prime Partner
-                        </p>
                         <p className="text-xl md:text-2xl text-slate-200 mb-8 font-light max-w-4xl leading-relaxed">
                             Becoming an Independent Prime Partner (IPP) with CLink HR is simple, structured, and designed for independent recruiters. The onboarding process ensures you are fully enabled to deliver quality recruitment services, while CLink HR and the Zryoss ecosystem handle clients, coordination, and backend operations.
                         </p>
@@ -101,7 +101,7 @@ const IPPOnboardingProcess = () => {
                                 </div>
                                 <p className="text-slate-600 text-lg leading-relaxed">{step.desc}</p>
                                 {i === 2 && (
-                                    <div className="mt-4 p-3 bg-accent-50 text-accent-800 text-sm font-bold rounded-lg inline-block border border-accent-100">
+                                    <div className="mt-4 p-3 bg-brand-50 text-brand-800 text-sm font-bold rounded-lg inline-block border border-brand-100">
                                         You remain independent while backed by a structured ecosystem.
                                     </div>
                                 )}

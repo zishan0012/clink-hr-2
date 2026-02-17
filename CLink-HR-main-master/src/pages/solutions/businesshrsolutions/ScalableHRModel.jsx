@@ -37,17 +37,17 @@ const ScalableHRModel = () => {
                     <div className="absolute inset-0 bg-brand-950/50"></div>
                 </div>
 
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div className="max-w-7xl ml-0 mr-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.4 }}
                         className="max-w-4xl"
                     >
-                        <span className="inline-block py-1 px-3 rounded-full bg-brand-800/50 border border-brand-700 text-brand-200 text-xs font-bold tracking-widest uppercase mb-6 backdrop-blur-md">
+                        <span className="inline-block py-1 px-3 rounded-full bg-brand-800/50 border border-brand-700 text-brand-200 text-xs font-semibold tracking-widest uppercase mb-6 backdrop-blur-md">
                             Scalable HR Model
                         </span>
-                        <h1 className="text-4xl md:text-7xl font-extrabold text-white mb-8 tracking-tight leading-[1.1]">
+                        <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold text-white mb-8 tracking-tight leading-[1.1]">
                             HR That Grows With <br />
                             <span className="text-accent-500">Your Business</span>
                         </h1>
@@ -55,7 +55,7 @@ const ScalableHRModel = () => {
                             CLink HR’s Scalable HR Model is a flexible, modular framework designed for organizations that are growing, evolving, or restructuring. We adapt as your workforce needs expand.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4">
-                            <Link to="/contact/hire-talent" className="bg-brand-600 text-white px-8 py-4 rounded-full font-bold hover:bg-brand-500 transition-all shadow-lg flex items-center justify-center gap-2">
+                            <Link to="/contact/hire-talent" className="bg-brand-600 text-white px-8 py-4 rounded-full font-semibold hover:bg-brand-500 transition-all shadow-lg flex items-center justify-center gap-2">
                                 Explore Scalable HR Solutions <ArrowRight className="w-5 h-5" />
                             </Link>
                         </div>

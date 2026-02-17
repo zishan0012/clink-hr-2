@@ -132,7 +132,7 @@ const FAQsClients = () => {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.4 }}
                     >
-                        <span className="inline-block py-1.5 px-4 rounded-full bg-brand-800/50 border border-brand-700 text-brand-200 text-sm font-bold tracking-widest uppercase mb-6 shadow-lg backdrop-blur-md">
+                        <span className="inline-block py-1.5 px-4 rounded-full bg-brand-800/50 border border-brand-700 text-brand-200 text-sm font-semibold tracking-widest uppercase mb-6 shadow-lg backdrop-blur-md">
                             Resource Center
                         </span>
                         <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-6">
@@ -182,10 +182,10 @@ const FAQsClients = () => {
                             Can't find the answer you're looking for? Please chat to our friendly team.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <Link to="/contact" className="bg-brand-600 text-white px-8 py-3 rounded-xl font-bold hover:bg-brand-700 transition-all shadow-lg hover:-translate-y-1">
+                            <Link to="/contact" className="bg-brand-600 text-white px-8 py-3 rounded-xl font-semibold hover:bg-brand-700 transition-all shadow-lg hover:-translate-y-1">
                                 Get in Touch
                             </Link>
-                            <a href="tel:+911234567890" className="bg-white text-slate-700 border border-slate-200 px-8 py-3 rounded-xl font-bold hover:border-brand-500 hover:text-brand-600 transition-all flex items-center justify-center gap-2">
+                            <a href="tel:+911234567890" className="bg-white text-slate-700 border border-slate-200 px-8 py-3 rounded-xl font-semibold hover:border-brand-500 hover:text-brand-600 transition-all flex items-center justify-center gap-2">
                                 <PhoneCall className="w-4 h-4" /> Call Us
                             </a>
                         </div>

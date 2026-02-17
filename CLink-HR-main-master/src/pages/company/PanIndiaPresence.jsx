@@ -55,16 +55,16 @@ const PanIndiaPresence = () => {
                     <div className="absolute inset-0 bg-brand-950/50"></div>
                 </div>
 
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div className="max-w-7xl ml-0 mr-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.4 }}
                     >
-                        <span className="inline-block py-1 px-3 rounded-full bg-brand-800/50 border border-brand-700 text-brand-200 text-xs font-bold tracking-widest uppercase mb-6 backdrop-blur-md">
+                        <span className="inline-block py-1 px-3 rounded-full bg-brand-800/50 border border-brand-700 text-brand-200 text-xs font-semibold tracking-widest uppercase mb-6 backdrop-blur-md">
                             Nationwide Coverage
                         </span>
-                        <h1 className="text-4xl md:text-8xl font-extrabold text-white mb-8 tracking-tight leading-[1.1]">
+                        <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold text-white mb-8 tracking-tight leading-[1.1]">
                             Pan-India <br />
                             <span className="text-accent-500">Service Network</span>
                         </h1>
@@ -161,7 +161,7 @@ const PanIndiaPresence = () => {
                     <p className="text-xl text-slate-600 mb-12 leading-relaxed max-w-2xl mx-auto font-light">
                         "Stop managing multiple vendors. Let CLink HR be your single point of accountability across India."
                     </p>
-                    <Link to="/contact" className="bg-brand-600 text-white px-12 py-5 rounded-full font-bold hover:bg-brand-700 transition-all shadow-xl">
+                    <Link to="/contact" className="bg-brand-600 text-white px-12 py-5 rounded-full font-semibold hover:bg-brand-700 transition-all shadow-xl">
                         Explore Our Network
                     </Link>
                 </div>

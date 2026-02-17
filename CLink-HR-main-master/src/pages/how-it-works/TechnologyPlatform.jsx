@@ -38,18 +38,18 @@ const TechnologyPlatform = () => {
                     <div className="absolute inset-0 bg-brand-950/50"></div>
                 </div>
 
-                <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="relative z-10 max-w-7xl ml-0 mr-auto px-4 sm:px-6 lg:px-8">
                     <motion.div
                         initial={{ opacity: 0, y: 40 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.4 }}
                         className="max-w-4xl"
                     >
-                        <span className="inline-block mb-6 px-4 py-1 rounded-full bg-brand-800/50 border border-brand-700 text-brand-200 text-xs font-bold tracking-widest uppercase backdrop-blur-md">
+                        <span className="inline-block mb-6 px-4 py-1 rounded-full bg-brand-800/50 border border-brand-700 text-brand-200 text-xs font-semibold tracking-widest uppercase backdrop-blur-md">
                             The Tech Backbone
                         </span>
 
-                        <h1 className="text-4xl md:text-7xl font-extrabold text-white mb-6 leading-[1.1] tracking-tight">
+                        <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-[1.1] tracking-tight">
                             Technology <span className="text-accent-500">Platform (Zryoss)</span>
                         </h1>
                         <h2 className="text-2xl md:text-3xl font-bold text-white mb-8 opacity-90 leading-tight">
@@ -57,13 +57,13 @@ const TechnologyPlatform = () => {
                         </h2>
 
                         <p className="text-xl md:text-2xl text-slate-200 mb-8 font-light max-w-4xl leading-relaxed">
-                            Zryoss is the technology platform that powers CLink HR’s distributed delivery model. It connects clients, CLink HR, and IPP partners into a single, structured, and transparent ecosystem—ensuring speed, control, and scalability.
+                            Zryoss is the technology engine connecting clients and partners into a single, transparent ecosystem for high-speed HR delivery and scalability.
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4">
                             <Link
                                 to="/contact"
-                                className="bg-brand-600 text-white px-8 py-4 rounded-full font-bold hover:bg-brand-500 transition-all shadow-lg flex items-center justify-center gap-2 text-lg"
+                                className="bg-brand-600 text-white px-8 py-4 rounded-full font-semibold hover:bg-brand-500 transition-all shadow-lg flex items-center justify-center gap-2 text-lg"
                             >
                                 Experience the Platform <ArrowRight className="w-5 h-5" />
                             </Link>
@@ -343,7 +343,7 @@ const TechnologyPlatform = () => {
                         className="space-y-8"
                     >
                         <Cpu className="w-20 h-20 text-accent-400 mx-auto" />
-                        <h2 className="text-4xl md:text-6xl font-extrabold italic tracking-tight uppercase">
+                        <h2 className="text-4xl md:text-4xl font-extrabold italic tracking-tight uppercase">
                             Technology that connects people, <br />
                             <span className="text-accent-400">processes, and performance</span> <br />
                             — at scale.
@@ -351,7 +351,7 @@ const TechnologyPlatform = () => {
                         <div className="pt-8">
                             <Link
                                 to="/contact"
-                                className="bg-accent-500 text-brand-950 px-12 py-5 rounded-full font-bold hover:bg-accent-400 transition-all shadow-2xl inline-flex items-center gap-3 text-lg"
+                                className="bg-accent-500 text-brand-950 px-12 py-5 rounded-full font-semibold hover:bg-accent-400 transition-all shadow-2xl inline-flex items-center gap-3 text-lg"
                             >
                                 Learn more about Zryoss <ArrowRight className="w-5 h-5" />
                             </Link>

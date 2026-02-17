@@ -42,36 +42,34 @@ const Logistics = () => {
                     <div className="absolute inset-0 bg-brand-950/50"></div>
                 </div>
 
-                <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="relative z-10 max-w-7xl ml-0 mr-auto px-4 sm:px-6 lg:px-8">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5 }}
                         className="max-w-4xl"
                     >
-                        <span className="inline-block mb-6 px-4 py-1 rounded-full bg-brand-800/50 border border-brand-700 text-brand-200 text-xs font-bold tracking-widest uppercase backdrop-blur-md">
+                        <span className="inline-block mb-6 px-4 py-1 rounded-full bg-brand-800/50 border border-brand-700 text-brand-200 text-xs font-semibold tracking-widest uppercase backdrop-blur-md">
                             Industries We Serve
                         </span>
 
-                        <h1 className="text-4xl md:text-7xl font-extrabold text-white mb-4 leading-[1.1] tracking-tight">
+                        <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-4 leading-[1.1] tracking-tight">
                             Logistics & <span className="text-accent-500">Supply Chain</span>
                         </h1>
-                        <h2 className="text-2xl md:text-3xl font-bold text-white mb-8 opacity-90">
+                        <h2 className="text-xl md:text-2xl font-bold text-white mb-8 opacity-90">
                             HR Solutions for Logistics & Supply Chain Businesses
                         </h2>
 
                         <p className="text-xl md:text-2xl text-slate-200 mb-8 font-light max-w-4xl leading-relaxed">
-                            The Logistics & Supply Chain industry requires a workforce that is efficient, scalable, and compliant to ensure smooth operations from warehouses to delivery networks.
-                            CLink HR delivers end-to-end HR, recruitment, payroll, and workforce management solutions tailored for logistics companies, warehousing operations, and transportation networks.
-                            We help businesses manage large, distributed teams across multiple locations while maintaining compliance and operational efficiency.
+                            Scalable HR and recruitment solutions for logistics and supply chain networks, managing distributed teams with speed and operational precision.
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4">
                             <Link
                                 to="/contact/hire-talent"
-                                className="bg-brand-600 text-white px-8 py-4 rounded-full font-bold hover:bg-brand-500 transition-all shadow-lg flex items-center justify-center gap-2"
+                                className="bg-brand-600 text-white px-8 py-4 rounded-full font-semibold hover:bg-brand-500 transition-all shadow-lg flex items-center justify-center gap-2"
                             >
-                                Explore Logistics HR Solutions <ArrowRight className="w-5 h-5" />
+                                Explore Logistics <ArrowRight className="w-5 h-5" />
                             </Link>
                         </div>
                     </motion.div>
@@ -283,13 +281,13 @@ const Logistics = () => {
                             <div className="flex flex-col sm:flex-row gap-6 justify-center">
                                 <Link
                                     to="/contact/hire-talent"
-                                    className="bg-accent-500 text-brand-900 px-10 py-5 rounded-full font-bold hover:bg-accent-400 transition-all shadow-xl flex items-center justify-center gap-2"
+                                    className="bg-accent-500 text-brand-900 px-10 py-5 rounded-full font-semibold hover:bg-accent-400 transition-all shadow-xl flex items-center justify-center gap-2"
                                 >
                                     Explore Logistics HR Solutions <ArrowRight className="w-5 h-5" />
                                 </Link>
                                 <Link
                                     to="/contact"
-                                    className="bg-transparent border border-white text-white px-10 py-5 rounded-full font-bold hover:bg-white/10 transition-all flex items-center justify-center"
+                                    className="bg-transparent border border-white text-white px-10 py-5 rounded-full font-semibold hover:bg-white/10 transition-all flex items-center justify-center"
                                 >
                                     Talk to Our Industry Experts
                                 </Link>

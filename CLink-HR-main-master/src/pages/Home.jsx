@@ -166,7 +166,8 @@ const Home = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent z-10"></div>
 
                 {/* Content Container */}
-                <div className="relative z-20 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center py-20 pb-24">
+                <div className="relative z-20 w-full ml-0 mr-auto px-6 sm:px-10 lg:px-20 h-full flex flex-col justify-center py-3 pb-10">
+
 
                     <motion.div
                         initial={{ opacity: 0, x: -20 }}
@@ -174,10 +175,10 @@ const Home = () => {
                         transition={{ duration: 0.5 }}
                         className="max-w-5xl"
                     >
-                        <span className="inline-block py-2 px-4 rounded-full bg-brand-800/20 border border-brand-700 text-brand-400 text-xs font-bold tracking-widest uppercase mb-8 backdrop-blur-md shadow-lg">
+                        <span className="inline-block py-2 px-4 rounded-full bg-brand-800/20 border border-brand-700 text-brand-400 text-xs font-semibold tracking-widest uppercase mb-8 backdrop-blur-md shadow-lg">
                             Premier Workforce Solutions
                         </span>
-                        <h1 className="text-4xl md:text-6xl lg:text-8xl font-bold leading-tight text-white mb-8 tracking-tight drop-shadow-xl">
+                        <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold leading-tight text-white mb-8 tracking-tight drop-shadow-xl">
 
 
 
@@ -202,17 +203,25 @@ const Home = () => {
                         initial={{ opacity: 0, y: 15 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5, delay: 0.2 }}
-                        className="flex flex-col sm:flex-row gap-6"
+                        className="flex flex-col sm:flex-row gap-4"
                     >
-                        <Link to="/contact/hire-talent" className="group relative bg-brand-600 text-white px-10 py-5 rounded-full font-bold overflow-hidden transition-all hover:scale-105 shadow-2xl hover:shadow-brand-500/40 block w-fit">
-                            <span className="relative flex items-center gap-3 text-lg">
-                                Hire Talent <Rocket className="w-6 h-6 group-hover:rotate-12 transition-transform" />
+                        <Link
+                            to="/contact/hire-talent"
+                            className="group relative bg-brand-600 text-white px-6 py-3 rounded-full font-semibold overflow-hidden transition-all hover:scale-105 shadow-xl hover:shadow-brand-500/40 block w-fit"
+                        >
+                            <span className="relative flex items-center gap-2 text-base">
+                                Hire Talent
+                                <Rocket className="w-5 h-5 group-hover:rotate-12 transition-transform" />
                             </span>
                         </Link>
 
-                        <Link to="/contact" className="group bg-white/10 backdrop-blur-md text-white px-10 py-5 rounded-full font-bold border border-white/20 hover:bg-white hover:text-brand-900 transition-all hover:border-white shadow-xl text-lg block w-fit">
+                        <Link
+                            to="/contact"
+                            className="group bg-white/10 backdrop-blur-md text-white px-6 py-3 rounded-full font-semibold border border-white/20 hover:bg-white hover:text-brand-900 transition-all hover:border-white shadow-lg text-base block w-fit"
+                        >
                             Talk to Us Today
                         </Link>
+
                     </motion.div>
 
                 </div>
@@ -586,7 +595,7 @@ const Home = () => {
                         ))}
                     </div>
                 </div>
-            </section >
+            </section>
 
 
 
@@ -625,7 +634,7 @@ const Home = () => {
                         ))}
                     </div>
                 </div>
-            </section >
+            </section>
 
             {/* NEW SECTION 8: PAN-INDIA PRESENCE */}
             <section className="py-24 bg-brand-900 text-white relative overflow-hidden" >
@@ -711,7 +720,7 @@ const Home = () => {
             <Testimonials />
 
             {/* ===== Partner Ecosystem Highlight Section ===== */}
-            < section className="py-24 bg-white relative overflow-hidden" >
+            <section className="py-24 bg-white relative overflow-hidden">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="relative rounded-[2.5rem] bg-slate-900 overflow-hidden shadow-2xl">
                         {/* Decorative Background Elements */}
@@ -769,10 +778,10 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-            </section >
+            </section>
 
             {/* ===== IPP SECTION ===== */}
-            < section className="py-24 bg-slate-900 text-white relative overflow-hidden text-center" >
+            <section className="py-24 bg-slate-900 text-white relative overflow-hidden text-center">
                 <div className="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-5"></div>
                 <div className="max-w-5xl mx-auto px-4 relative z-10">
                     <span className="inline-block py-1 px-3 rounded-full bg-brand-500/20 text-brand-300 text-xs font-bold uppercase tracking-wider mb-6 border border-brand-500/30">
@@ -804,10 +813,10 @@ const Home = () => {
                         Become an IPP Partner
                     </Link>
                 </div>
-            </section >
+            </section>
 
             {/* HRMS Software Section */}
-            < section className="py-24 bg-slate-50 overflow-hidden relative" >
+            <section className="py-24 bg-slate-50 overflow-hidden relative">
                 <div className="absolute top-0 left-0 w-full h-1/2 bg-white skew-y-3 origin-left -z-0"></div>
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <div className="lg:grid lg:grid-cols-2 gap-20 items-center">
@@ -846,10 +855,10 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-            </section >
+            </section>
 
             {/* About Us Section */}
-            < section id="about" className="py-24 bg-white" >
+            <section id="about" className="py-24 bg-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
@@ -872,7 +881,7 @@ const Home = () => {
 
                             <div className="space-y-6 text-xl text-slate-600 leading-relaxed">
                                 <p>
-                                    At <span className="font-bold text-slate-900">CLink HR</span>, we align the diversified and intricate HR needs of our clients by providing reliable and strategic staffing solutions.
+                                    At <span className="font-bold text-slate-900">Clink HR Services</span>  powered by<span className="font-bold text-slate-900"> CLink Consultancy Services</span>, we align the diversified and intricate HR needs of our clients by providing reliable and strategic staffing solutions.
                                 </p>
                                 <p>
                                     Headquartered in Gurgaon, India, we are a subsidiary of the <span className="font-bold text-slate-900">CLink Group</span> and pioneers of organized recruitment services in India.
@@ -901,7 +910,7 @@ const Home = () => {
 
                     </div>
                 </div>
-            </section >
+            </section>
             {/* Contact CTA */}
             {/* <section id="contact" className="py-24 bg-brand-600">
                 <div className="max-w-4xl mx-auto px-4 text-center text-white">

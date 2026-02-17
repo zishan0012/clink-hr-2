@@ -44,32 +44,32 @@ const RequirementDistribution = () => {
                     <div className="absolute inset-0 bg-brand-950/50"></div>
                 </div>
 
-                <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="relative z-10 max-w-7xl ml-0 mr-auto px-4 sm:px-6 lg:px-8">
                     <motion.div
                         initial={{ opacity: 0, y: 40 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.4 }}
                         className="max-w-4xl"
                     >
-                        <span className="inline-block mb-6 px-4 py-1 rounded-full bg-brand-800/50 border border-brand-700 text-brand-200 text-xs font-bold tracking-widest uppercase backdrop-blur-md">
+                        <span className="inline-block mb-6 px-4 py-1 rounded-full bg-brand-800/50 border border-brand-700 text-brand-200 text-xs font-semibold tracking-widest uppercase backdrop-blur-md">
                             Delivery Engine
                         </span>
 
-                        <h1 className="text-4xl md:text-7xl font-extrabold text-white mb-6 leading-[1.1] tracking-tight">
+                        <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-[1.1] tracking-tight">
                             Requirement <br /><span className="text-accent-500">Distribution System</span>
                         </h1>
-                        <h2 className="text-2xl md:text-3xl font-bold text-white mb-8 opacity-90 leading-tight">
+                        <h2 className="text-xl md:text-2xl font-bold text-white mb-8 opacity-90 leading-tight">
                             Smart, Structured & Scalable Delivery Engine
                         </h2>
 
                         <p className="text-xl md:text-2xl text-slate-200 mb-8 font-light max-w-4xl leading-relaxed">
-                            CLink HR’s Requirement Distribution System is designed to ensure that every hiring or HR requirement reaches the right execution partner (IPP) at the right time—without delays, confusion, or dependency.
+                            Ensuring every hiring requirement reaches the right execution partner at the right time through a structured, dependency-free delivery engine.
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4">
                             <Link
                                 to="/contact"
-                                className="bg-brand-600 text-white px-8 py-4 rounded-full font-bold hover:bg-brand-500 transition-all shadow-lg flex items-center justify-center gap-2 text-lg"
+                                className="bg-brand-600 text-white px-8 py-4 rounded-full font-semibold hover:bg-brand-500 transition-all shadow-lg flex items-center justify-center gap-2 text-lg"
                             >
                                 Optimize Your Hiring <ArrowRight className="w-5 h-5" />
                             </Link>
@@ -401,7 +401,7 @@ const RequirementDistribution = () => {
                         className="space-y-10"
                     >
                         <Network className="w-24 h-24 text-accent-400 mx-auto" />
-                        <h2 className="text-4xl md:text-7xl font-black italic tracking-tighter uppercase leading-none">
+                        <h2 className="text-4xl md:text-4xl font-black italic tracking-tighter uppercase leading-none">
                             Right requirement. <br />
                             Right partner. <br />
                             <span className="text-accent-400 underline decoration-accent-500/30">Right speed.</span>
@@ -409,7 +409,7 @@ const RequirementDistribution = () => {
                         <div className="pt-10">
                             <Link
                                 to="/contact"
-                                className="bg-accent-500 text-brand-950 px-16 py-6 rounded-full font-black hover:bg-accent-400 transition-all shadow-2xl inline-flex items-center gap-4 text-xl uppercase tracking-widest"
+                                className="bg-accent-500 text-brand-950 px-16 py-6 rounded-full font-semibold hover:bg-accent-400 transition-all shadow-2xl inline-flex items-center gap-4 text-xl uppercase tracking-widest"
                             >
                                 Experience the system <ArrowRight className="w-6 h-6" />
                             </Link>

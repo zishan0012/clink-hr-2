@@ -69,7 +69,7 @@ const CookiePolicy = () => {
                 position: 'relative',
                 backgroundColor: '#0f172a',
                 padding: '140px 20px',
-                textAlign: 'center',
+                textAlign: 'left',
                 backgroundImage: 'url(' + cookies1 + ')',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
@@ -78,9 +78,9 @@ const CookiePolicy = () => {
                 <div style={{ position: 'absolute', inset: 0, backgroundColor: 'rgba(15, 23, 42, 0.8)', zIndex: 1 }}></div>
                 <div style={{ position: 'relative', zIndex: 2 }}>
                     <h1 style={{ color: '#ffffff', fontSize: '3.5rem', fontWeight: '900', margin: '0 0 20px 0' }}>
-                        Cookie <span style={{ color: '#f97316' }}>Policy</span>
+                        Cookie <span style={{ color: '#6366f1' }}>Policy</span>
                     </h1>
-                    <p style={{ color: '#cbd5e1', fontSize: '1.2rem', maxWidth: '750px', margin: '0 auto', lineHeight: '1.6' }}>
+                    <p style={{ color: '#cbd5e1', fontSize: '1.2rem', maxWidth: '750px', margin: '0', lineHeight: '1.6' }}>
                         Understanding how we use cookies to improve your experience on our platform.
                     </p>
                 </div>
@@ -101,7 +101,7 @@ const CookiePolicy = () => {
                         <article key={idx} style={{ marginBottom: '50px' }}>
                             <h2 style={{
                                 color: '#0f172a',
-                                borderLeft: '5px solid #f97316',
+                                borderLeft: '5px solid #6366f1',
                                 paddingLeft: '15px',
                                 fontSize: '1.75rem',
                                 fontWeight: '700',

@@ -37,32 +37,32 @@ const QualitySLAFramework = () => {
                     <div className="absolute inset-0 bg-brand-950/50"></div>
                 </div>
 
-                <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="relative z-10 max-w-7xl ml-0 mr-auto px-4 sm:px-6 lg:px-8">
                     <motion.div
                         initial={{ opacity: 0, y: 40 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.4 }}
                         className="max-w-4xl"
                     >
-                        <span className="inline-block mb-6 px-4 py-1 rounded-full bg-brand-800/50 border border-brand-700 text-brand-200 text-xs font-bold tracking-widest uppercase backdrop-blur-md">
+                        <span className="inline-block mb-6 px-4 py-1 rounded-full bg-brand-800/50 border border-brand-700 text-brand-200 text-xs font-semibold tracking-widest uppercase backdrop-blur-md">
                             How It Works
                         </span>
 
-                        <h1 className="text-4xl md:text-7xl font-extrabold text-white mb-6 leading-[1.1] tracking-tight">
+                        <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-[1.1] tracking-tight">
                             Quality & <span className="text-accent-500">SLA Framework</span>
                         </h1>
-                        <h2 className="text-2xl md:text-3xl font-bold text-white mb-8 opacity-90 leading-tight">
+                        <h2 className="text-xl md:text-2xl font-bold text-white mb-8 opacity-90 leading-tight">
                             Consistent Quality Across a Distributed Delivery Network
                         </h2>
 
                         <p className="text-xl md:text-2xl text-slate-200 mb-8 font-light max-w-4xl leading-relaxed">
-                            CLink HR follows a centralized Quality & SLA Framework to ensure reliable, predictable, and high-quality delivery—even while execution is carried out by independent IPP partners across the Zryoss ecosystem.
+                            Predictable and high-quality delivery through a centralized framework, ensuring consistency even across a distributed partner network.
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4">
                             <Link
                                 to="/contact"
-                                className="bg-brand-600 text-white px-8 py-4 rounded-full font-bold hover:bg-brand-500 transition-all shadow-lg flex items-center justify-center gap-2 text-lg"
+                                className="bg-brand-600 text-white px-8 py-4 rounded-full font-semibold hover:bg-brand-500 transition-all shadow-lg flex items-center justify-center gap-2 text-lg"
                             >
                                 Experience Quality Delivery <ArrowRight className="w-5 h-5" />
                             </Link>
@@ -418,7 +418,7 @@ const QualitySLAFramework = () => {
                         className="space-y-8"
                     >
                         <ShieldCheck className="w-20 h-20 text-accent-400 mx-auto" />
-                        <h2 className="text-4xl md:text-6xl font-extrabold italic tracking-tight">
+                        <h2 className="text-4xl md:text-4xl font-extrabold italic tracking-tight">
                             Central Standards. <br />
                             <span className="text-accent-400">Measurable Outcomes.</span> <br />
                             Scalable Quality.
@@ -429,7 +429,7 @@ const QualitySLAFramework = () => {
                         <div className="pt-8">
                             <Link
                                 to="/contact"
-                                className="bg-accent-500 text-brand-950 px-12 py-5 rounded-full font-bold hover:bg-accent-400 transition-all shadow-2xl inline-flex items-center gap-3 text-lg"
+                                className="bg-accent-500 text-brand-950 px-12 py-5 rounded-full font-semibold hover:bg-accent-400 transition-all shadow-2xl inline-flex items-center gap-3 text-lg"
                             >
                                 Let's Discuss Your Quality Standard <ArrowRight className="w-5 h-5" />
                             </Link>

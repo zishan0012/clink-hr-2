@@ -27,12 +27,12 @@ const PayrollAndComplianceBenefits = () => {
                     />
                     <div className="absolute inset-0 bg-brand-950/60"></div>
                 </div>
-                <div className="max-w-4xl mx-auto px-4 sm:px-6 relative z-10">
+                <div className="max-w-4xl mx-auto px-4 sm:px-6 relative z-10 text-center">
                     <motion.div
                         initial={{ opacity: 0, y: 15 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.4 }}
-                        className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-800/50 border border-brand-700 text-brand-200 text-xs font-bold tracking-widest uppercase mb-6 backdrop-blur-md"
+                        className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-800/50 border border-brand-700 text-brand-200 text-xs font-semibold tracking-widest uppercase mb-6 backdrop-blur-md mx-auto"
                     >
                         <span className="w-2 h-2 rounded-full bg-accent-500"></span>
                         Operational Efficiency
@@ -53,7 +53,7 @@ const PayrollAndComplianceBenefits = () => {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 0.4, delay: 0.1 }}
-                        className="flex flex-wrap items-center gap-6 text-slate-300 text-sm md:text-base"
+                        className="flex flex-wrap items-center justify-center gap-6 text-slate-300 text-sm md:text-base"
                     >
                         <div className="flex items-center gap-2">
                             <User className="w-4 h-4 text-accent-500" />
@@ -264,14 +264,14 @@ const PayrollAndComplianceBenefits = () => {
                     </article>
 
                     <div className="mt-12 pt-8 border-t border-slate-100">
-                        <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-                            <div className="text-center md:text-left">
-                                <h4 className="text-lg font-bold text-slate-900 mb-2">Struggling with payroll complexity?</h4>
-                                <p className="text-slate-600 text-sm">Let us handle your compliance risk-free.</p>
+                        <div className="flex flex-col items-center justify-center text-center gap-6">
+                            <div>
+                                <h4 className="text-xl font-bold text-slate-900 mb-2">Struggling with payroll complexity?</h4>
+                                <p className="text-slate-600 text-base">Let us handle your compliance risk-free.</p>
                             </div>
                             <Link
                                 to="/contact/payroll-inquiry"
-                                className="bg-accent-500 text-brand-900 px-8 py-3 rounded-full font-bold hover:bg-accent-400 transition-colors shadow-lg hover:shadow-xl hover:-translate-y-1 transform duration-300"
+                                className="bg-accent-500 text-brand-900 px-8 py-3 rounded-full font-semibold hover:bg-accent-400 transition-colors shadow-lg hover:shadow-xl hover:-translate-y-1 transform duration-300"
                             >
                                 Get a Quote
                             </Link>

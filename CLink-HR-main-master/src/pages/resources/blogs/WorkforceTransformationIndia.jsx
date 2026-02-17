@@ -27,12 +27,12 @@ const WorkforceTransformationIndia = () => {
                     />
                     <div className="absolute inset-0 bg-brand-950/60"></div>
                 </div>
-                <div className="max-w-4xl mx-auto px-4 sm:px-6 relative z-10">
+                <div className="max-w-4xl mx-auto px-4 sm:px-6 relative z-10 text-center">
                     <motion.div
                         initial={{ opacity: 0, y: 15 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.4 }}
-                        className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-800/50 border border-brand-700 text-brand-200 text-xs font-bold tracking-widest uppercase mb-6 backdrop-blur-md"
+                        className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-800/50 border border-brand-700 text-brand-200 text-xs font-semibold tracking-widest uppercase mb-6 backdrop-blur-md mx-auto"
                     >
                         <span className="w-2 h-2 rounded-full bg-emerald-500"></span>
                         HR Trends 2026
@@ -51,7 +51,7 @@ const WorkforceTransformationIndia = () => {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 0.4, delay: 0.1 }}
-                        className="flex flex-wrap items-center gap-6 text-slate-300 text-sm md:text-base"
+                        className="flex flex-wrap items-center justify-center gap-6 text-slate-300 text-sm md:text-base"
                     >
                         <div className="flex items-center gap-2">
                             <User className="w-4 h-4 text-emerald-400" />
@@ -241,14 +241,14 @@ const WorkforceTransformationIndia = () => {
                     </article>
 
                     <div className="mt-12 pt-8 border-t border-slate-100">
-                        <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-                            <div className="text-center md:text-left">
-                                <h4 className="text-lg font-bold text-slate-900 mb-2">Ready to transform your workforce?</h4>
-                                <p className="text-slate-600 text-sm">Let CLink HR guide your journey to 2026.</p>
+                        <div className="flex flex-col items-center justify-center text-center gap-6">
+                            <div>
+                                <h4 className="text-xl font-bold text-slate-900 mb-2">Ready to transform your workforce?</h4>
+                                <p className="text-slate-600 text-base">Let CLink HR guide your journey to 2026.</p>
                             </div>
                             <Link
                                 to="/contact"
-                                className="bg-emerald-600 text-white px-8 py-3 rounded-full font-bold hover:bg-emerald-700 transition-colors shadow-lg hover:shadow-xl hover:-translate-y-1 transform duration-300"
+                                className="bg-emerald-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-emerald-700 transition-colors shadow-lg hover:shadow-xl hover:-translate-y-1 transform duration-300"
                             >
                                 Get Future-Ready
                             </Link>
