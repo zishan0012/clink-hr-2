@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { NAVIGATION } from '../constants';
 
@@ -12,7 +12,10 @@ const MobileNavItem = ({ item, setIsOpen }) => {
       <div className="flex items-center justify-between py-0.5 px-1 hover:bg-brand-50/50 rounded-lg transition-colors group">
         <Link
           to={item.path}
-          onClick={() => setIsOpen(false)}
+          onClick={() => {
+            setIsOpen(false);
+            document.body.style.overflow = 'unset';
+          }}
           className={`flex-1 py-3 text-base font-bold tracking-tight ${hasChildren ? 'text-slate-900' : 'text-slate-600'}`}
         >
           {item.label}
@@ -52,6 +55,18 @@ const MobileNavItem = ({ item, setIsOpen }) => {
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 1024) { // lg breakpoint
+        setIsOpen(false);
+        document.body.style.overflow = 'unset';
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   return (
     <nav className="bg-white/90 backdrop-blur-lg border-b border-slate-100 sticky top-0 z-50 transition-all duration-300">
@@ -126,13 +141,17 @@ const Navbar = () => {
 
       {/* Mobile menu */}
       {isOpen && (
-        <div className="fixed inset-x-0 top-[80px] bg-white border-t border-slate-100 h-[calc(100vh-80px)] overflow-y-auto overflow-x-hidden z-[60] animate-in fade-in slide-in-from-top-4 duration-300">
+        <div className="fixed inset-x-0 top-[80px] bg-white border-t border-slate-100 h-[calc(100vh-80px)] overflow-y-auto overflow-x-hidden z-[60] lg:hidden animate-in fade-in slide-in-from-top-4 duration-300">
           <div className="w-full px-4 pt-4 pb-32 space-y-1">
             {NAVIGATION.map((item) => (
-              <MobileNavItem key={item.label} item={item} setIsOpen={(val) => {
-                setIsOpen(val);
-                document.body.style.overflow = 'unset';
-              }} />
+              <MobileNavItem
+                key={item.label}
+                item={item}
+                setIsOpen={(val) => {
+                  setIsOpen(val);
+                  if (!val) document.body.style.overflow = 'unset';
+                }}
+              />
             ))}
           </div>
         </div>
