@@ -3,6 +3,53 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { NAVIGATION } from '../constants';
 
+const MobileNavItem = ({ item, setIsOpen }) => {
+  const [isExpanded, setIsExpanded] = useState(false);
+  const hasChildren = item.children && item.children.length > 0;
+
+  return (
+    <div className="w-full overflow-hidden">
+      <div className="flex items-center justify-between py-0.5 px-1 hover:bg-brand-50/50 rounded-lg transition-colors group">
+        <Link
+          to={item.path}
+          onClick={() => setIsOpen(false)}
+          className={`flex-1 py-3 text-base font-bold tracking-tight ${hasChildren ? 'text-slate-900' : 'text-slate-600'}`}
+        >
+          {item.label}
+        </Link>
+        {hasChildren && (
+          <button
+            onClick={(e) => {
+              e.preventDefault();
+              setIsExpanded(!isExpanded);
+            }}
+            className={`p-2.5 rounded-lg transition-all ${isExpanded ? 'bg-brand-50 text-brand-600' : 'text-slate-400 group-hover:text-brand-500'}`}
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={2.5}
+              stroke="currentColor"
+              className={`w-4 h-4 transition-transform duration-300 ${isExpanded ? 'rotate-180' : ''}`}
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+            </svg>
+          </button>
+        )}
+      </div>
+
+      {hasChildren && isExpanded && (
+        <div className="pl-4 mt-1 border-l border-slate-100 ml-2 space-y-1 transition-all duration-300">
+          {item.children.map((child) => (
+            <MobileNavItem key={child.label} item={child} setIsOpen={setIsOpen} />
+          ))}
+        </div>
+      )}
+    </div>
+  );
+};
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -12,7 +59,7 @@ const Navbar = () => {
         <div className="flex justify-between h-20">
           <div className="flex items-center">
             <Link to="/" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="flex-shrink-0 flex items-center gap-2 cursor-pointer transition-opacity hover:opacity-90">
-              <img src="/clink-logo.png" alt="CLink HR Services" className="h-16 w-auto" />
+              <img src="/clink-logo.png" alt="CLink HR Services" className="h-14 w-auto" />
             </Link>
           </div>
 
@@ -61,7 +108,14 @@ const Navbar = () => {
             </Link>
           </div>
           <div className="lg:hidden flex items-center">
-            <button onClick={() => setIsOpen(!isOpen)} className="text-slate-600 hover:text-brand-500 p-2">
+            <button
+              onClick={() => {
+                setIsOpen(!isOpen);
+                if (!isOpen) document.body.style.overflow = 'hidden';
+                else document.body.style.overflow = 'unset';
+              }}
+              className="text-slate-600 hover:text-brand-500 p-2 transition-colors"
+            >
               <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={isOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"} />
               </svg>
@@ -72,34 +126,13 @@ const Navbar = () => {
 
       {/* Mobile menu */}
       {isOpen && (
-        <div className="lg:hidden bg-white border-t border-brand-50 h-screen overflow-y-auto">
-          <div className="px-2 pt-2 pb-3 space-y-1">
+        <div className="fixed inset-x-0 top-[80px] bg-white border-t border-slate-100 h-[calc(100vh-80px)] overflow-y-auto overflow-x-hidden z-[60] animate-in fade-in slide-in-from-top-4 duration-300">
+          <div className="w-full px-4 pt-4 pb-32 space-y-1">
             {NAVIGATION.map((item) => (
-              <div key={item.label}>
-                <Link to={item.path} onClick={() => setIsOpen(false)} className="block px-3 py-2 text-base font-medium text-slate-700 hover:bg-brand-50 hover:text-brand-600 rounded-md">
-                  {item.label}
-                </Link>
-                {item.children && (
-                  <div className="pl-6 space-y-1">
-                    {item.children.map((child) => (
-                      <div key={child.label}>
-                        <Link to={child.path} onClick={() => setIsOpen(false)} className="block px-3 py-2 text-sm font-medium text-slate-500 hover:text-brand-500">
-                          {child.label}
-                        </Link>
-                        {child.children && (
-                          <div className="pl-6 space-y-1">
-                            {child.children.map((subChild) => (
-                              <Link key={subChild.label} to={subChild.path} onClick={() => setIsOpen(false)} className="block px-3 py-2 text-sm font-medium text-slate-400 hover:text-brand-500">
-                                {subChild.label}
-                              </Link>
-                            ))}
-                          </div>
-                        )}
-                      </div>
-                    ))}
-                  </div>
-                )}
-              </div>
+              <MobileNavItem key={item.label} item={item} setIsOpen={(val) => {
+                setIsOpen(val);
+                document.body.style.overflow = 'unset';
+              }} />
             ))}
           </div>
         </div>
