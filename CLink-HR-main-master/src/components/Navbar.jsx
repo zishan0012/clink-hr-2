@@ -14,7 +14,6 @@ const MobileNavItem = ({ item, setIsOpen }) => {
           to={item.path}
           onClick={() => {
             setIsOpen(false);
-            document.body.style.overflow = 'unset';
           }}
           className={`flex-1 py-3 text-base font-bold tracking-tight ${hasChildren ? 'text-slate-900' : 'text-slate-600'}`}
         >
@@ -60,7 +59,6 @@ const Navbar = () => {
     const handleResize = () => {
       if (window.innerWidth >= 1024) { // lg breakpoint
         setIsOpen(false);
-        document.body.style.overflow = 'unset';
       }
     };
 
@@ -68,8 +66,23 @@ const Navbar = () => {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
+  // Handle body scroll lock
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+      document.documentElement.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+      document.documentElement.style.overflow = 'unset';
+    }
+    return () => {
+      document.body.style.overflow = 'unset';
+      document.documentElement.style.overflow = 'unset';
+    };
+  }, [isOpen]);
+
   return (
-    <nav className="bg-white/90 backdrop-blur-lg border-b border-slate-100 sticky top-0 z-50 transition-all duration-300">
+    <nav className="fixed top-0 left-0 w-full bg-white/90 backdrop-blur-lg border-b border-slate-100 z-50 transition-all duration-300">
       <div className="w-full px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-20">
           <div className="flex items-center">
@@ -126,8 +139,6 @@ const Navbar = () => {
             <button
               onClick={() => {
                 setIsOpen(!isOpen);
-                if (!isOpen) document.body.style.overflow = 'hidden';
-                else document.body.style.overflow = 'unset';
               }}
               className="text-slate-600 hover:text-brand-500 p-2 transition-colors"
             >
@@ -141,7 +152,7 @@ const Navbar = () => {
 
       {/* Mobile menu */}
       {isOpen && (
-        <div className="fixed inset-x-0 top-[80px] bg-white border-t border-slate-100 h-[calc(100vh-80px)] overflow-y-auto overflow-x-hidden z-[60] lg:hidden animate-in fade-in slide-in-from-top-4 duration-300">
+        <div className="fixed inset-x-0 top-[80px] bg-white border-t border-slate-100 h-[calc(100dvh-80px)] overflow-y-auto overflow-x-hidden z-[60] lg:hidden animate-in fade-in slide-in-from-top-4 duration-300">
           <div className="w-full px-4 pt-4 pb-32 space-y-1">
             {NAVIGATION.map((item) => (
               <MobileNavItem
@@ -149,7 +160,6 @@ const Navbar = () => {
                 item={item}
                 setIsOpen={(val) => {
                   setIsOpen(val);
-                  if (!val) document.body.style.overflow = 'unset';
                 }}
               />
             ))}

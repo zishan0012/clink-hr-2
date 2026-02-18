@@ -148,14 +148,14 @@ const Home = () => {
             {/*SECTION:1 HEQ Hero Section */}
             {/*SECTION:1 HEQ Hero Section */}
             <section
-                className="relative flex items-center overflow-hidden bg-slate-900 min-h-[90vh] pt-20"
+                className="relative flex items-center overflow-hidden bg-slate-900 min-h-[90vh] pt-20 w-full"
             >
                 {/* Background Image with Parallax-like effect */}
                 <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.6 }}
-                    className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat transform scale-105"
+                    className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat transform scale-100"
                     style={{
                         backgroundImage: "url('/hero.jpg')",
                     }}
@@ -884,7 +884,7 @@ const Home = () => {
                                     At <span className="font-bold text-slate-900">Clink HR Services</span>  powered by<span className="font-bold text-slate-900"> CLink Consultancy Services</span>, we align the diversified and intricate HR needs of our clients by providing reliable and strategic staffing solutions.
                                 </p>
                                 <p>
-                                    Headquartered in Gurgaon, India, we are a subsidiary of the <span className="font-bold text-slate-900">CLink Group</span> and pioneers of organized recruitment services in India.
+                                    Headquartered in Gurgaon, India, we are a subsidiary of the <span className="font-bold text-slate-900">CLink HR Groups</span> and pioneers of organized recruitment services in India.
                                 </p>
                                 <p>
                                     Over the years, we have emerged as the <span className="text-brand-600 font-bold">preferred recruitment partner</span> for multinationals and leading Indian businesses nationwide.

@@ -101,7 +101,7 @@ import CookiePolicy from './pages/company/CookiePolicy';
 
 const App = () => {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col pt-20">
       <ScrollToTop />
       <ScrollToTopButton />
       <Navbar />
